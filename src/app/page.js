@@ -13,6 +13,7 @@ import leadershipImg from '../../public/tj.webp'
 
 export default function Home() {
   const [showMobile, setShowMobile] = useState(false);
+  const [hydrated, setHydrated] = useState(false); // New state to track hydration
 
   useEffect(() => {
     const handleResize = () => {
@@ -23,6 +24,7 @@ export default function Home() {
       }
     };
 
+    setHydrated(true); // Set hydrated to true once the component has mounted
     handleResize(); // Check on initial load
     window.addEventListener('resize', handleResize); // Listen for resize events
 
@@ -30,6 +32,29 @@ export default function Home() {
       window.removeEventListener('resize', handleResize); // Cleanup on unmount
     };
   }, []);
+
+  if (!hydrated) {
+    // Skeleton UI for Desktop
+    return (
+      <div className="container mx-auto px-36 py-8">
+        <div className="flex flex-wrap justify-center gap-4">
+          <div className="bg-gray-300 shadow-md rounded-2xl lg:w-[234px] lg:h-[250px] w-[266px] h-[198px] animate-pulse"></div>
+          <div className="bg-gray-300 shadow-md rounded-2xl lg:w-[462px] lg:h-[250px] w-[170px] h-[180px] animate-pulse"></div>
+          <div className="bg-gray-300 shadow-md rounded-2xl lg:w-[234px] lg:h-[250px] w-[170px] h-[180px] animate-pulse"></div>
+        </div>
+        <div className="flex flex-wrap gap-4 justify-center mt-4">
+          <div className="bg-gray-300 shadow-md rounded-2xl w-[310px] h-[250px] animate-pulse"></div>
+          <div className="bg-gray-300 shadow-md rounded-2xl w-[310px] h-[250px] animate-pulse"></div>
+          <div className="bg-gray-300 shadow-md rounded-2xl w-[310px] h-[250px] animate-pulse"></div>
+        </div>
+        <div className="flex flex-wrap gap-4 justify-center mt-4">
+          <div className="bg-gray-300 shadow-md rounded-2xl w-[462px] h-[250px] animate-pulse"></div>
+          <div className="bg-gray-300 shadow-md rounded-2xl w-[462px] h-[250px] animate-pulse"></div>
+        </div>
+      </div>
+    );
+  }
+
 
   return (
     <div className="container mx-auto px-2 sm:px-4 py-8">
@@ -111,14 +136,14 @@ export default function Home() {
               </Link>
             </div>
             <div className="flex flex-wrap gap-4 justify-center">
-              <Link href="/events" className="bg-white shadow-md rounded-2xl w-[462px] h-[250px] relative overflow-hidden">
+              <Link href="/events" className="bg-white shadow-md rounded-2xl w-[470px] h-[250px] relative overflow-hidden">
                 <div className="relative block h-full">
                   {/* Add your image for this box here */}
                 </div>
                 {/* No button or title for this box */}
               </Link>
 
-              <Link href="/sermons" className="bg-white shadow-md rounded-2xl w-[462px] h-[250px] relative overflow-hidden">
+              <Link href="/sermons" className="bg-white shadow-md rounded-2xl w-[470px] h-[250px] relative overflow-hidden">
                 <div className="relative block h-full">
                   {/* Add your image for this box here */}
                 </div>
