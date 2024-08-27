@@ -65,6 +65,12 @@ export default function Home() {
               <div className="bg-white shadow-md rounded-2xl w-[366px] h-[198px] relative overflow-hidden">
                 <div className="relative block h-full">
                   {/* Add your image for this box here */}
+                  <Image
+                    src="https://placehold.co/600x400?text=Placeholder"
+                    layout="fill"
+                    objectFit="cover"
+                    alt="Leadership Image"
+                  />
                 </div>
                 {/* No button or title for this box */}
               </div>
@@ -75,6 +81,12 @@ export default function Home() {
               <Link href="/first-time-here" className="bg-white shadow-md rounded-2xl w-[170px] h-[180px] relative overflow-hidden">
                 <div className="relative block h-full">
                   {/* Add your image for this box here */}
+                  <Image
+                    src="https://placehold.co/600x400?text=Placeholder"
+                    layout="fill"
+                    objectFit="cover"
+                    alt="Leadership Image"
+                  />
                 </div>
                 <h3 className="text-2xl font-semibold absolute top-1.5 left-3 text-white">First Time Here!</h3>
                 <div className="absolute right-0 bottom-0">
@@ -143,8 +155,8 @@ export default function Home() {
             <div className="flex flex-wrap gap-4 justify-center">
               <Link href="/events" className="bg-white shadow-md rounded-2xl w-[368px] h-[199px] relative overflow-hidden">
                 <div className="relative block h-full">
-                  <Image
-                    src={kidsMobile}
+                <Image
+                    src="https://placehold.co/600x400?text=Placeholder"
                     layout="fill"
                     objectFit="cover"
                     alt="event Image"
@@ -157,27 +169,29 @@ export default function Home() {
             <div className="flex flex-wrap gap-4 justify-center">
               <Link href="/sermons" className="bg-white shadow-md rounded-2xl w-[368px] h-[199px] relative overflow-hidden">
                 <div className="relative block h-full">
-                  <Image
-                    src={kidsMobile}
+                <Image
+                    src="https://placehold.co/600x400?text=Placeholder"
                     layout="fill"
                     objectFit="cover"
-                    alt="sermon Image"
+                    alt="sermons Image"
                   />
                 </div>
                 {/* No button or title for this box */}
               </Link>
             </div>
-
-
-
           </>
-
         ) : (
           <>
             <div className="flex flex-wrap gap-4 justify-center mb-4">
               <Link href="/first-time-here" className="bg-white shadow-md rounded-2xl w-[234px] h-[250px] relative overflow-hidden">
                 <div className="relative block h-full">
                   {/* Add your image for this box here */}
+                  <Image
+                    src="https://placehold.co/600x400?text=Placeholder"
+                    layout="fill"
+                    objectFit="cover"
+                    alt="Leadership Image"
+                  />
                 </div>
                 <h3 className="text-2xl font-semibold absolute top-1.5 left-3 text-white">First Time Here!</h3>
                 <div className="absolute right-0 bottom-0">
@@ -190,6 +204,12 @@ export default function Home() {
               <div className="bg-white shadow-md rounded-2xl w-[462px] h-[250px] relative overflow-hidden">
                 <div className="relative block h-full">
                   {/* Add your image for this box here */}
+                  <Image
+                    src="https://placehold.co/600x400?text=Placeholder"
+                    layout="fill"
+                    objectFit="cover"
+                    alt="Leadership Image"
+                  />
                 </div>
                 {/* No button or title for this box */}
               </div>
@@ -249,16 +269,28 @@ export default function Home() {
               </Link>
             </div>
             <div className="flex flex-wrap gap-4 justify-center">
-              <Link href="/events" className="bg-white shadow-md rounded-2xl w-[470px] h-[250px] relative overflow-hidden">
+              <Link href="/events" className="bg-white shadow-md rounded-2xl w-[475px] h-[250px] relative overflow-hidden">
                 <div className="relative block h-full">
                   {/* Add your image for this box here */}
+                  <Image
+                    src="https://placehold.co/600x400?text=Placeholder"
+                    layout="fill"
+                    objectFit="cover"
+                    alt="Leadership Image"
+                  />
                 </div>
                 {/* No button or title for this box */}
               </Link>
 
-              <Link href="/sermons" className="bg-white shadow-md rounded-2xl w-[470px] h-[250px] relative overflow-hidden">
+              <Link href="/sermons" className="bg-white shadow-md rounded-2xl w-[475px] h-[250px] relative overflow-hidden">
                 <div className="relative block h-full">
                   {/* Add your image for this box here */}
+                  <Image
+                    src="https://placehold.co/600x400?text=Placeholder"
+                    layout="fill"
+                    objectFit="cover"
+                    alt="Leadership Image"
+                  />
                 </div>
                 {/* No button or title for this box */}
               </Link>

@@ -46,7 +46,7 @@ export default function Sermons() {
 
         {/* Recent Sermons */}
         <div className="space-y-6 w-full mt-32">
-          <h2 className="text-2xl inline-block font-bold rounded-lg px-3 py-1 bg-gray-100 text-gray-900">Recent Sermons</h2>
+          <h2 className="text-2xl inline-block font-semibold rounded-lg px-3 py-1 text-gray-900">Recent Sermons</h2>
           <div className="overflow-x-auto flex gap-6 snap-x w-full">
             {displayedVideos.map((videoUrl, index) => (
               <div key={index} className="flex-none w-[60%] sm:w-[50%] lg:w-[30%] snap-start">
@@ -71,7 +71,7 @@ export default function Sermons() {
 
         {/* Sermon Series */}
         <div className="space-y-6 mt-6 w-full">
-          <h2 className="text-2xl inline-block font-bold rounded-lg px-3 py-1 bg-gray-100 text-gray-900">Sermon Series</h2>
+          <h2 className="text-2xl inline-block font-semibold rounded-lg px-3 py-1 text-gray-900">Sermon Series</h2>
           <div className="overflow-x-auto flex gap-6 snap-x w-full">
             {displayedVideos.map((videoUrl, index) => (
               <div key={index} className="flex-none w-[60%] sm:w-[50%] lg:w-[30%] snap-start">
