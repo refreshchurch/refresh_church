@@ -10,6 +10,8 @@ import connectedDesktop from '../../public/get-connected-desktop.webp'
 import kidsMobile from '../../public/r-kids-mobile.webp'
 import kidsDesktop from '../../public/r-kids-desktop.webp'
 import leadershipImg from '../../public/tj.webp'
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
 
 export default function Home() {
   const [showMobile, setShowMobile] = useState(false);
@@ -63,14 +65,39 @@ export default function Home() {
             {/* row 1 */}
             <div className="flex flex-wrap gap-4 justify-center mb-4">
               <div className="bg-white shadow-md rounded-2xl w-[366px] h-[198px] relative overflow-hidden">
-                <div className="relative block h-full">
-                  {/* Add your image for this box here */}
-                  <Image
-                    src="https://placehold.co/600x400?text=Placeholder"
-                    layout="fill"
-                    objectFit="cover"
-                    alt="Leadership Image"
-                  />
+                <div className="relative block h-full flex items-center">
+                  <Carousel
+                    autoPlay
+                    infiniteLoop
+                    showThumbs={false}
+                    showStatus={false}
+
+                    interval={2000} // Adjust the duration as needed
+                    className="rounded-2xl overflow-hidden"
+                  >
+                    <div className="relative block h-full">
+                      <img
+                        src="https://placehold.co/600x400?text=Placeholder1"
+                        className="w-full h-full object-cover"
+                        alt="Image 1"
+                      />
+                    </div>
+                    <div className="relative block h-full">
+                      <img
+                        src="https://placehold.co/600x400?text=Placeholder2"
+                        className="w-full h-full object-cover"
+                        alt="Image 2"
+                      />
+                    </div>
+                    <div className="relative block h-full">
+                      <img
+                        src="https://placehold.co/600x400?text=Placeholder3"
+                        className="w-full h-full object-cover"
+                        alt="Image 3"
+                      />
+                    </div>
+                    {/* Add more items as needed */}
+                  </Carousel>
                 </div>
                 {/* No button or title for this box */}
               </div>
@@ -155,7 +182,7 @@ export default function Home() {
             <div className="flex flex-wrap gap-4 justify-center">
               <Link href="/events" className="bg-white shadow-md rounded-2xl w-[368px] h-[199px] relative overflow-hidden">
                 <div className="relative block h-full">
-                <Image
+                  <Image
                     src="https://placehold.co/600x400?text=Placeholder"
                     layout="fill"
                     objectFit="cover"
@@ -169,7 +196,7 @@ export default function Home() {
             <div className="flex flex-wrap gap-4 justify-center">
               <Link href="/sermons" className="bg-white shadow-md rounded-2xl w-[368px] h-[199px] relative overflow-hidden">
                 <div className="relative block h-full">
-                <Image
+                  <Image
                     src="https://placehold.co/600x400?text=Placeholder"
                     layout="fill"
                     objectFit="cover"
@@ -183,7 +210,7 @@ export default function Home() {
         ) : (
           <>
             <div className="flex flex-wrap gap-4 justify-center mb-4">
-              <Link href="/first-time-here" className="bg-white shadow-md rounded-2xl w-[234px] h-[250px] relative overflow-hidden">
+              <Link href="/first-time-here" className="bg-white shadow-md rounded-2xl w-[234px] h-[250px] relative overflow-hidden transform transition-transform duration-300 hover:scale-105">
                 <div className="relative block h-full">
                   {/* Add your image for this box here */}
                   <Image
@@ -201,20 +228,44 @@ export default function Home() {
                 </div>
               </Link>
 
-              <div className="bg-white shadow-md rounded-2xl w-[462px] h-[250px] relative overflow-hidden">
-                <div className="relative block h-full">
-                  {/* Add your image for this box here */}
-                  <Image
-                    src="https://placehold.co/600x400?text=Placeholder"
-                    layout="fill"
-                    objectFit="cover"
-                    alt="Leadership Image"
-                  />
+              <div className="bg-white shadow-md rounded-2xl w-[462px] h-[250px] relative overflow-hidden ">
+                <div className="relative block h-full flex items-center">
+                  <Carousel
+                    autoPlay
+                    infiniteLoop
+                    showThumbs={false}
+                    showStatus={false}
+                    showArrows={false}
+                    interval={2000} // Adjust the duration as needed
+                    className="rounded-2xl overflow-hidden"
+                  >
+                    <div className="relative block h-full">
+                      <img
+                        src="https://placehold.co/600x400?text=Placeholder1"
+                        className="w-full h-full object-cover"
+                        alt="Image 1"
+                      />
+                    </div>
+                    <div className="relative block h-full">
+                      <img
+                        src="https://placehold.co/600x400?text=Placeholder2"
+                        className="w-full h-full object-cover"
+                        alt="Image 2"
+                      />
+                    </div>
+                    <div className="relative block h-full">
+                      <img
+                        src="https://placehold.co/600x400?text=Placeholder3"
+                        className="w-full h-full object-cover"
+                        alt="Image 3"
+                      />
+                    </div>
+                    {/* Add more items as needed */}
+                  </Carousel>
                 </div>
-                {/* No button or title for this box */}
               </div>
 
-              <Link href="/leadership" className="bg-white shadow-md rounded-2xl w-[234px] h-[250px] relative overflow-hidden">
+              <Link href="/leadership" className="bg-white shadow-md rounded-2xl w-[234px] h-[250px] relative overflow-hidden transform transition-transform duration-300 hover:scale-105">
                 <div className="relative block h-full">
                   <Image
                     src={leadershipImg}
@@ -232,19 +283,7 @@ export default function Home() {
               </Link>
             </div>
             <div className="flex flex-wrap gap-4 justify-center mb-4">
-              <Link href="/r-kids" className="bg-white shadow-md rounded-2xl w-[310px] h-[250px] relative overflow-hidden">
-                <div className="relative block h-full">
-                  <Image
-                    src={kidsDesktop}
-                    layout="fill"
-                    objectFit="cover"
-                    alt="Kids Image"
-                  />
-                </div>
-                {/* No button or title for this box */}
-              </Link>
-
-              <Link href="/connect" className="bg-white shadow-md rounded-2xl w-[310px] h-[250px] relative overflow-hidden">
+              <Link href="/connect" className="bg-white shadow-md rounded-2xl w-[310px] h-[250px] relative overflow-hidden transform transition-transform duration-300 hover:scale-105">
                 <div className="relative block h-full">
                   <Image
                     src={connectedDesktop}
@@ -256,7 +295,19 @@ export default function Home() {
                 {/* No button or title for this box */}
               </Link>
 
-              <Link href="/discovery" className="bg-white shadow-md rounded-2xl w-[310px] h-[250px] relative overflow-hidden">
+              <Link href="/r-kids" className="bg-white shadow-md rounded-2xl w-[310px] h-[250px] relative overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                <div className="relative block h-full">
+                  <Image
+                    src={kidsDesktop}
+                    layout="fill"
+                    objectFit="cover"
+                    alt="Kids Image"
+                  />
+                </div>
+                {/* No button or title for this box */}
+              </Link>
+
+              <Link href="/discovery" className="bg-white shadow-md rounded-2xl w-[310px] h-[250px] relative overflow-hidden transform transition-transform duration-300 hover:scale-105">
                 <div className="relative block h-full">
                   <Image
                     src={discoveryDesktop}
@@ -269,7 +320,7 @@ export default function Home() {
               </Link>
             </div>
             <div className="flex flex-wrap gap-4 justify-center">
-              <Link href="/events" className="bg-white shadow-md rounded-2xl w-[475px] h-[250px] relative overflow-hidden">
+              <Link href="/events" className="bg-white shadow-md rounded-2xl w-[475px] h-[250px] relative overflow-hidden transform transition-transform duration-300 hover:scale-105">
                 <div className="relative block h-full">
                   {/* Add your image for this box here */}
                   <Image
@@ -282,7 +333,7 @@ export default function Home() {
                 {/* No button or title for this box */}
               </Link>
 
-              <Link href="/sermons" className="bg-white shadow-md rounded-2xl w-[475px] h-[250px] relative overflow-hidden">
+              <Link href="/sermons" className="bg-white shadow-md rounded-2xl w-[475px] h-[250px] relative overflow-hidden transform transition-transform duration-300 hover:scale-105">
                 <div className="relative block h-full">
                   {/* Add your image for this box here */}
                   <Image

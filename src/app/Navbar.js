@@ -8,7 +8,9 @@ import { usePathname } from 'next/navigation';
 export default function Navbar() {
   const [dropdown, setDropdown] = useState(null);
   const [mobileMenu, setMobileMenu] = useState(false);
-  const dropdownRef = useRef(null);
+  const firstTimeRef = useRef(null);
+  const yourFamilyRef = useRef(null);
+  const connectRef = useRef(null);
   const pathname = usePathname();
 
   const toggleMobileMenu = () => {
@@ -20,7 +22,11 @@ export default function Navbar() {
   };
 
   const handleClickOutside = (event) => {
-    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+    if (
+      (firstTimeRef.current && !firstTimeRef.current.contains(event.target)) &&
+      (yourFamilyRef.current && !yourFamilyRef.current.contains(event.target)) &&
+      (connectRef.current && !connectRef.current.contains(event.target))
+    ) {
       setDropdown(null);
     }
   };
@@ -35,6 +41,7 @@ export default function Navbar() {
   const isActive = (path) => pathname === path;
 
   const handleLinkClick = () => {
+    console.log("handleLinkClick")
     setDropdown(null); // Close the dropdown
   };
 
@@ -100,7 +107,7 @@ export default function Navbar() {
                 <div className="absolute left-0 z-10 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
                   <ul className="py-2 text-base text-gray-700 dark:text-gray-400">
                     <li>
-                      <Link href="/refresh-kids">
+                      <Link href="/r-kids">
                         <div className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">refresh kids</div>
                       </Link>
                     </li>
@@ -176,124 +183,124 @@ export default function Navbar() {
         </div> */}
 
         <div className={`${mobileMenu ? 'block' : 'hidden'} w-full md:block md:w-auto z-50`}>
-        <ul className="flex flex-col font-sm p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-11 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 mx-auto md:justify-center">
-          <li>
-            <Link href="/">
-              <div className={`${isActive('/') ? 'primary' : 'gray'} text-gray-900 text-xl block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent`}>home</div>
-            </Link>
-          </li>
-          <li className="relative" ref={dropdownRef}>
-            <button onClick={() => toggleDropdown('firstTime')} className="text-xl flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">first time here
-              <svg className="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
+          <ul className="flex flex-col font-sm p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-11 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 mx-auto md:justify-center">
+            <li>
+              <Link href="/">
+                <div className={`${isActive('/') ? 'primary' : 'gray'} text-gray-900 text-xl block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent`}>home</div>
+              </Link>
+            </li>
+            <li className="relative" ref={firstTimeRef}>
+              <button onClick={() => toggleDropdown('firstTime')} className="text-xl flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">first time here
+                <svg className="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
+                </svg>
+              </button>
+              {dropdown === 'firstTime' && (
+                <div className="absolute left-0 z-10 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                  <ul className="py-2 text-base text-gray-700 dark:text-gray-400">
+                    <li>
+                      <Link href="/first-time-here" onClick={handleLinkClick}>
+                        <div className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">first time here?</div>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/leadership" onClick={handleLinkClick}>
+                        <div className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">leadership</div>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/beliefs" onClick={handleLinkClick}>
+                        <div className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">beliefs</div>
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              )}
+            </li>
+            <li className="relative" ref={yourFamilyRef}>
+              <button onClick={() => toggleDropdown('yourFamily')} className="text-xl flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">your family
+                <svg className="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
+                </svg>
+              </button>
+              {dropdown === 'yourFamily' && (
+                <div className="absolute left-0 z-10 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                  <ul className="py-2 text-base text-gray-700 dark:text-gray-400">
+                    <li>
+                      <Link href="/r-kids" onClick={handleLinkClick}>
+                        <div className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">refresh kids</div>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/refresh-youth" onClick={handleLinkClick}>
+                        <div className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">refresh youth</div>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/mens-ministry" onClick={handleLinkClick}>
+                        <div className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">men&apos;s ministry</div>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/womens-ministry" onClick={handleLinkClick}>
+                        <div className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">women&apos;s ministry</div>
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              )}
+            </li>
+            <li className="relative" ref={connectRef}>
+              <button onClick={() => toggleDropdown('connect')} className="text-xl flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">connect
+                <svg className="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
+                </svg>
+              </button>
+              {dropdown === 'connect' && (
+                <div className="absolute left-0 z-10 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                  <ul className="py-2 text-base text-gray-700 dark:text-gray-400">
+                    <li>
+                      <Link href="/discovery" onClick={handleLinkClick}>
+                        <div className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">discovery</div>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/small-groups" onClick={handleLinkClick}>
+                        <div className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">small groups</div>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="https://refresh.churchcenter.com/people/forms/301611?_ga=2.212286996.1630180229.1675698110-905807684.1675698110" onClick={handleLinkClick}>
+                        <div className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">serve team</div>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/sermons" onClick={handleLinkClick}>
+                        <div className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">sermons</div>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/events" onClick={handleLinkClick}>
+                        <div className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">events</div>
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              )}
+            </li>
+            <li>
+              <Link href="/contact">
+                <div className={`${isActive('/contact') ? 'primary' : 'gray'} text-gray-900 text-xl block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent`}>contact</div>
+              </Link>
+            </li>
+            <li className='flex items-center'>
+              <div href="https://www.merriam-webster.com/dictionary/give" className="text-xl block py-2 px-3 me-1 text-primary rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">give</div>
+              <svg className="w-4 h-4 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M18 14v4.833A1.166 1.166 0 0 1 16.833 20H5.167A1.167 1.167 0 0 1 4 18.833V7.167A1.166 1.166 0 0 1 5.167 6h4.618m4.447-2H20v5.768m-7.889 2.121 7.778-7.778" />
               </svg>
-            </button>
-            {dropdown === 'firstTime' && (
-              <div className="absolute left-0 z-10 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                <ul className="py-2 text-base text-gray-700 dark:text-gray-400">
-                  <li>
-                    <Link href="/first-time-here" onClick={handleLinkClick}>
-                      <div className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">first time here?</div>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/leadership" onClick={handleLinkClick}>
-                      <div className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">leadership</div>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/beliefs" onClick={handleLinkClick}>
-                      <div className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">beliefs</div>
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            )}
-          </li>
-          <li className="relative" ref={dropdownRef}>
-            <button onClick={() => toggleDropdown('yourFamily')} className="text-xl flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">your family
-              <svg className="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
-              </svg>
-            </button>
-            {dropdown === 'yourFamily' && (
-              <div className="absolute left-0 z-10 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                <ul className="py-2 text-base text-gray-700 dark:text-gray-400">
-                  <li>
-                    <Link href="/refresh-kids" onClick={handleLinkClick}>
-                      <div className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">refresh kids</div>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/refresh-youth" onClick={handleLinkClick}>
-                      <div className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">refresh youth</div>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/mens-ministry" onClick={handleLinkClick}>
-                      <div className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">men&apos;s ministry</div>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/womens-ministry" onClick={handleLinkClick}>
-                      <div className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">women&apos;s ministry</div>
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            )}
-          </li>
-          <li className="relative" ref={dropdownRef}>
-            <button onClick={() => toggleDropdown('connect')} className="text-xl flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">connect
-              <svg className="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
-              </svg>
-            </button>
-            {dropdown === 'connect' && (
-              <div className="absolute left-0 z-10 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                <ul className="py-2 text-base text-gray-700 dark:text-gray-400">
-                  <li>
-                    <Link href="/discovery" onClick={handleLinkClick}>
-                      <div className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">discovery</div>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/small-groups" onClick={handleLinkClick}>
-                      <div className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">small groups</div>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/serve-team" onClick={handleLinkClick}>
-                      <div className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">serve team</div>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/sermons" onClick={handleLinkClick}>
-                      <div className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">sermons</div>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/events" onClick={handleLinkClick}>
-                      <div className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">events</div>
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            )}
-          </li>
-          <li>
-            <Link href="/contact">
-              <div className={`${isActive('/contact') ? 'primary' : 'gray'} text-gray-900 text-xl block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent`}>contact</div>
-            </Link>
-          </li>
-          <li className='flex items-center'>
-            <div href="https://www.merriam-webster.com/dictionary/give" className="text-xl block py-2 px-3 me-1 text-primary rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">give</div>
-            <svg className="w-4 h-4 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-              <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M18 14v4.833A1.166 1.166 0 0 1 16.833 20H5.167A1.167 1.167 0 0 1 4 18.833V7.167A1.166 1.166 0 0 1 5.167 6h4.618m4.447-2H20v5.768m-7.889 2.121 7.778-7.778" />
-            </svg>
-          </li>
-        </ul>
-      </div>
+            </li>
+          </ul>
+        </div>
 
 
         <div className='flex items-bottom space-x-1.5 md:flex hidden'>

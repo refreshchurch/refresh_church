@@ -17,6 +17,7 @@ export default function FirstTimeHere() {
           infiniteLoop
           showThumbs={false}
           showStatus={false}
+          showArrows={false}
           interval={3000}
           className="rounded-2xl overflow-hidden"
         >
