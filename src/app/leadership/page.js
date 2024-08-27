@@ -12,7 +12,7 @@ export default function Leadership() {
       <div className="bg-white shadow-lg rounded-2xl p-8 mb-12 flex flex-col lg:flex-row items-center lg:items-start">
         <div className="w-full lg:w-1/3 mb-8 lg:mb-0">
           <Image
-            src="/path-to-head-pastor-image.jpg" // Replace with the actual path to the image
+            src="https://refresh.church/wp-content/uploads/2023/01/Leadership-1.jpg" // Replace with the actual path to the image
             layout="responsive"
             width={300}
             height={300}

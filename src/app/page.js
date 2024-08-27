@@ -50,8 +50,8 @@ export default function Home() {
           <div className="bg-gray-300 shadow-md rounded-2xl w-[310px] h-[250px] animate-pulse"></div>
         </div>
         <div className="flex flex-wrap gap-4 justify-center mt-4">
-          <div className="bg-gray-300 shadow-md rounded-2xl w-[462px] h-[250px] animate-pulse"></div>
-          <div className="bg-gray-300 shadow-md rounded-2xl w-[462px] h-[250px] animate-pulse"></div>
+          <div className="bg-gray-300 shadow-md rounded-2xl w-[475px] h-[250px] animate-pulse"></div>
+          <div className="bg-gray-300 shadow-md rounded-2xl w-[475px] h-[250px] animate-pulse"></div>
         </div>
       </div>
     );
