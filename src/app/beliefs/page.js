@@ -21,7 +21,7 @@ export default function Beliefs() {
   return (
     <div className="container mx-auto px-8 sm:px-36 py-12">
       {/* Page Title */}
-      <h2 className="text-4xl font-bold text-gray-900 tracking-tighter sm:text-5xl md:text-6xl mb-12">Our Beliefs</h2>
+      <h2 className="text-4xl font-bold text-gray-900 tracking-tighter sm:text-4xl md:text-5xl mb-12">Our Beliefs</h2>
 
       {/* Hero Blurb */}
       <div className="bg-white shadow-lg rounded-2xl p-8 mb-12 text-center">
@@ -32,7 +32,7 @@ export default function Beliefs() {
 
       {/* Church Slogan */}
       <div className="text-center mb-12">
-        <h3 className="text-2xl font-bold text-primary uppercase">every person refreshed. every purpose discovered.</h3>
+        <h3 className="text-2xl font-bold text-primary lowercase">every person refreshed. every purpose discovered.</h3>
       </div>
 
       {/* Beliefs Grid */}

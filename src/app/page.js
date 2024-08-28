@@ -9,6 +9,7 @@ import connectedMobile from '../../public/get-connected-mobile.webp'
 import connectedDesktop from '../../public/get-connected-desktop.webp'
 import kidsMobile from '../../public/r-kids-mobile.webp'
 import kidsDesktop from '../../public/r-kids-desktop.webp'
+import eventImg from '../../public/event.webp'
 import leadershipImg from '../../public/tj.webp'
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
@@ -180,20 +181,6 @@ export default function Home() {
             </div>
             {/* row 4 */}
             <div className="flex flex-wrap gap-4 justify-center">
-              <Link href="/events" className="bg-white shadow-md rounded-2xl w-[368px] h-[199px] relative overflow-hidden">
-                <div className="relative block h-full">
-                  <Image
-                    src="https://placehold.co/600x400?text=Placeholder"
-                    layout="fill"
-                    objectFit="cover"
-                    alt="event Image"
-                  />
-                </div>
-                {/* No button or title for this box */}
-              </Link>
-            </div>
-            {/* row 5 */}
-            <div className="flex flex-wrap gap-4 justify-center">
               <Link href="/sermons" className="bg-white shadow-md rounded-2xl w-[368px] h-[199px] relative overflow-hidden">
                 <div className="relative block h-full">
                   <Image
@@ -206,6 +193,22 @@ export default function Home() {
                 {/* No button or title for this box */}
               </Link>
             </div>
+            
+            {/* row 5 */}
+            <div className="flex flex-wrap gap-4 justify-center">
+              <Link href="/events" className="bg-white shadow-md rounded-2xl w-[368px] h-[199px] relative overflow-hidden">
+                <div className="relative block h-full">
+                  <Image
+                    src={eventImg}
+                    layout="fill"
+                    objectFit="cover"
+                    alt="event Image"
+                  />
+                </div>
+                {/* No button or title for this box */}
+              </Link>
+            </div>
+
           </>
         ) : (
           <>
@@ -320,7 +323,8 @@ export default function Home() {
               </Link>
             </div>
             <div className="flex flex-wrap gap-4 justify-center">
-              <Link href="/events" className="bg-white shadow-md rounded-2xl w-[475px] h-[250px] relative overflow-hidden transform transition-transform duration-300 hover:scale-105">
+
+              <Link href="/sermons" className="bg-white shadow-md rounded-2xl w-[475px] h-[250px] relative overflow-hidden transform transition-transform duration-300 hover:scale-105">
                 <div className="relative block h-full">
                   {/* Add your image for this box here */}
                   <Image
@@ -333,11 +337,11 @@ export default function Home() {
                 {/* No button or title for this box */}
               </Link>
 
-              <Link href="/sermons" className="bg-white shadow-md rounded-2xl w-[475px] h-[250px] relative overflow-hidden transform transition-transform duration-300 hover:scale-105">
+              <Link href="/events" className="bg-white shadow-md rounded-2xl w-[475px] h-[250px] relative overflow-hidden transform transition-transform duration-300 hover:scale-105">
                 <div className="relative block h-full">
                   {/* Add your image for this box here */}
                   <Image
-                    src="https://placehold.co/600x400?text=Placeholder"
+                    src={eventImg}
                     layout="fill"
                     objectFit="cover"
                     alt="Leadership Image"

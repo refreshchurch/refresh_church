@@ -16,7 +16,7 @@ export default function SmallGroups() {
 
   return (
     <div className="container mx-auto px-8 sm:px-36 py-12">
-      <h2 className="text-4xl font-bold text-gray-900 tracking-tighter sm:text-5xl md:text-6xl mb-12">Join a Small Group</h2>
+      <h2 className="text-4xl font-bold text-gray-900 tracking-tighter sm:text-4xl md:text-5xl mb-12">Join a Small Group</h2>
       <p className="text-lg text-gray-700 mb-12 text-center">
         Our small groups are a great way to connect with others, grow in your faith, and find support in your journey. Explore the groups below and sign up to get started!
       </p>

@@ -86,7 +86,7 @@ export default function FirstTimeHere() {
 
       {/* Church Slogan and Verse */}
       <div className="text-center mb-12">
-        <h3 className="text-2xl font-bold text-primary uppercase mb-4">every person refreshed. every purpose discovered.</h3>
+        <h3 className="text-2xl font-bold text-primary lowercase mb-4">every person refreshed. every purpose discovered.</h3>
         <p className="text-xl text-gray-700 italic">"A generous person will prosper; whoever refreshes others will be refreshed." - Proverbs 11:25</p>
       </div>
 
