@@ -2,7 +2,7 @@
 
 export default function Beliefs() {
   const beliefs = [
-    { title: "1. The Bible", blurb: "We believe the Bible is the inspired and only infallible, authoritative Word of God." },
+    { title: "1. Holy Bible", blurb: "The Holy Bible, and only the Bible, is the authoritative Word of God. It alone is the final authority in determining all doctrinal truths. In its original writing, it is inspired, infallible and inerrant (II Timothy 3:16; II Peter 1:20-21; Proverbs 30:5; Romans 16:25-26)." },
     { title: "2. The Trinity", blurb: "We believe in one God, eternally existent in three persons: Father, Son, and Holy Spirit." },
     { title: "3. Jesus Christ", blurb: "We believe in the deity of our Lord Jesus Christ, His virgin birth, sinless life, and redemptive death." },
     { title: "4. Salvation", blurb: "We believe that salvation is a free gift from God, received by faith in Jesus Christ." },

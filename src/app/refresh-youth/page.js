@@ -7,23 +7,23 @@ import Link from "next/link";
 export default function YouthMinistry() {
   return (
     <div className="container mx-auto px-8 sm:px-36 py-12">
-      <h2 className="text-4xl font-bold text-gray-900 tracking-tighter sm:text-5xl md:text-6xl mb-12">Youth Ministry</h2>
+      <h2 className="text-4xl font-bold text-gray-900 tracking-tighter sm:text-4xl md:text-5xl mb-12">Youth Ministry</h2>
 
       {/* Introduction Section with Image */}
       <div className="flex flex-col lg:flex-row items-center mb-12">
         <div className="lg:w-1/2 mb-8 lg:mb-0 lg:pr-8">
-          <h3 className="text-2xl font-semibold text-gray-900 mb-4">Welcome to Youth Ministry</h3>
+          <h3 className="text-2xl font-semibold text-gray-900 mb-4">Welcome to The Well</h3>
           <p className="text-gray-700 text-lg mb-6">
-            Our Youth Ministry is a vibrant and energetic community where young people can connect, grow in their faith, and have fun together. We meet weekly for worship, Bible study, and a variety of exciting activities. Whether you're new to the church or a regular attendee, there's a place for you here!
+          We believe ministry to the next generation is one of the most important ministries here at Refresh Church.
           </p>
-          <Link href="/youth-events" className="inline-block bg-primary text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-primaryDark transition duration-300 ease-in-out">
-            Join Us for Youth Night
+          <Link href="/events" className="inline-block bg-primary text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-primaryDark transition duration-300 ease-in-out">
+            Join Us at The Well
           </Link>
         </div>
         <div className="lg:w-1/2">
           <div className="w-full h-[350px] relative overflow-hidden rounded-2xl shadow-lg">
             <Image
-              src="/path-to-youth-photo1.jpg" // Replace with the actual path to the image
+              src="https://refresh.church/wp-content/uploads/2023/01/Refresh-Youth.jpg" // Replace with the actual path to the image
               layout="fill"
               objectFit="cover"
               alt="Youth Ministry Image 1"
@@ -38,7 +38,9 @@ export default function YouthMinistry() {
           <div className="lg:w-1/2 lg:pl-8 mb-8 lg:mb-0">
             <h3 className="text-2xl font-semibold text-gray-900 mb-4">Time & Location</h3>
             <p className="text-gray-700 text-lg">
-            At the heart of our ministry is a commitment to helping women grow in their relationship with God. We offer a variety of Bible studies and small groups that provide a space to explore Scripture, share experiences, and pray for one another.
+            Students come together every Wednesday Night from 6-7:30pm to build relationships, learn about Jesus, and discover their purpose. They meet at the Refresh HQ: 601 E Schiller Ln in Meridian. 
+<br/>
+Our gathering consists of group games, devotional time, small group discussion, Bible study, and prayer. We also enjoy snacks, friendship, and lots of laughs
             </p>
           </div>
           <div className="lg:w-1/2">
@@ -58,9 +60,9 @@ export default function YouthMinistry() {
       {/* Final Call to Action with Image */}
       <div className="flex flex-col lg:flex-row items-center text-center lg:text-left mt-12">
         <div className="lg:w-1/2 lg:pr-8">
-          <h3 className="text-2xl font-semibold text-gray-900 mb-4">Get Involved in Youth Ministry</h3>
+          <h3 className="text-2xl font-semibold text-gray-900 mb-4">Join us Wednesday @ 6pm!</h3>
           <p className="text-gray-700 text-lg mb-6">
-            Ready to take the next step? Come to one of our upcoming events or join us on a Wednesday night. We can't wait to see you there!
+          We believe in the power of community. Our youth leaders recognize that they have a unique influence in the lives of the middle and high school students they serve. Their goal is to encourage authentic faith as they invest in a relationship with your student(s) and help them build a relationship with Jesus and others around them.
           </p>
           <Link href="/youth-events" className="inline-block bg-primary text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-primaryDark transition duration-300 ease-in-out">
             Join Us for Youth Night

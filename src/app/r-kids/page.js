@@ -3,19 +3,45 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import refreshKid from '../../../public/r-kids-desktop.webp'
 
 export default function KidMinistry() {
   return (
     <div className="container mx-auto px-8 sm:px-36 py-12">
       <h2 className="text-4xl font-bold text-gray-900 tracking-tighter sm:text-5xl md:text-6xl mb-12">Kid Ministry</h2>
 
-      {/* Hero Blurb Section with Background Pattern */}
-      <div className="bg-pattern bg-cover shadow-lg rounded-2xl p-8 mb-12 text-center text-white">
-        <h3 className="text-2xl font-semibold mb-4">Welcome to Our Kid Ministry</h3>
-        <p className="text-lg">
-          Our Kid Ministry is designed to provide a safe, fun, and nurturing environment where children can learn about God's love. Whether it's their first Sunday or they’ve been coming for years, we’re committed to helping every child grow in their faith and make lasting friendships.
-        </p>
+      {/* Hero Blurb Section with Background Image and Improved Text Bubble */}
+      {/* <div
+        className="bg-cover bg-center shadow-lg rounded-2xl p-8 mb-12 text-center text-white relative"
+        style={{
+          backgroundImage: "url('https://refresh.church/wp-content/uploads/2023/01/Rkids-Background.jpg')",
+        }}
+      >
+        <div className="absolute inset-0 bg-black bg-opacity-70 rounded-2xl z-0"></div>
+
+        <div className="relative z-10">
+          <h3 className="text-2xl font-semibold mb-4">Welcome to Our Kid Ministry</h3>
+          <p className="text-lg">
+            Our Kid Ministry is designed to provide a safe, fun, and nurturing environment where children can learn about God's love. Whether it's their first Sunday or they’ve been coming for years, we’re committed to helping every child grow in their faith and make lasting friendships.
+          </p>
+        </div>
+      </div> */}
+
+      <div
+        className="bg-cover bg-center shadow-lg rounded-2xl p-8 mb-12 text-center text-white relative"
+        style={{
+          backgroundImage: "url('https://refresh.church/wp-content/uploads/2023/01/Rkids-Background.jpg')",
+        }}
+      >
+        {/* Text content with its own background */}
+        <div className="relative z-10 text-black bg-[#daedec] rounded-xl p-6 max-w-3xl mx-auto">
+          <h3 className="text-2xl font-bold mb-4">Welcome to Our Kid Ministry</h3>
+          <p className="text-lg">
+            Our Kid Ministry is designed to provide a safe, fun, and nurturing environment where children can learn about God's love. Whether it's their first Sunday or they’ve been coming for years, we’re committed to helping every child grow in their faith and make lasting friendships.
+          </p>
+        </div>
       </div>
+
 
       {/* Group Sections with Scattered Images */}
       <div className="mb-12">
@@ -29,7 +55,7 @@ export default function KidMinistry() {
           </div>
           <div className="lg:w-1/2 h-[250px] relative overflow-hidden rounded-2xl shadow-lg">
             <Image
-              src="/path-to-kid-photo1.jpg" // Replace with the actual path to the image
+              src="https://refresh.church/wp-content/uploads/2023/08/S2_17.png" // Replace with the actual path to the image
               layout="fill"
               objectFit="cover"
               alt="Your First Sunday"
@@ -41,7 +67,7 @@ export default function KidMinistry() {
         <div className="mb-12 flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2 h-[250px] relative overflow-hidden rounded-2xl shadow-lg mb-6 lg:mb-0">
             <Image
-              src="/path-to-kid-photo2.jpg" // Replace with the actual path to the image
+              src={refreshKid} // Replace with the actual path to the image
               layout="fill"
               objectFit="cover"
               alt="Nursery"
@@ -65,7 +91,7 @@ export default function KidMinistry() {
           </div>
           <div className="lg:w-1/2 h-[250px] relative overflow-hidden rounded-2xl shadow-lg">
             <Image
-              src="/path-to-kid-photo3.jpg" // Replace with the actual path to the image
+              src="https://refresh.church/wp-content/uploads/2023/08/S2_16.png" // Replace with the actual path to the image
               layout="fill"
               objectFit="cover"
               alt="Toddlers & Pre-K"
@@ -77,7 +103,7 @@ export default function KidMinistry() {
         <div className="mb-12 flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2 h-[250px] relative overflow-hidden rounded-2xl shadow-lg mb-6 lg:mb-0">
             <Image
-              src="/path-to-kid-photo4.jpg" // Replace with the actual path to the image
+              src="https://refresh.church/wp-content/uploads/2023/01/Rkids-Background-3.jpg" // Replace with the actual path to the image
               layout="fill"
               objectFit="cover"
               alt="Elementary & Pre-Teen"
@@ -98,7 +124,7 @@ export default function KidMinistry() {
         <p className="text-gray-700 text-lg mb-6">
           Are you passionate about working with children and helping them grow in their faith? We're always looking for dedicated volunteers to join our team. Get involved and make a difference in the lives of our kids today!
         </p>
-        <Link href="/join-the-team" className="inline-block bg-primary text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-primaryDark transition duration-300 ease-in-out">
+        <Link href="https://refresh.churchcenter.com/people/forms/301611" className="inline-block bg-primary text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-primaryDark transition duration-300 ease-in-out">
           Join the Team
         </Link>
       </div>
