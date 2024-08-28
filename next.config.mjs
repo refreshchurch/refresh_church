@@ -2,7 +2,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-      domains: ['placehold.co', 'example.com', 'another-example.com', 'refresh.church'],
+      domains: ['placehold.co', 'example.com', 'another-example.com', 'refresh.church', 'registrations-production.s3.amazonaws.com'],
       dangerouslyAllowSVG: true,
     },
   };
