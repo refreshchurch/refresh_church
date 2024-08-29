@@ -3,8 +3,6 @@
 import { useEffect, useState } from 'react';
 import Image from "next/image";
 import Link from "next/link";
-import axios from 'axios';
-import discoveryDesktop from '../../../public/discovery-desktop.webp'
 
 // Utility function to strip HTML tags
 const stripHtml = (html) => {

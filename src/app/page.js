@@ -110,7 +110,7 @@ export default function Home() {
                 <div className="relative block h-full">
                   {/* Add your image for this box here */}
                   <Image
-                    src="https://placehold.co/600x400?text=Placeholder"
+                    src="https://refresh.church/wp-content/uploads/2023/01/Worship-Team-1024x576.jpg"
                     layout="fill"
                     objectFit="cover"
                     alt="Leadership Image"
@@ -193,7 +193,7 @@ export default function Home() {
                 {/* No button or title for this box */}
               </Link>
             </div>
-            
+
             {/* row 5 */}
             <div className="flex flex-wrap gap-4 justify-center">
               <Link href="/events" className="bg-white shadow-md rounded-2xl w-[368px] h-[199px] relative overflow-hidden">
@@ -217,7 +217,7 @@ export default function Home() {
                 <div className="relative block h-full">
                   {/* Add your image for this box here */}
                   <Image
-                    src="https://placehold.co/600x400?text=Placeholder"
+                    src="https://refresh.church/wp-content/uploads/2023/01/Worship-Team-1024x576.jpg"
                     layout="fill"
                     objectFit="cover"
                     alt="Leadership Image"
@@ -244,7 +244,7 @@ export default function Home() {
                   >
                     <div className="relative block h-full">
                       <img
-                        src="https://placehold.co/600x400?text=Placeholder1"
+                        src="https://refresh.church/wp-content/uploads/2023/08/9.jpg"
                         className="w-full h-full object-cover"
                         alt="Image 1"
                       />

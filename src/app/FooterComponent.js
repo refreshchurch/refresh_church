@@ -11,7 +11,7 @@ export default function FooterComponent() {
           <p class="text-gray-700 dark:text-gray-400">
             <strong>During the Week</strong><br />
             Refresh HQ
-            <a href="https://maps.app.goo.gl/QVoYXC8LbYkQkN3s7" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline ml-2">Get Directions</a>
+            <a href="https://maps.app.goo.gl/tttX16azxxXtdhbb9" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline ml-2">Get Directions</a>
           </p>
           <p class="text-gray-700 dark:text-gray-400">
             <strong>Sunday’s at 9:00 AM & 10:30 AM</strong><br />
