@@ -23,7 +23,7 @@ export default function MensMinistry() {
         <div className="lg:w-1/2">
           <div className="w-full h-[350px] relative overflow-hidden rounded-2xl shadow-lg">
             <Image
-              src="https://refresh.church/wp-content/uploads/2023/01/Refresh-Mens-Ministry.jpg" // Replace with the actual path to the image
+              src="https://refresh.church/wp-content/uploads/2023/01/Refresh-Mens-Ministry.jpg"
               layout="fill"
               objectFit="cover"
               alt="Men's Ministry Image 1"

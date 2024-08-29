@@ -4,6 +4,8 @@
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import logoImage from '../../public/logo.webp'
+import Image from 'next/image';
 
 export default function Navbar() {
   const [dropdown, setDropdown] = useState(null);
@@ -50,7 +52,13 @@ export default function Navbar() {
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto h-[82px] px-3 relative">
         <Link href="/">
           <div className="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Flowbite Logo" />
+            {/* <img src={logoImage} className="h-8" alt="Refresh Logo" /> */}
+            <Image
+            src={logoImage}
+            alt="Refresh Logo" 
+            width={128} // Set the width according to your preference
+            className="h-auto" // Keep this class if you want to maintain the styling
+          />
           </div>
         </Link>
 

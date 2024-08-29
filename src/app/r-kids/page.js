@@ -37,7 +37,8 @@ export default function KidMinistry() {
         <div className="relative z-10 text-black bg-[#daedec] rounded-xl p-6 max-w-3xl mx-auto">
           <h3 className="text-2xl font-bold mb-4">Welcome to Our Kid Ministry</h3>
           <p className="text-lg">
-            Our Kid Ministry is designed to provide a safe, fun, and nurturing environment where children can learn about God's love. Whether it's their first Sunday or they’ve been coming for years, we’re committed to helping every child grow in their faith and make lasting friendships.
+            We believe ministry to children is one of the most important ministries here at Refresh Church.
+            We are excited to join with families as we partner together, to raise a generation of children who passionately follow Jesus, become like Him and do what He does.
           </p>
         </div>
       </div>
@@ -50,7 +51,11 @@ export default function KidMinistry() {
           <div className="lg:w-1/2 mb-6 lg:mb-0 lg:pr-8">
             <h4 className="text-2xl font-bold text-primary mb-4">Your First Sunday</h4>
             <p className="text-gray-700 text-lg">
-              We know that visiting a new church can be overwhelming, especially with kids. Our team is ready to welcome you and your family, help you get settled, and make sure your child has a great experience. From check-in to pick-up, we’re here to guide you every step of the way.
+              When you arrive at Refresh, walk over to the Check in area located near the refreshments. Here you will be greeted and assisted as you register your children for the first time. We will then direct you to one of our 5 environments.
+
+              We care about the safety of your children and use two-part name tags with a unique family security number required for pick up.
+
+              You can pre-register your kids <a className="text-primary" href="https://refresh.churchcenter.com/people/forms/303995">here.</a>
             </p>
           </div>
           <div className="lg:w-1/2 h-[250px] relative overflow-hidden rounded-2xl shadow-lg">
@@ -76,7 +81,8 @@ export default function KidMinistry() {
           <div className="lg:w-1/2 lg:pl-8">
             <h4 className="text-2xl font-bold text-primary mb-4">Nursery</h4>
             <p className="text-gray-700 text-lg">
-              Our nursery is a warm and loving place where infants and toddlers (up to age 2) are cared for during the service. Our dedicated volunteers ensure that each child receives individual attention and care in a safe and secure environment.
+              Nursery
+              Whether you’re parenting a brand new baby or are a seasoned parent, our nursery is full of loving volunteers who are focused on their care, we meet your child where they are so that they can experience Jesus through their interaction with our loving leaders.
             </p>
           </div>
         </div>
@@ -86,7 +92,7 @@ export default function KidMinistry() {
           <div className="lg:w-1/2 mb-6 lg:mb-0 lg:pr-8">
             <h4 className="text-2xl font-bold text-primary mb-4">Toddlers & Pre-K</h4>
             <p className="text-gray-700 text-lg">
-              For children aged 2 to 5, our Toddlers & Pre-K program is full of engaging activities, Bible stories, and songs that help them learn about God in a fun and interactive way. Each week, our caring teachers help kids explore the wonder of God’s love.
+              For our preschoolers the message is simple. We want them to know that God loves them, God made them, and Jesus wants to be their friend. They are engaged and challenged with age-appropriate worship and Bible teaching by loving and consistent leaders. We combine childhood development techniques and practical theology to make each message relevant to your child.
             </p>
           </div>
           <div className="lg:w-1/2 h-[250px] relative overflow-hidden rounded-2xl shadow-lg">
@@ -112,7 +118,9 @@ export default function KidMinistry() {
           <div className="lg:w-1/2 lg:pl-8">
             <h4 className="text-2xl font-bold text-primary mb-4">Elementary & Pre-Teen (4th & 5th Grade)</h4>
             <p className="text-gray-700 text-lg">
-              Our Elementary & Pre-Teen group is designed for kids in 4th and 5th grade, offering a mix of Bible lessons, small group discussions, and activities that help them apply God’s Word to their everyday lives. We aim to equip them with the tools they need to navigate their pre-teen years with faith and confidence.
+              In the Elementary and Pre-Teen classrooms, we provide a fun, high energy environment where kids come to know Jesus personally through worship, small groups, and relevant creative Bible teaching. Each week we focus our efforts to see kids fall in love with Jesus and develop a deeper faith.
+              <br />
+              We believe in the power of community. Our small group leaders recognize that they have a unique influence on your child. Their role is to encourage authentic faith as they follow up the large group teaching time and invest in the lives of your children.
             </p>
           </div>
         </div>
@@ -121,7 +129,7 @@ export default function KidMinistry() {
       {/* Join the Team Section */}
       <div className="text-center mt-12">
         <h3 className="text-2xl font-semibold text-gray-900 mb-4">Join the Kid Ministry Team</h3>
-        <p className="text-gray-700 text-lg mb-6">
+        <p className="text-gray-700 text-lg mb-6 ">
           Are you passionate about working with children and helping them grow in their faith? We're always looking for dedicated volunteers to join our team. Get involved and make a difference in the lives of our kids today!
         </p>
         <Link href="https://refresh.churchcenter.com/people/forms/301611" className="inline-block bg-primary text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-primaryDark transition duration-300 ease-in-out">

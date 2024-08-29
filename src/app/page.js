@@ -184,7 +184,7 @@ export default function Home() {
               <Link href="/sermons" className="bg-white shadow-md rounded-2xl w-[368px] h-[199px] relative overflow-hidden">
                 <div className="relative block h-full">
                   <Image
-                    src="https://placehold.co/600x400?text=Placeholder"
+                    src="https://images.planningcenterusercontent.com/v1/transform.png?bucket=publishing-production-attachments&disposition=inline&expires_at=1725173999&key=organization_364387_ay15kalazklrzk7914tjl28g7raf&thumb=640x360%23&signature=b5ab371fc618f18af4e5106e1d0450bbbbc725cec630b7f73f83f3135734ecb4"
                     layout="fill"
                     objectFit="cover"
                     alt="sermons Image"
@@ -328,7 +328,7 @@ export default function Home() {
                 <div className="relative block h-full">
                   {/* Add your image for this box here */}
                   <Image
-                    src="https://placehold.co/600x400?text=Placeholder"
+                    src="https://images.planningcenterusercontent.com/v1/transform.png?bucket=publishing-production-attachments&disposition=inline&expires_at=1725173999&key=organization_364387_ay15kalazklrzk7914tjl28g7raf&thumb=640x360%23&signature=b5ab371fc618f18af4e5106e1d0450bbbbc725cec630b7f73f83f3135734ecb4"
                     layout="fill"
                     objectFit="cover"
                     alt="Leadership Image"
