@@ -38,7 +38,7 @@ export default function MensMinistry() {
           <div className="lg:w-1/2 lg:pl-8 mb-8 lg:mb-0">
             <h3 className="text-2xl font-semibold text-gray-900 mb-4">Grow in Faith Together</h3>
             <p className="text-gray-700 text-lg">
-            We have gatherings a few times per quarter sharing food and getting to know each other. These gatherings lend themselves to building community so that we can break off into smaller groups and take steps to see every person refreshed and every purpose discovered.
+            We have gatherings a few times per quarter, sharing food and getting to know each other. These gatherings lend themselves to building community so that we can break off into smaller groups and take steps to see every person refreshed and every purpose discovered.
             </p>
           </div>
           <div className="lg:w-1/2">
