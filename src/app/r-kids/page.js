@@ -8,7 +8,7 @@ import refreshKid from '../../../public/r-kids-desktop.webp'
 export default function KidMinistry() {
   return (
     <div className="container mx-auto px-8 sm:px-36 py-12">
-      <h2 className="text-4xl font-bold text-gray-900 tracking-tighter sm:text-5xl md:text-6xl mb-12">Kid Ministry</h2>
+      <h2 className="text-4xl font-bold text-gray-900 tracking-tighter sm:text-5xl md:text-6xl mb-12">Kids Ministry</h2>
 
       {/* Hero Blurb Section with Background Image and Improved Text Bubble */}
       {/* <div
@@ -20,7 +20,7 @@ export default function KidMinistry() {
         <div className="absolute inset-0 bg-black bg-opacity-70 rounded-2xl z-0"></div>
 
         <div className="relative z-10">
-          <h3 className="text-2xl font-semibold mb-4">Welcome to Our Kid Ministry</h3>
+          <h3 className="text-2xl font-semibold mb-4">Welcome to Our Kids Ministry</h3>
           <p className="text-lg">
             Our Kid Ministry is designed to provide a safe, fun, and nurturing environment where children can learn about God's love. Whether it's their first Sunday or they’ve been coming for years, we’re committed to helping every child grow in their faith and make lasting friendships.
           </p>
@@ -35,7 +35,7 @@ export default function KidMinistry() {
       >
         {/* Text content with its own background */}
         <div className="relative z-10 text-black bg-[#daedec] rounded-xl p-6 max-w-3xl mx-auto">
-          <h3 className="text-2xl font-bold mb-4">Welcome to Our Kid Ministry</h3>
+          <h3 className="text-2xl font-bold mb-4">Welcome to Our Kids Ministry</h3>
           <p className="text-lg">
             We believe ministry to children is one of the most important ministries here at Refresh Church.
             We are excited to join with families as we partner together, to raise a generation of children who passionately follow Jesus, become like Him and do what He does.
@@ -51,7 +51,7 @@ export default function KidMinistry() {
           <div className="lg:w-1/2 mb-6 lg:mb-0 lg:pr-8">
             <h4 className="text-2xl font-bold text-primary mb-4">Your First Sunday</h4>
             <p className="text-gray-700 text-lg">
-              When you arrive at Refresh, walk over to the Check in area located near the refreshments. Here you will be greeted and assisted as you register your children for the first time. We will then direct you to one of our 5 environments.
+              When you arrive at Refresh, walk over to the Check In area located near the refreshments. Here you will be greeted and assisted as you register your children for the first time. We will then direct you to one of our 5 environments.
 
               We care about the safety of your children and use two-part name tags with a unique family security number required for pick up.
 
@@ -81,7 +81,6 @@ export default function KidMinistry() {
           <div className="lg:w-1/2 lg:pl-8">
             <h4 className="text-2xl font-bold text-primary mb-4">Nursery</h4>
             <p className="text-gray-700 text-lg">
-              Nursery
               Whether you’re parenting a brand new baby or are a seasoned parent, our nursery is full of loving volunteers who are focused on their care, we meet your child where they are so that they can experience Jesus through their interaction with our loving leaders.
             </p>
           </div>
@@ -128,7 +127,7 @@ export default function KidMinistry() {
 
       {/* Join the Team Section */}
       <div className="text-center mt-12">
-        <h3 className="text-2xl font-semibold text-gray-900 mb-4">Join the Kid Ministry Team</h3>
+        <h3 className="text-2xl font-semibold text-gray-900 mb-4">Join the Kids Ministry Team</h3>
         <p className="text-gray-700 text-lg mb-6 ">
           Are you passionate about working with children and helping them grow in their faith? We're always looking for dedicated volunteers to join our team. Get involved and make a difference in the lives of our kids today!
         </p>

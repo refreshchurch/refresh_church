@@ -13,10 +13,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/r-favicon.svg" type="image/svg+xml" />
+      </head>
       <body className={inter.className}>
         <Navbar />
         {children}
-        <FooterComponent/>
+        <FooterComponent />
       </body>
     </html>
   );

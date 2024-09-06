@@ -14,7 +14,7 @@ export default function YouthMinistry() {
         <div className="lg:w-1/2 mb-8 lg:mb-0 lg:pr-8">
           <h3 className="text-2xl font-semibold text-gray-900 mb-4">Welcome to The Well</h3>
           <p className="text-gray-700 text-lg mb-6">
-          We believe ministry to the next generation is one of the most important ministries here at Refresh Church.
+          We believe ministering to the next generation is one of the most important ministries here at Refresh Church.
           </p>
           <Link href="https://refresh.churchcenter.com/groups/small-groups/youth-small-group" className="inline-block bg-primary text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-primaryDark transition duration-300 ease-in-out">
             Join Us at The Well
@@ -38,9 +38,8 @@ export default function YouthMinistry() {
           <div className="lg:w-1/2 lg:pl-8 mb-8 lg:mb-0">
             <h3 className="text-2xl font-semibold text-gray-900 mb-4">Time & Location</h3>
             <p className="text-gray-700 text-lg">
-            Students come together every Wednesday Night from 6-7:30pm to build relationships, learn about Jesus, and discover their purpose. They meet at the Refresh HQ: 601 E Schiller Ln in Meridian. 
-<br/>
-Our gathering consists of group games, devotional time, small group discussion, Bible study, and prayer. We also enjoy snacks, friendship, and lots of laughs
+            Students come together every Wednesday Night from 6-7:30pm to build relationships, learn about Jesus, and discover their purpose.
+            We meet at the Refresh HQ: 601 E Schiller Ln in Meridian. <br/>Our gathering consists of group games, devotional time, small group discussion, Bible study, and prayer. We also enjoy snacks, friendship, and lots of laughs
             </p>
           </div>
           <div className="lg:w-1/2">
@@ -60,7 +59,7 @@ Our gathering consists of group games, devotional time, small group discussion, 
       {/* Final Call to Action with Image */}
       <div className="flex flex-col lg:flex-row items-center text-center lg:text-left mt-12">
         <div className="lg:w-1/2 lg:pr-8">
-          <h3 className="text-2xl font-semibold text-gray-900 mb-4">Join us Wednesday @ 6pm!</h3>
+          <h3 className="text-2xl font-semibold text-gray-900 mb-4">Join us at The Well!</h3>
           <p className="text-gray-700 text-lg mb-6">
           We believe in the power of community. Our youth leaders recognize that they have a unique influence in the lives of the middle and high school students they serve. Their goal is to encourage authentic faith as they invest in a relationship with your student(s) and help them build a relationship with Jesus and others around them.
           </p>
