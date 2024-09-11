@@ -56,7 +56,7 @@ export default function SmallGroups() {
       <h2 className="mb-10 text-4xl font-extrabold text-gray-900 tracking-tighter sm:text-4xl">Small Groups</h2>
       <div className="bg-primaryLight p-6 rounded-lg mb-10 mx-auto w-full sm:w-3/4 lg:w-2/3">
         <p className="text-lg text-gray-900 text-left">
-        Small groups are a key aspect of your spiritual growth. We get better when we are together. It is for this reason we've decided to make small groups a central part of what we do as a church. Check back each semester for new groups, dates, and times.
+        Small groups are a key aspect of our spiritual growth. We get better when we are together. It is for this reason we've decided to make small groups a central part of what we do as a church. Check back each semester for new groups, dates, and times.
         </p>
       </div>
       <h2 className="mb-10 text-3xl font-bold text-gray-900 tracking-tighter sm:text-3xl text-center">All Groups</h2>
