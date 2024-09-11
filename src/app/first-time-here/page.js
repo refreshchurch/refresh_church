@@ -125,7 +125,7 @@ export default function FirstTimeHere() {
       </div>
 
       {/* Lead Pastor Section */}
-      <div className="flex flex-col lg:flex-row items-center lg:items-start mb-12">
+      {/* <div className="flex flex-col lg:flex-row items-center lg:items-start mb-12">
         <div className="lg:w-1/3 mb-8 lg:mb-0 lg:pr-8">
           <div className="w-full h-[400px] relative overflow-hidden rounded-2xl shadow-lg">
             <Image
@@ -144,7 +144,7 @@ export default function FirstTimeHere() {
             Amid a pandemic, the Hankey family headed for their new home. Since then, the Hankey’s have built friendships, raised resources, and dreamed about what Refresh will one day be. They are so excited to meet you!
           </p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

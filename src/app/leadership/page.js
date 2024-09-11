@@ -60,8 +60,8 @@ export default function Leadership() {
             alt="Associate Pastor 1"
             className="rounded-full mb-4"
           />
-          <h4 className="text-xl font-bold text-primary">Pastor Christ Abernathy</h4>
-          <p className="text-gray-600">Connections Director</p>
+          <h4 className="text-xl font-bold text-primary">Pastor Chris Abernathy</h4>
+          <p className="text-gray-600">Connections Pastor</p>
         </div>
 
         {/* Pastor 2 */}
@@ -75,8 +75,8 @@ export default function Leadership() {
             alt="Associate Pastor 2"
             className="rounded-full mb-4"
           />
-          <h4 className="text-xl font-bold text-primary">Pastor Same</h4>
-          <p className="text-gray-600">Next Gen Director</p>
+          <h4 className="text-xl font-bold text-primary">Pastor Sam</h4>
+          <p className="text-gray-600">Next Gen Pastor</p>
         </div>
 
         {/* Pastor 3 */}

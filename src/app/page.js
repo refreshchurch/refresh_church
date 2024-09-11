@@ -117,11 +117,11 @@ export default function Home() {
                   />
                 </div>
                 <h3 className="text-2xl font-semibold absolute top-1.5 left-3 text-white">First Time Here!</h3>
-                <div className="absolute right-0 bottom-0">
+                {/* <div className="absolute right-0 bottom-0">
                   <button type="button" className='focus:outline-none focus:ring-3 focus:ring-primaryLight font-medium rounded-full text-sm px-5 py-1.5 text-center me-2 mb-2 bg-primary text-white hover:bg-primaryDark'>
                     Learn More
                   </button>
-                </div>
+                </div> */}
               </Link>
               <Link href="/leadership" className="bg-white shadow-md rounded-2xl w-[170px] h-[180px] relative overflow-hidden">
                 <div className="relative block h-full">
@@ -133,11 +133,11 @@ export default function Home() {
                   />
                 </div>
                 <h3 className="text-2xl font-semibold absolute top-1.5 left-3 text-white">Leadership</h3>
-                <div className="absolute right-0 bottom-0">
+                {/* <div className="absolute right-0 bottom-0">
                   <button type="button" className='focus:outline-none focus:ring-3 focus:ring-white-200 font-medium rounded-full text-sm px-5 py-1.5 text-center me-2 mb-2 bg-white text-black hover:bg-gray-200'>
                     Learn More
                   </button>
-                </div>
+                </div> */}
               </Link>
             </div>
 
@@ -224,11 +224,11 @@ export default function Home() {
                   />
                 </div>
                 <h3 className="text-2xl font-semibold absolute top-1.5 left-3 text-white">First Time Here!</h3>
-                <div className="absolute right-0 bottom-0">
+                {/* <div className="absolute right-0 bottom-0">
                   <button type="button" className='focus:outline-none focus:ring-3 focus:ring-primaryLight font-medium rounded-full text-sm px-5 py-1.5 text-center me-2 mb-2 bg-primary text-white hover:bg-primaryDark'>
                     Learn More
                   </button>
-                </div>
+                </div> */}
               </Link>
 
               <div className="bg-white shadow-md rounded-2xl w-[462px] h-[250px] relative overflow-hidden ">
@@ -278,11 +278,11 @@ export default function Home() {
                   />
                 </div>
                 <h3 className="text-2xl font-semibold absolute top-1.5 left-3 text-white">Leadership</h3>
-                <div className="absolute right-0 bottom-0">
+                {/* <div className="absolute right-0 bottom-0">
                   <button type="button" className='focus:outline-none focus:ring-3 focus:ring-white-200 font-medium rounded-full text-sm px-5 py-1.5 text-center me-2 mb-2 bg-white text-black hover:bg-gray-200'>
                     Learn More
                   </button>
-                </div>
+                </div> */}
               </Link>
             </div>
             <div className="flex flex-wrap gap-4 justify-center mb-4">
