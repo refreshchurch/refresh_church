@@ -7,14 +7,15 @@ import Image from "next/image";
 
 export default function GetConnected() {
   const ministries = [
-    { name: "Men's Ministry", link: "/mens-ministry", image: 'https://refresh.church/wp-content/uploads/2023/01/Refresh-Mens-Ministry.jpg' },
-    { name: "Women's Ministry", link: "/womens-ministry", image: 'https://refresh.church/wp-content/uploads/2023/01/Lobby-Experience-2.jpg' },
-    { name: "Youth Ministry", link: "/refresh-youth", image: 'https://refresh.church/wp-content/uploads/2023/01/Refresh-Youth.jpg' },
+    { name: "Small Groups", link: "/small-groups", image: '/photos/connect/small-groups.webp' },
+    { name: "Men's Ministry", link: "/mens-ministry", image: '/photos/mens/men-1.webp' },
+    { name: "Women's Ministry", link: "/womens-ministry", image: '/photos/womens/women-1.webp' },
+    { name: "Young Adults", link: "https://refresh.churchcenter.com/groups/all-groups/young-adults-garrett-cat-adams", image: '/photos/connect/young-adults.webp' },
+    { name: "Youth Ministry", link: "/refresh-youth", image: '/photos/youth/youth-1.webp' },
     { name: "Kid's Ministry", link: "/r-kids", image: '/photos/home/r-kids-desktop.webp' },
-    { name: "Small Groups", link: "/small-groups", image: 'https://refresh.church/wp-content/uploads/2023/01/medium_image-1633456841431.jpg' },
     { name: "Discovery", link: "/discovery", image: '/photos/home/discovery-desktop.webp' },
-    { name: "Baby Dedications", link: "https://refresh.churchcenter.com/people/forms/541850", image: 'https://refresh.church/wp-content/uploads/2023/08/20220301-Baby-Dedication-_Hero.jpg' },
-    { name: "Serve Team", link: "https://refresh.churchcenter.com/people/forms/301611?_ga=2.212286996.1630180229.1675698110-905807684.1675698110", image: 'https://refresh.church/wp-content/uploads/2023/08/17.jpg' },
+    { name: "Baby Dedications", link: "https://refresh.churchcenter.com/people/forms/541850", image: '/photos/connect/baby-dedication.webp' },
+    { name: "Serve Team", link: "https://refresh.churchcenter.com/people/forms/301611?_ga=2.212286996.1630180229.1675698110-905807684.1675698110", image: '/photos/connect/serve-team.webp' },
     // Add more ministries as needed
   ];
 
