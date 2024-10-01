@@ -48,12 +48,12 @@ export default function Leadership() {
           <h3 className="text-3xl font-bold text-primary mb-4">Pastor TJ & Leah</h3>
       
           <p className="text-gray-700 text-lg">
-            T.J. Hankey felt called to be a pastor shortly after he graduated from high school in Sarasota, FL. With this new purpose in mind, he started his education through a local church program called the Master’s Commission. It was here that he gained valuable experience and education through Global and Southeastern Universities. While serving his local church, he met his beautiful wife Leah.
+            need blurb
             <br />
           </p>
         </div>
       </div>
-      <div className="bg-white shadow-lg rounded-2xl p-12 mb-12 flex flex-col lg:flex-row items-center">
+      {/* <div className="bg-white shadow-lg rounded-2xl p-12 mb-12 flex flex-col lg:flex-row items-center">
         <p className="text-gray-700 text-lg">  
           In 2011, T.J. and Leah set out on the incredible adventure of planting a new, life-giving, church on the west side of Sarasota. On January 29th, 2012, The Shore Church had its first service. Over the next 8-and-a-half years, The Shore saw more than 1,000 people make the decision to follow Jesus with their entire lives.
           <br />
@@ -63,7 +63,7 @@ export default function Leadership() {
           <br />
           Pastor T.J. is a gifted teacher and communicator. He has a passion for making God’s word relatable and practical, and he has a heart for reaching people right where they are and introducing them to the refreshing message of Jesus. In their free time, T.J. and Leah like spending time outdoors with their four children Mckenna, Addison, Cecelia, and Layton.
         </p>
-      </div>
+      </div> */}
 
       {/* Associate Pastors Section */}
       <h3 className="text-xl font-bold text-gray-900 tracking-tighter sm:text-4xl md:text-3xl mb-8">Associate Pastors & Staff</h3>
