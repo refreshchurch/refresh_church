@@ -23,7 +23,7 @@ export default function MensMinistry() {
         <div className="lg:w-1/2">
           <div className="w-full h-[350px] relative overflow-hidden rounded-2xl shadow-lg">
             <Image
-              src="https://refresh.church/wp-content/uploads/2023/01/Refresh-Mens-Ministry.jpg"
+              src="/photos/mens/men-1.webp"
               layout="fill"
               objectFit="cover"
               alt="Men's Ministry Image 1"
@@ -44,7 +44,7 @@ export default function MensMinistry() {
           <div className="lg:w-1/2">
             <div className="w-full h-[250px] relative overflow-hidden rounded-2xl shadow-lg">
               <Image
-                src="https://refresh.church/wp-content/uploads/2023/01/Refresh-Worship.jpg" // Replace with the actual path to the image
+                src="/photos/mens/men-2.webp" 
                 layout="fill"
                 objectFit="cover"
                 alt="Men's Ministry Image 3"
@@ -68,7 +68,7 @@ export default function MensMinistry() {
         <div className="lg:w-1/2 mt-8 lg:mt-0">
           <div className="w-full h-[350px] relative overflow-hidden rounded-2xl shadow-lg">
             <Image
-              src="https://refresh.church/wp-content/uploads/2024/01/karen-green-vyovA8BQ3G8-unsplash-768x576.jpg" // Replace with the actual path to the image
+              src="/photos/mens/men-3.webp"
               layout="fill"
               objectFit="cover"
               alt="Men's Ministry Image 4"

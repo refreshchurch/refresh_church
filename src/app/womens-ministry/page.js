@@ -23,7 +23,7 @@ export default function MensMinistry() {
         <div className="lg:w-1/2">
           <div className="w-full h-[350px] relative overflow-hidden rounded-2xl shadow-lg">
             <Image
-              src="https://refresh.church/wp-content/uploads/2023/01/Lobby-Experience-2.jpg" // Replace with the actual path to the image
+              src="/photos/womens/women-1.webp"
               layout="fill"
               objectFit="cover"
               alt="Women's Ministry Image 1"
@@ -45,7 +45,7 @@ export default function MensMinistry() {
           <div className="lg:w-1/2">
             <div className="w-full h-[250px] relative overflow-hidden rounded-2xl shadow-lg">
               <Image
-                src="/path-to-photo4.jpg"
+                src="/path-to-photo4.jpg" // Replace with the path to your image
                 layout="fill"
                 objectFit="cover"
                 alt="Women's Ministry Image 3"
@@ -60,7 +60,7 @@ export default function MensMinistry() {
         <div className="lg:w-1/2 lg:pr-8">
           <h3 className="text-2xl font-semibold text-gray-900 mb-4">Join Us at Our Next Event</h3>
           <p className="text-gray-700 text-lg mb-6">
-            We would love for you to be a part of our upcoming events. Whether it's a retreat, a service project, or a fun social gathering, there's always something happening in our Women's Ministry.
+            need blurb
           </p>
           <Link href="/events" className="inline-block bg-primary text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-primaryDark transition duration-300 ease-in-out">
             View Upcoming Events
@@ -69,7 +69,7 @@ export default function MensMinistry() {
         <div className="lg:w-1/2 mt-8 lg:mt-0">
           <div className="w-full h-[350px] relative overflow-hidden rounded-2xl shadow-lg">
             <Image
-              src="https://refresh.church/wp-content/uploads/2023/01/Refresh-Friends.jpg" // Replace with the actual path to the image
+              src="/photos/womens/women-3.webp"
               layout="fill"
               objectFit="cover"
               alt="Women's Ministry Image 4"

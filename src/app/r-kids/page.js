@@ -29,7 +29,7 @@ export default function KidMinistry() {
       <div
         className="bg-cover bg-center shadow-lg rounded-2xl p-8 mb-12 text-center text-white relative"
         style={{
-          backgroundImage: "url('https://refresh.church/wp-content/uploads/2023/01/Rkids-Background.jpg')",
+          backgroundImage: "url('/photos/kids/design-2.webp')",
         }}
       >
         {/* Text content with its own background */}
@@ -41,7 +41,6 @@ export default function KidMinistry() {
           </p>
         </div>
       </div>
-
 
       {/* Group Sections with Scattered Images */}
       <div className="mb-12">
@@ -59,7 +58,7 @@ export default function KidMinistry() {
           </div>
           <div className="lg:w-1/2 h-[250px] relative overflow-hidden rounded-2xl shadow-lg">
             <Image
-              src="https://refresh.church/wp-content/uploads/2023/08/S2_17.png" // Replace with the actual path to the image
+              src="/photos/kids/kids-1.webp"
               layout="fill"
               objectFit="cover"
               alt="Your First Sunday"
@@ -71,7 +70,7 @@ export default function KidMinistry() {
         <div className="mb-12 flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2 h-[250px] relative overflow-hidden rounded-2xl shadow-lg mb-6 lg:mb-0">
             <Image
-              src='/photos/home/r-kids-desktop.webp' // Replace with the actual path to the image
+              src='/photos/home/r-kids-desktop.webp'
               layout="fill"
               objectFit="cover"
               alt="Nursery"
@@ -95,7 +94,7 @@ export default function KidMinistry() {
           </div>
           <div className="lg:w-1/2 h-[250px] relative overflow-hidden rounded-2xl shadow-lg">
             <Image
-              src="https://refresh.church/wp-content/uploads/2023/08/S2_16.png" // Replace with the actual path to the image
+              src="/photos/kids/kids-2.webp"
               layout="fill"
               objectFit="cover"
               alt="Toddlers & Pre-K"
@@ -107,7 +106,7 @@ export default function KidMinistry() {
         <div className="mb-12 flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2 h-[250px] relative overflow-hidden rounded-2xl shadow-lg mb-6 lg:mb-0">
             <Image
-              src="https://refresh.church/wp-content/uploads/2023/01/Rkids-Background-3.jpg" // Replace with the actual path to the image
+              src="/photos/kids/design-1.webp"
               layout="fill"
               objectFit="cover"
               alt="Elementary & Pre-Teen"
@@ -131,7 +130,7 @@ export default function KidMinistry() {
           </div>
           <div className="lg:w-1/2 h-[250px] relative overflow-hidden rounded-2xl shadow-lg mb-6 lg:mb-0">
             <Image
-              src="https://refresh.church/wp-content/uploads/2023/01/Rkids-Background-3.jpg" // Replace with the actual path to the image
+              src="/photos/kids/design-1.webp" // Replace with the actual path to the image
               layout="fill"
               objectFit="cover"
               alt="Elementary & Pre-Teen"
