@@ -41,18 +41,68 @@ export default function FirstTimeHere() {
       <div className="mb-12">
         <h3 className="text-3xl font-semibold text-gray-900 mb-8">What to Expect</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="bg-white shadow-md rounded-2xl p-6">
+          <div className="bg-white shadow-md rounded-2xl p-6 flex flex-col justify-between">
             <h4 className="text-xl font-bold text-primary mb-4">Services</h4>
             <p className="text-gray-700">
-              Refresh Church meets every Sunday at 9:00am and 10:30am for an hour to an hour and ten minutes in the Owyhee High School Auditorium located at 3650 N. Owyhee Storm Ave. Meridian, ID 83646 <a className="text-primary" href="https://maps.app.goo.gl/QVoYXC8LbYkQkN3s7">Get Directions.</a> Services will include 3-4 songs of worship and around 30 minutes of practical teaching. Our philosophy on church services is to laugh and learn, a lot. We want you to connect as much as you feel comfortable, so we will never single you out as a first-time guest.
+              Refresh Church meets every Sunday at <b>9:00am</b> and <b>10:30am</b> for an hour to an hour and ten minutes in the Owyhee High School Auditorium located at 3650 N. Owyhee Storm Ave. Meridian, ID 83646. Services will include 3-4 songs of worship and around 30 minutes of practical teaching. Our philosophy on church services is to laugh and learn, a lot. We want you to connect as much as you feel comfortable, so we will never single you out as a first-time guest.
             </p>
+            <div className="flex justify-end mt-4">
+              <Link href="https://maps.app.goo.gl/QVoYXC8LbYkQkN3s7">
+                <button className="flex items-center bg-primary text-white text-sm font-semibold py-2.5 px-6 rounded-full hover:bg-primaryDark transition duration-300 ease-in-out">
+                  Get Directions
+                  <svg
+                    className="w-4 h-4 ms-2 text-white"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="white"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M18 14v4.833A1.166 1.166 0 0 1 16.833 20H5.167A1.167 1.167 0 0 1 4 18.833V7.167A1.166 1.166 0 0 1 5.167 6h4.618m4.447-2H20v5.768m-7.889 2.121 7.778-7.778"
+                    />
+                  </svg>
+                </button>
+              </Link>
+            </div>
           </div>
 
-          <div className="bg-white shadow-md rounded-2xl p-6">
+          <div className="bg-white shadow-md rounded-2xl p-6 flex flex-col justify-between">
+            <div>
             <h4 className="text-xl font-bold text-primary mb-4">Kids Ministry</h4>
             <p className="text-gray-700">
-              Our team works hard to create a safe, clean, and fun environment for your child. Kids ministries are offered for ages birth through 5th grade. The kids’ check-in area and classrooms are easy to find and our leaders are eager to welcome your child. You can preregister your family and save time during the check-in process by clicking <a className="text-primary" href="https://refresh.churchcenter.com/people/forms/303995">here.</a>
+              Our team works hard to create a safe, clean, and fun environment for your child. Kids ministries are offered for ages birth through 5th grade. The kids’ check-in area and classrooms are easy to find and our leaders are eager to welcome your child. You can preregister your family and save time during the check-in process by clicking the link below!
             </p>
+            </div>
+            <div className="flex justify-end mt-4">
+              <Link href="/refresh-youth">
+                <button className="flex items-center bg-primary text-white text-sm font-semibold py-2.5 px-6 rounded-full hover:bg-primaryDark transition duration-300 ease-in-out">
+                  Preregister
+                  <svg
+                    className="w-4 h-4 ms-2 text-white"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="white"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M18 14v4.833A1.166 1.166 0 0 1 16.833 20H5.167A1.167 1.167 0 0 1 4 18.833V7.167A1.166 1.166 0 0 1 5.167 6h4.618m4.447-2H20v5.768m-7.889 2.121 7.778-7.778"
+                    />
+                  </svg>
+                </button>
+              </Link>
+            </div>
           </div>
 
           {/* <div className="bg-white shadow-md rounded-2xl p-6">

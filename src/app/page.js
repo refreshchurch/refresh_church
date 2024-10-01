@@ -3,14 +3,14 @@
 import { useEffect, useState } from 'react';
 import Image from "next/image";
 import Link from "next/link";
-import discoveryMobile from '../../public/discovery-mobile.webp'
-import discoveryDesktop from '../../public/discovery-desktop.webp'
-import connectedMobile from '../../public/get-connected-mobile.webp'
-import connectedDesktop from '../../public/get-connected-desktop.webp'
-import kidsMobile from '../../public/r-kids-mobile.webp'
-import kidsDesktop from '../../public/r-kids-desktop.webp'
-import eventImg from '../../public/event.webp'
-import leadershipImg from '../../public/tj.webp'
+// import discoveryMobile from '../../public/discovery-mobile.webp'
+// import discoveryDesktop from '../../public/discovery-desktop.webp'
+// import connectedMobile from '../../public/get-connected-mobile.webp'
+// import connectedDesktop from '../../public/photos/home/get-connected-desktop.webp'
+// import kidsMobile from '../../public/r-kids-mobile.webp'
+// import kidsDesktop from '../../public/r-kids-desktop.webp'
+// import eventImg from '../../public/event.webp'
+// import leadershipImg from '../../public/tj.webp'
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 
@@ -126,7 +126,7 @@ export default function Home() {
               <Link href="/leadership" className="bg-white shadow-md rounded-2xl w-[170px] h-[180px] relative overflow-hidden">
                 <div className="relative block h-full">
                   <Image
-                    src={leadershipImg}
+                    src='/photos/home/tj.webp'
                     layout="fill"
                     objectFit="cover"
                     alt="Leadership Image"
@@ -146,7 +146,7 @@ export default function Home() {
               <Link href="/r-kids" className="bg-white shadow-md rounded-2xl w-[366px] h-[52px] relative overflow-hidden">
                 <div className="relative block h-full">
                   <Image
-                    src={kidsMobile}
+                    src="/photos/home/r-kids-mobile.webp"
                     layout="fill"
                     objectFit="cover"
                     alt="Kids Image"
@@ -158,7 +158,7 @@ export default function Home() {
               <Link href="/connect" className="bg-white shadow-md rounded-2xl w-[366px] h-[52px] relative overflow-hidden">
                 <div className="relative block h-full">
                   <Image
-                    src={connectedMobile}
+                    src='/photos/home/get-connected-mobile.webp'
                     layout="fill"
                     objectFit="cover"
                     alt="Connected Image"
@@ -170,7 +170,7 @@ export default function Home() {
               <Link href="/discovery" className="bg-white shadow-md rounded-2xl w-[366px] h-[52px] relative overflow-hidden">
                 <div className="relative block h-full">
                   <Image
-                    src={discoveryMobile}
+                    src='/photos/home/discovery-mobile.webp'
                     layout="fill"
                     objectFit="cover"
                     alt="Discovery Image"
@@ -199,7 +199,7 @@ export default function Home() {
               <Link href="/events" className="bg-white shadow-md rounded-2xl w-[368px] h-[199px] relative overflow-hidden">
                 <div className="relative block h-full">
                   <Image
-                    src={eventImg}
+                    src='/photos/home/event.webp'
                     layout="fill"
                     objectFit="cover"
                     alt="event Image"
@@ -271,7 +271,7 @@ export default function Home() {
               <Link href="/leadership" className="bg-white shadow-md rounded-2xl w-[234px] h-[250px] relative overflow-hidden transform transition-transform duration-300 hover:scale-105">
                 <div className="relative block h-full">
                   <Image
-                    src={leadershipImg}
+                    src='/photos/home/tj.webp'
                     layout="fill"
                     objectFit="cover"
                     alt="Leadership Image"
@@ -289,7 +289,7 @@ export default function Home() {
               <Link href="/connect" className="bg-white shadow-md rounded-2xl w-[310px] h-[250px] relative overflow-hidden transform transition-transform duration-300 hover:scale-105">
                 <div className="relative block h-full">
                   <Image
-                    src={connectedDesktop}
+                    src='/photos/home/get-connected-desktop.webp'
                     layout="fill"
                     objectFit="cover"
                     alt="Connected Image"
@@ -301,7 +301,7 @@ export default function Home() {
               <Link href="/r-kids" className="bg-white shadow-md rounded-2xl w-[310px] h-[250px] relative overflow-hidden transform transition-transform duration-300 hover:scale-105">
                 <div className="relative block h-full">
                   <Image
-                    src={kidsDesktop}
+                    src='/photos/home/r-kids-desktop.webp'
                     layout="fill"
                     objectFit="cover"
                     alt="Kids Image"
@@ -313,7 +313,7 @@ export default function Home() {
               <Link href="/discovery" className="bg-white shadow-md rounded-2xl w-[310px] h-[250px] relative overflow-hidden transform transition-transform duration-300 hover:scale-105">
                 <div className="relative block h-full">
                   <Image
-                    src={discoveryDesktop}
+                    src='/photos/home/discovery-desktop.webp'
                     layout="fill"
                     objectFit="cover"
                     alt="Discovery Image"
@@ -341,7 +341,7 @@ export default function Home() {
                 <div className="relative block h-full">
                   {/* Add your image for this box here */}
                   <Image
-                    src={eventImg}
+                    src='/photos/home/event.webp'
                     layout="fill"
                     objectFit="cover"
                     alt="Leadership Image"

@@ -3,7 +3,6 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import refreshKid from '../../../public/r-kids-desktop.webp'
 
 export default function KidMinistry() {
   return (
@@ -72,7 +71,7 @@ export default function KidMinistry() {
         <div className="mb-12 flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2 h-[250px] relative overflow-hidden rounded-2xl shadow-lg mb-6 lg:mb-0">
             <Image
-              src={refreshKid} // Replace with the actual path to the image
+              src='/photos/home/r-kids-desktop.webp' // Replace with the actual path to the image
               layout="fill"
               objectFit="cover"
               alt="Nursery"
@@ -104,7 +103,7 @@ export default function KidMinistry() {
           </div>
         </div>
 
-        {/* Elementary & Pre-Teen (4th & 5th Grade) */}
+        {/* Elementary  */}
         <div className="mb-12 flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2 h-[250px] relative overflow-hidden rounded-2xl shadow-lg mb-6 lg:mb-0">
             <Image
@@ -115,12 +114,28 @@ export default function KidMinistry() {
             />
           </div>
           <div className="lg:w-1/2 lg:pl-8">
-            <h4 className="text-2xl font-bold text-primary mb-4">Elementary & Pre-Teen (4th & 5th Grade)</h4>
+            <h4 className="text-2xl font-bold text-primary mb-4">Elementary</h4>
             <p className="text-gray-700 text-lg">
-              In the Elementary and Pre-Teen classrooms, we provide a fun, high energy environment where kids come to know Jesus personally through worship, small groups, and relevant creative Bible teaching. Each week we focus our efforts to see kids fall in love with Jesus and develop a deeper faith.
-              <br />
-              We believe in the power of community. Our small group leaders recognize that they have a unique influence on your child. Their role is to encourage authentic faith as they follow up the large group teaching time and invest in the lives of your children.
+              Elementary blurb
             </p>
+          </div>
+        </div>
+        
+        {/* Pre-Teen (4th & 5th Grade) */}
+        <div className="mb-12 flex flex-col lg:flex-row items-center">
+          <div className="lg:w-1/2 lg:pl-8">
+            <h4 className="text-2xl font-bold text-primary mb-4">Pre-Teen (4th & 5th Grade)</h4>
+            <p className="text-gray-700 text-lg">
+              Pre-teen blurb
+            </p>
+          </div>
+          <div className="lg:w-1/2 h-[250px] relative overflow-hidden rounded-2xl shadow-lg mb-6 lg:mb-0">
+            <Image
+              src="https://refresh.church/wp-content/uploads/2023/01/Rkids-Background-3.jpg" // Replace with the actual path to the image
+              layout="fill"
+              objectFit="cover"
+              alt="Elementary & Pre-Teen"
+            />
           </div>
         </div>
       </div>
