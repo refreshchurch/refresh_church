@@ -21,7 +21,7 @@ export default function Card({ item, showMobile }) {
         />
       </div>
       <div className="p-6 flex flex-col justify-between h-[250px]">
-        <h3 className="text-2xl font-semibold text-gray-900 mb-3 truncate overflow-hidden whitespace-nowrap">{item.attributes.name}</h3>
+        <h3 className="text-2xl font-semibold text-gray-900 mb-1 truncate overflow-hidden whitespace-nowrap">{item.attributes.name}</h3>
         <p className="text-gray-700 sm:mb-5 mb-3 flex-grow">
           {showMobile ? (
             <>
@@ -29,7 +29,7 @@ export default function Card({ item, showMobile }) {
             </>
           ) : (
             <>
-              {stripHtml(item.attributes.description).substring(0, 200)}...
+              {stripHtml(item.attributes.description).substring(0, 180)}...
             </>
           )}
         </p>
