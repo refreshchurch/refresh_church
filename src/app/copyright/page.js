@@ -16,7 +16,7 @@ export default function Component() {
                         </div>
                         <div className="mx-auto max-w-3xl mt-8 prose prose-gray dark:prose-invert">
                             <p>
-                                This website and its content is copyright of Refresh Church – © Refresh Church 2021. All rights reserved.
+                                This website and its content is copyright of Refresh Church – © Refresh Church 2024. All rights reserved.
                                 <br />
                                 <br />
                                 Any redistribution or reproduction of part or all of the contents in any form is prohibited other than the following:
