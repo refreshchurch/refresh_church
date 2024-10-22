@@ -44,7 +44,7 @@ export default function FirstTimeHere() {
           <div className="bg-white shadow-md rounded-2xl p-6 flex flex-col justify-between">
             <h4 className="text-xl font-bold text-primary mb-4">Services</h4>
             <p className="text-gray-700">
-              Refresh Church meets every Sunday at <b>9:00am</b> and <b>10:30am</b> for an hour to an hour and ten minutes in the Owyhee High School Auditorium located at 3650 N. Owyhee Storm Ave. Meridian, ID 83646. Services will include 3-4 songs of worship and around 30 minutes of practical teaching. Our philosophy on church services is to laugh and learn, a lot. We want you to connect as much as you feel comfortable, so we will never single you out as a first-time guest.
+            Refresh Church meets every Sunday at <b>9:00am & 10:30am</b> for an hour to an hour and ten minutes in the <b>Owyhee High School Auditorium</b> located at <Link href='https://maps.app.goo.gl/QVoYXC8LbYkQkN3s7' className="underline">3650 N. Owyhee Storm Ave. Meridian, ID 83646</Link>. Our philosophy on church services is to laugh and learn, as we draw closer to God.
             </p>
             <div className="flex justify-end mt-4">
               <Link href="https://maps.app.goo.gl/QVoYXC8LbYkQkN3s7">

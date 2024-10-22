@@ -70,22 +70,22 @@ export default function Home() {
                   >
                     <div className="relative block h-full">
                       <img
-                        src="/photos/home/home-1.webp"
-                        className="w-full h-full object-cover"
+                        src="/photos/home/church-life-1.webp"
+                        className="w-full h-full object-cover user-select-none"
                         alt="Image 1"
                       />
                     </div>
                     <div className="relative block h-full">
                       <img
-                        src="https://placehold.co/600x400?text=Placeholder2"
-                        className="w-full h-full object-cover"
+                        src="/photos/home/church-life-2.webp"
+                        className="w-full h-full object-cover user-select-none"
                         alt="Image 2"
                       />
                     </div>
                     <div className="relative block h-full">
                       <img
-                        src="https://placehold.co/600x400?text=Placeholder3"
-                        className="w-full h-full object-cover"
+                        src="/photos/home/church-life-3.webp"
+                        className="w-full h-full object-cover user-select-none"
                         alt="Image 3"
                       />
                     </div>
@@ -106,6 +106,7 @@ export default function Home() {
                     layout="fill"
                     objectFit="cover"
                     alt="Leadership Image"
+                    draggable="false"
                   />
                 </div>
                 <h3 className="text-2xl font-semibold absolute top-1.5 left-3 text-white">First Time Here!</h3>
@@ -122,6 +123,7 @@ export default function Home() {
                     layout="fill"
                     objectFit="cover"
                     alt="Leadership Image"
+                    draggable="false"
                   />
                 </div>
                 <h3 className="text-2xl font-semibold absolute top-1.5 left-3 text-white">Leadership</h3>
@@ -142,6 +144,7 @@ export default function Home() {
                     layout="fill"
                     objectFit="cover"
                     alt="Kids Image"
+                    draggable="false"
                   />
                 </div>
                 {/* No button or title for this box */}
@@ -154,6 +157,7 @@ export default function Home() {
                     layout="fill"
                     objectFit="cover"
                     alt="Connected Image"
+                    draggable="false"
                   />
                 </div>
                 {/* No button or title for this box */}
@@ -166,6 +170,7 @@ export default function Home() {
                     layout="fill"
                     objectFit="cover"
                     alt="Discovery Image"
+                    draggable="false"
                   />
                 </div>
                 {/* No button or title for this box */}
@@ -180,6 +185,7 @@ export default function Home() {
                     layout="fill"
                     objectFit="cover"
                     alt="sermons Image"
+                    draggable="false"
                   />
                 </div>
                 {/* No button or title for this box */}
@@ -195,6 +201,7 @@ export default function Home() {
                     layout="fill"
                     objectFit="cover"
                     alt="event Image"
+                    draggable="false"
                   />
                 </div>
                 {/* No button or title for this box */}
@@ -213,6 +220,7 @@ export default function Home() {
                     layout="fill"
                     objectFit="cover"
                     alt="Leadership Image"
+                    draggable="false"
                   />
                 </div>
                 <h3 className="text-2xl font-semibold absolute top-1.5 left-3 text-white">First Time Here!</h3>
@@ -236,21 +244,21 @@ export default function Home() {
                   >
                     <div className="relative block h-full">
                       <img
-                        src="/photos/home/home-1.webp"
+                        src="/photos/home/church-life-1.webp"
                         className="w-full h-full object-cover"
                         alt="Image 1"
                       />
                     </div>
                     <div className="relative block h-full">
                       <img
-                        src="https://placehold.co/600x400?text=Placeholder2"
+                        src="/photos/home/church-life-2.webp"
                         className="w-full h-full object-cover"
                         alt="Image 2"
                       />
                     </div>
                     <div className="relative block h-full">
                       <img
-                        src="https://placehold.co/600x400?text=Placeholder3"
+                        src="/photos/home/church-life-3.webp"
                         className="w-full h-full object-cover"
                         alt="Image 3"
                       />
@@ -267,6 +275,7 @@ export default function Home() {
                     layout="fill"
                     objectFit="cover"
                     alt="Leadership Image"
+                    draggable="false"
                   />
                 </div>
                 <h3 className="text-2xl font-semibold absolute top-1.5 left-3 text-white">Leadership</h3>
@@ -285,6 +294,7 @@ export default function Home() {
                     layout="fill"
                     objectFit="cover"
                     alt="Connected Image"
+                    draggable="false"
                   />
                 </div>
                 {/* No button or title for this box */}
@@ -297,6 +307,7 @@ export default function Home() {
                     layout="fill"
                     objectFit="cover"
                     alt="Kids Image"
+                    draggable="false"
                   />
                 </div>
                 {/* No button or title for this box */}
@@ -309,6 +320,7 @@ export default function Home() {
                     layout="fill"
                     objectFit="cover"
                     alt="Discovery Image"
+                    draggable="false"
                   />
                 </div>
                 {/* No button or title for this box */}
@@ -324,6 +336,7 @@ export default function Home() {
                     layout="fill"
                     objectFit="cover"
                     alt="Leadership Image"
+                    draggable="false"
                   />
                 </div>
                 {/* No button or title for this box */}
@@ -337,6 +350,7 @@ export default function Home() {
                     layout="fill"
                     objectFit="cover"
                     alt="Leadership Image"
+                    draggable="false"
                   />
                 </div>
                 {/* No button or title for this box */}

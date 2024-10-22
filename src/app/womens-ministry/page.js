@@ -58,9 +58,9 @@ export default function MensMinistry() {
       {/* Final Call to Action with Image */}
       <div className="flex flex-col lg:flex-row items-center text-center lg:text-left mt-12">
         <div className="lg:w-1/2 lg:pr-8">
-          <h3 className="text-2xl font-semibold text-gray-900 mb-4">Join Us at Our Next Event</h3>
+          <h3 className="text-2xl font-semibold text-gray-900 mb-4">Get Connected!</h3>
           <p className="text-gray-700 text-lg mb-6">
-            need blurb
+          Whether we are crafting, hearing from other ladies of God about how He has moved in their life, or sharing stories over a cup of coffee, we have multiple ways in which other women can get connected to a community of Godly women.
           </p>
           <Link href="/events" className="inline-block bg-primary text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-primaryDark transition duration-300 ease-in-out">
             View Upcoming Events

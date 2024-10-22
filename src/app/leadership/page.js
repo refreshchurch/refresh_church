@@ -6,27 +6,27 @@ import Image from "next/image";
 export default function Leadership() {
   const staff = [
     {
-      img:"/photos/chris.webp",
-      name:"Pastor Chris Abernathy",
-      title:"Connections Pastor",
+      img: "/photos/chris.webp",
+      name: "Pastor Chris Abernathy",
+      title: "Connections Pastor",
     },
     {
-      img:"/photos/sam.webp",
-      name:"Pastor Sam Pech",
-      title:"Next Gen Pastor",
+      img: "/photos/sam.webp",
+      name: "Pastor Sam Pech",
+      title: "Next Gen Pastor",
     },
     {
-      img:"/photos/yolanda.webp",
-      name:"Yolanda Pech",
-      title:"Pastoral Assistant and Administration",
+      img: "/photos/yolanda.webp",
+      name: "Yolanda Pech",
+      title: "Pastoral Assistant and Administration",
     },
     {
-      img:"/photos/jeanine.webp",
-      name:"Jeanine Abernathy",
-      title:"Children’s Ministry Assistant",
+      img: "/photos/jeanine.webp",
+      name: "Jeanine Abernathy",
+      title: "Children’s Ministry Assistant",
     },
   ]
-  
+
   return (
     <div className="container mx-auto px-8 sm:px-36 py-12">
       <h2 className="text-3xl font-bold text-gray-900 tracking-tighter sm:text-3xl md:text-4xl mb-12">Our Leadership</h2>
@@ -46,10 +46,12 @@ export default function Leadership() {
         </div>
         <div className="lg:w-2/3 lg:pl-8 text-center lg:text-left">
           <h3 className="text-3xl font-bold text-primary mb-4">Pastor TJ & Leah</h3>
-      
-          <p className="text-gray-700 text-lg">
-            need blurb
+
+          <p className="text-gray-700 text-lg text-left">
+            In the summer of 2020, T.J. and Leah felt a clear call from God to plant a life-giving church in the Treasure Valley of Idaho. Refresh Church launched in September of 2021 and has built an incredible team to see people refreshed by the presence of God and discover their purpose in Him.
             <br />
+            <br />
+            Pastor T.J. is a gifted teacher and communicator. He has a passion for making God’s word relatable and practical, and he has a heart for reaching people right where they are and introducing them to the refreshing message of Jesus. In their free time, T.J. and Leah like spending time outdoors with their four children Mckenna, Addison, Cecelia, and Layton.
           </p>
         </div>
       </div>
