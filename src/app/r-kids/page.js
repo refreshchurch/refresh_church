@@ -93,11 +93,12 @@ export default function KidMinistry() {
             </p>
           </div>
           <div className="lg:w-1/2 h-[250px] relative overflow-hidden rounded-2xl shadow-lg">
+            {/* Picture of the crafts */}
             <Image
-              src="/photos/kids/kids-2.webp"
+              src="/photos/kids/kids-3.webp"
               layout="fill"
               objectFit="cover"
-              alt="Toddlers & Pre-K"
+              alt="Elementary & Pre-Teen"
             />
           </div>
         </div>
@@ -105,11 +106,12 @@ export default function KidMinistry() {
         {/* Elementary  */}
         <div className="mb-12 flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2 h-[250px] relative overflow-hidden rounded-2xl shadow-lg mb-6 lg:mb-0">
+
             <Image
-              src="/photos/kids/design-1.webp"
+              src="/photos/kids/kids-2.webp"
               layout="fill"
               objectFit="cover"
-              alt="Elementary & Pre-Teen"
+              alt="Toddlers & Pre-K"
             />
           </div>
           <div className="lg:w-1/2 lg:pl-8">
@@ -119,7 +121,7 @@ export default function KidMinistry() {
             </p>
           </div>
         </div>
-        
+
         {/* Pre-Teen (4th & 5th Grade) */}
         <div className="mb-12 flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2 lg:pl-8">
