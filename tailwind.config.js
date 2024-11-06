@@ -19,6 +19,10 @@ module.exports = {
         background: '#F8F7F4', // Example custom color
         // Add more custom colors as needed
       },
+      aspectRatio: {
+        '17/9': '17 / 9',
+      },
+
     },
   },
   plugins: [

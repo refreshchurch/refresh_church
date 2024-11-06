@@ -1,7 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./Navbar";
-import FooterComponent from "./FooterComponent.js"
+import FooterComponent from "./components/FooterComponent.js"
 import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({ subsets: ["latin"] });
