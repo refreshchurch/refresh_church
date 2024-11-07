@@ -19,14 +19,14 @@ export default function HomePage({ showMobile, hydrated }) {
             draggable="false"
           />
           <div className="absolute inset-0 bg-black bg-opacity-10 flex items-center justify-center flex-col">
-            <h1 className="text-white text-7xl font-bold z-100">Refresh Church</h1>
+            <h1 className="text-white sm:text-7xl text-5xl font-bold z-100">Refresh Church</h1>
             {/* <Link href="/contact" className="text-white text-2xl font-bold z-100 pt-1 cursor-pointer">9 & 10 AM @ Owhyee High School</Link> */}
           </div>
         </div>
       </div>
 
       {/* Middle */}
-      <div className="grid grid-cols-[65%_1fr] gap-4 mb-4">
+      <div className="grid md:grid-cols-[65%_1fr] grid-cols-1 gap-4 mb-4">
         <div className="flex flex-col gap-4">
           <Link href="/" className="bg-white shadow-md rounded-2xl w-full aspect-video relative overflow-hidden transform transition-transform duration-350 hover:scale-[1.02]">
             <Image
@@ -37,7 +37,7 @@ export default function HomePage({ showMobile, hydrated }) {
               draggable="false"
             />
             <div className="absolute inset-0 bg-black bg-opacity-10 flex items-center justify-center">
-              <p className="text-white text-7xl font-bold z-100">First Time Here</p>
+              <p className="text-white sm:text-7xl text-5xl  font-bold z-100">First Time Here</p>
             </div>
           </Link>
           <Link href="/first-time-here" className="bg-white shadow-md rounded-2xl w-full aspect-video relative overflow-hidden transform transition-transform duration-350 hover:scale-[1.02]">
@@ -49,7 +49,7 @@ export default function HomePage({ showMobile, hydrated }) {
               draggable="false"
             />
             <div className="absolute inset-0 bg-black bg-opacity-10 flex items-center justify-center">
-              <h1 className="text-white text-7xl font-bold z-100">Leadership</h1>
+              <h1 className="text-white sm:text-7xl text-5xl font-bold z-100">Leadership</h1>
             </div>
           </Link>
         </div>
@@ -154,7 +154,7 @@ export default function HomePage({ showMobile, hydrated }) {
             draggable="false"
           />
           <div className="absolute inset-0 bg-black bg-opacity-10 flex items-center justify-center">
-            <p className="text-white text-7xl font-bold z-100">Placeholder</p>
+            <p className="text-white sm:text-7xl text-5xl font-bold z-100">Placeholder</p>
           </div>
         </Link>
         <Link href="/first-time-here" className="bg-white shadow-md rounded-2xl w-full aspect-video relative overflow-hidden transform transition-transform duration-350 hover:scale-[1.02]">
@@ -166,7 +166,7 @@ export default function HomePage({ showMobile, hydrated }) {
             draggable="false"
           />
           <div className="absolute inset-0 bg-black bg-opacity-10 flex items-center justify-center">
-            <p className="text-white text-7xl font-bold z-100">Placeholder</p>
+            <p className="text-white sm:text-7xl text-5xl font-bold z-100">Placeholder</p>
           </div>
         </Link>
 

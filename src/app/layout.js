@@ -4,7 +4,9 @@ import Navbar from "./Navbar";
 import FooterComponent from "./components/FooterComponent.js"
 import { Analytics } from "@vercel/analytics/react"
 
-const inter = Inter({ subsets: ["latin"] });
+import { Montserrat } from "next/font/google";
+
+const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Refresh Church",
@@ -17,7 +19,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/r-favicon.svg" type="image/svg+xml" />
       </head>
-      <body className={inter.className}>
+      <body className={montserrat.className}>
         <Navbar />
         {children}
         <FooterComponent />
@@ -26,3 +28,4 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
