@@ -60,7 +60,7 @@ export default function FooterComponent() {
       <footer className="bg-white antialiased dark:bg-gray-800">
         <div className="mx-auto max-w-screen-xl px-4 2xl:px-0">
           <div className="border-b border-gray-100 py-6 dark:border-gray-700 md:py-8">
-            <div className="space-y-4 lg:flex lg:items-center lg:gap-4 lg:space-y-0">
+            <div className="space-y-4 flex lg:items-center lg:gap-4 lg:space-y-0">
               <div className="w-full gap-4 md:flex md:items-center md:gap-8">
                 <a href="/" title="">
                   <Image
@@ -78,7 +78,7 @@ export default function FooterComponent() {
                     <a href="https://maps.app.goo.gl/tttX16azxxXtdhbb9" title="" className="text-gray-900 hover:underline dark:text-white"> Refresh HQ </a>
                   </div>
                 </div>
-                <div className="flex space-x-4">
+                <div className="flex space-x-4 md:pt-0 pt-3">
                   <a href='https://www.instagram.com/refreshchurchtv/' target="_blank" rel="noopener noreferrer">
                     <svg className=" w-8 h-8 text-gray-600 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                       <path fill="currentColor" fillRule="evenodd" d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z" clipRule="evenodd" />
