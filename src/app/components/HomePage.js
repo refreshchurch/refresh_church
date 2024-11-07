@@ -12,15 +12,23 @@ export default function HomePage({ showMobile, hydrated }) {
       <div className="flex flex-wrap gap-4 justify-center mb-4">
         <div className="bg-white shadow-md rounded-2xl w-full sm:aspect-17/9 aspect-square relative overflow-hidden">
           <Image
-            src='/photos/placeholder.webp'
+            src='/photos/home/church-life-3.webp'
             layout="fill"
             objectFit="cover"
             alt="Leadership Image"
             draggable="false"
           />
-          <div className="absolute inset-0 bg-black bg-opacity-10 flex items-center justify-center flex-col">
-            <h1 className="text-white sm:text-7xl text-5xl font-bold z-100">Refresh Church</h1>
-            {/* <Link href="/contact" className="text-white text-2xl font-bold z-100 pt-1 cursor-pointer">9 & 10 AM @ Owhyee High School</Link> */}
+          <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center flex-col">
+            <Image
+              src="/photos/white-logo.webp"
+              width={600}
+              height={600}
+              className="sm:mb-[-30px] mb-[-20px] lg:w-[600px] w-[450px] sm:w-[500px] "
+              alt="Leadership Image"
+              draggable="false"
+            />
+            <Link href="/contact" className="text-white lg:text-2xl text-xl font-bold z-100 cursor-pointer"> <span className="sm:inline-block hidden">Sunday Services</span> Owhyee High School</Link>
+            <Link href="/contact" className="text-white lg:text-2xl text-xl font-bold z-100 pt-1 cursor-pointer">9 & 10 AM</Link>
           </div>
         </div>
       </div>
