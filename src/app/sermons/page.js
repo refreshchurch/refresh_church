@@ -12,6 +12,7 @@ export default function Sermons() {
   const [recentVideos, setRecentVideos] = useState([]);
   const [playlists, setPlaylists] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [hidePlaylist, setHidePlaylist] = useState(false);
 
   // Static data for fallback
   const staticRecentVideos = [
@@ -59,6 +60,7 @@ export default function Sermons() {
         // Fallback to static data
         setLatestVideo("https://www.youtube.com/embed/KZ1Pcm7PgbU");
         setRecentVideos(staticRecentVideos);
+        setHidePlaylist(true);
         setLoading(false);
       }
     };
@@ -119,7 +121,9 @@ export default function Sermons() {
 
         {/* Sermon Series */}
         <div className="space-y-6 mt-6 w-full">
+          {!hidePlaylist &&
           <h2 className="text-2xl inline-block font-semibold rounded-lg px-3 py-1 text-gray-900">Sermon Series</h2>
+          }
           <div className="overflow-x-auto flex gap-6 snap-x w-full">
             {(loading ? staticRecentVideos : playlists).map((playlist, index) => (
               <div key={index} className="flex-none w-[60%] sm:w-[50%] lg:w-[30%] snap-start">
