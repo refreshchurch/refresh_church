@@ -1,11 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useYoutubeApi } from "../../../constants";
 
 // Replace these with your YouTube API key and channel ID
-const API_KEY = 'YOUR_YOUTUBE_API_KEY';
-const CHANNEL_ID = 'YOUR_CHANNEL_ID';
-const usingApi = false; // Set this to true to use the API, false to use static data
+const API_KEY = process.env.NEXT_PUBLIC_YOUTUBE_API_KEY;
+const CHANNEL_ID = process.env.NEXT_PUBLIC_YOUTUBE_CHANNEL_ID;
 
 export default function Sermons() {
   const [latestVideo, setLatestVideo] = useState(null);
@@ -23,7 +23,7 @@ export default function Sermons() {
 
   useEffect(() => {
     const fetchYouTubeData = async () => {
-      if (usingApi) {
+      if (useYoutubeApi) {
         try {
           // Fetch most recent 5 videos
           const videoResponse = await fetch(
@@ -47,9 +47,12 @@ export default function Sermons() {
           );
           const playlistData = await playlistResponse.json();
           setPlaylists(playlistData.items);
+          setLoading(false);
         } catch (error) {
           console.error("Error fetching YouTube data:", error);
-        } finally {
+          console.log("Falling back to static data");
+          setLatestVideo("https://www.youtube.com/embed/KZ1Pcm7PgbU");
+          setRecentVideos(staticRecentVideos);
           setLoading(false);
         }
       } else {
@@ -151,3 +154,4 @@ export default function Sermons() {
     </section>
   );
 }
+ 
