@@ -19,8 +19,8 @@ export default function Contact() {
       {/* Enhanced Top Section */}
       <div className="bg-primaryLight dark:bg-gray-800 rounded-2xl shadow-lg p-8 mb-12 flex flex-col sm:flex-row items-center justify-between text-center sm:text-left">
         <div className="mb-4 sm:mb-0">
-          <h2 className="text-4xl font-bold text-gray-900 dark:text-white tracking-tighter sm:text-4xl md:text-5xl">Let's Connect</h2>
-          <p className="text-xl text-gray-700 dark:text-gray-300">We’d love to get to know you.</p>
+          <h2 className="text-4xl font-bold text-white dark:text-white tracking-tighter sm:text-4xl md:text-5xl">Let's Connect</h2>
+          <p className="text-xl text-gray-200 dark:text-gray-300">We’d love to get to know you.</p>
         </div>
         <Link href="https://refresh.churchcenter.com/people/forms/214918">
           <div className="inline-block bg-primary text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-primaryDark transition duration-300 ease-in-out">

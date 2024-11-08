@@ -6,22 +6,27 @@ import Image from "next/image";
 export default function Leadership() {
   const staff = [
     {
-      img: "/photos/chris.webp",
+      img: "/photos/leadership/chris.webp",
       name: "Pastor Chris Abernathy",
       title: "Connections Pastor",
     },
     {
-      img: "/photos/sam.webp",
+      img: "/photos/leadership/sam.webp",
       name: "Pastor Sam Pech",
       title: "Next Gen Pastor",
     },
     {
-      img: "/photos/yolanda.webp",
+      img: "/photos/leadership/dylan.webp",
+      name: "Pastor Dylan Cochran",
+      title: "Worship & Production Pastor",
+    },
+    {
+      img: "/photos/leadership/yolanda.webp",
       name: "Yolanda Pech",
       title: "Pastoral Assistant and Administration",
     },
     {
-      img: "/photos/jeanine.webp",
+      img: "/photos/leadership/jeanine.webp",
       name: "Jeanine Abernathy",
       title: "Children’s Ministry Assistant",
     },
@@ -36,7 +41,7 @@ export default function Leadership() {
         <div className="w-full lg:w-1/3 mb-8 lg:mb-0 flex justify-center">
           <div className="relative xl:w-72 xl:h-72 w-56 h-56">
             <Image
-              src="https://refresh.church/wp-content/uploads/2023/01/TJLeah.jpg" // Replace with the actual path to the image
+              src="/photos/leadership/TJLeah.webp" // Replace with the actual path to the image
               layout="fill"
               objectFit="cover"
               alt="Head Pastor"

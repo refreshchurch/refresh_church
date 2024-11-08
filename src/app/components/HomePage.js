@@ -194,25 +194,25 @@ export default function HomePage({ showMobile, hydrated }) {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
         <Link href="/connect" className="bg-white shadow-md rounded-2xl w-full aspect-video relative overflow-hidden transform transition-transform duration-350 hover:scale-[1.02]">
           <Image
-            src="/photos/blue16_9.webp"
+            src="/photos/background/DarkBlue16_9.webp"
             layout="fill"
             objectFit="cover"
-            alt="Leadership Image"
+            alt="Dark Blue Background"
             draggable="false"
           />
-          <div className="absolute inset-0 bg-black bg-opacity-10 flex items-center justify-center">
+          <div className="absolute inset-0 bg-opacity-10 flex items-center justify-center">
             <p className="text-white sm:text-7xl text-5xl font-bold z-100">Community</p>
           </div>
         </Link>
         <Link href="/discovery" className="bg-white shadow-md rounded-2xl w-full aspect-video relative overflow-hidden transform transition-transform duration-350 hover:scale-[1.02]">
           <Image
-            src="/photos/orange16_9.webp"
+            src="/photos/background/DarkOrange16_9.webp"
             layout="fill"
             objectFit="cover"
-            alt="Leadership Image"
+            alt="Dark Orange Background"
             draggable="false"
           />
-          <div className="absolute inset-0 bg-black bg-opacity-10 flex items-center justify-center">
+          <div className="absolute inset-0  bg-opacity-10 flex items-center justify-center">
             <p className="text-white sm:text-7xl text-5xl font-bold z-100">Discovery</p>
           </div>
         </Link>
