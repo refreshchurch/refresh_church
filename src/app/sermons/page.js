@@ -121,7 +121,7 @@ export default function Sermons() {
 
         {/* Sermon Series */}
         <div className="space-y-6 mt-6 w-full">
-          {!hidePlaylist &&
+          {!hidePlaylist || !useYoutubeApi &&
           <h2 className="text-2xl inline-block font-semibold rounded-lg px-3 py-1 text-gray-900">Sermon Series</h2>
           }
           <div className="overflow-x-auto flex gap-6 snap-x w-full">
