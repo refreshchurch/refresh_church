@@ -192,7 +192,7 @@ export default function HomePage({ showMobile, hydrated }) {
 
       {/* Bottom */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-        <Link href="/first-time-here" className="bg-white shadow-md rounded-2xl w-full aspect-video relative overflow-hidden transform transition-transform duration-350 hover:scale-[1.02]">
+        <Link href="/connect" className="bg-white shadow-md rounded-2xl w-full aspect-video relative overflow-hidden transform transition-transform duration-350 hover:scale-[1.02]">
           <Image
             src="/photos/blue16_9.webp"
             layout="fill"

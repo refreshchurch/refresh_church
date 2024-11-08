@@ -74,7 +74,7 @@ export default function Sermons() {
     <section className="w-full py-8 md:py-10 lg:py-12">
       <div className="container mx-auto px-8 md:px-24 lg:px-32 space-y-12">
         {/* Large video section */}
-        <h2 className="text-3xl font-bold text-gray-900 tracking-tighter sm:text-4xl md:text-5xl">Sermons</h2>
+        <h2 className="text-3xl font-bold text-gray-900 tracking-tighter md:text-4xl">Sermons</h2>
         <div className="flex justify-center w-full">
           <div className="relative w-full aspect-video overflow-hidden rounded-xl shadow-lg">
             {loading ? (

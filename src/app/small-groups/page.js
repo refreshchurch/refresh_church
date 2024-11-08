@@ -64,7 +64,7 @@ export default function SmallGroups() {
         {loading ? (
           <>
             {[1, 2, 3, 4].map((index) => (
-              <div key={index} className="bg-gray-200 animate-pulse shadow-lg rounded-3xl overflow-hidden transform transition-all">
+              <div key={index} className="bg-gray-200 animate-pulse shadow-lg rounded-xl overflow-hidden transform transition-all">
                 <div className="relative w-full sm:h-[275px] h-[200px] bg-gray-300"></div>
                 <div className="p-6 flex flex-col justify-between h-[250px]">
                   <div className="h-6 bg-gray-300 mb-3 rounded"></div>

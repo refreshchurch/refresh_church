@@ -101,12 +101,12 @@ export default function Events() {
 
       {/* 2 wide */}
       <div className="container mx-auto px-8 sm:px-36 py-12">
-        <h2 className="mb-10 text-4xl font-extrabold text-gray-900 tracking-tighter sm:text-4xl">Upcoming Events</h2>
+        <h2 className="mb-10 text-4xl font-bold text-gray-900 tracking-tighter sm:text-4xl">Upcoming Events</h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {loading ? (
             <>
               {[1, 2, 3, 4].map((index) => (
-                <div key={index} className="bg-gray-200 animate-pulse shadow-lg rounded-2xl overflow-hidden transform transition-all">
+                <div key={index} className="bg-gray-200 animate-pulse shadow-lg rounded-xl overflow-hidden transform transition-all">
                   <div className="relative w-full sm:h-[275px] h-[200px] bg-gray-300"></div>
                   <div className="p-6 flex flex-col justify-between h-[250px]">
                     <div className="h-6 bg-gray-300 mb-3 rounded"></div>
