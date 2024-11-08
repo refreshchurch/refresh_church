@@ -117,7 +117,7 @@ export default function HomePage({ showMobile, hydrated }) {
                   Give
                 </p>
               </Link>
-              <Link href="/" className="flex items-center gap-2 px-2 py-3 hover:bg-gray-100 rounded-lg cursor-pointer">
+              <Link href="/events" className="flex items-center gap-2 px-2 py-3 hover:bg-gray-100 rounded-lg cursor-pointer">
                 <Calendar className="w-7" />
                 <p className="text-xl font-semibold">
                   Events
