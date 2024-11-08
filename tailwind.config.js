@@ -11,13 +11,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#E46246',// Example custom color
-        primaryDark: '#B64E38',// Example custom color
-        primaryLight: '#E9816A',// Example custom color
+        primary: '#E46246',
+        primaryDark: '#B64E38',
+        primaryLight: '#E9816A',
         secondary: '#ffed4a', 
-        accent: '',// Example custom color
-        background: '#F8F7F4', // Example custom color
-        // Add more custom colors as needed
+        accent: '',
+        background: '#F8F7F4', 
       },
       aspectRatio: {
         '17/9': '17 / 9',
