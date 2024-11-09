@@ -13,25 +13,14 @@ export default function FirstTimeHere() {
 
       {/* Hero Carousel Section */}
       <div className="relative w-full h-[500px] mb-12">
-        <Carousel
-          autoPlay
-          infiniteLoop
-          showThumbs={false}
-          showStatus={false}
-          showArrows={false}
-          interval={3000}
-          className="rounded-2xl overflow-hidden"
-        >
-          <div>
-            <img src="https://placehold.co/600x400?text=1" alt="Church Life 1" className="object-cover w-full h-[500px]" />
-          </div>
-          <div>
-            <img src="https://placehold.co/600x400?text=2" alt="Church Life 2" className="object-cover w-full h-[500px]" />
-          </div>
-          <div>
-            <img src="https://placehold.co/600x400?text=3" alt="Church Life 3" className="object-cover w-full h-[500px]" />
-          </div>
-        </Carousel>
+        <Image
+          src='/photos/first-time-here/first-time-here.webp'
+          layout="fill"
+          objectFit="cover"
+          objectPosition="0 35%"
+          alt="Leadership Image"
+          draggable="false"
+        />
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
           <h1 className="text-white text-5xl font-bold">First Time Here?</h1>
         </div>
@@ -44,7 +33,7 @@ export default function FirstTimeHere() {
           <div className="bg-white shadow-md rounded-2xl p-6 flex flex-col justify-between">
             <h4 className="text-xl font-bold text-primary mb-4">Services</h4>
             <p className="text-gray-700">
-            Refresh Church meets every Sunday at <b>9:00am & 10:30am</b> for an hour to an hour and ten minutes in the <b>Owyhee High School Auditorium</b> located at <Link href='https://maps.app.goo.gl/QVoYXC8LbYkQkN3s7' className="underline">3650 N. Owyhee Storm Ave. Meridian, ID 83646</Link>. Our philosophy on church services is to laugh and learn, as we draw closer to God.
+              Refresh Church meets every Sunday at <b>9:00am & 10:30am</b> for an hour to an hour and ten minutes in the <b>Owyhee High School Auditorium</b> located at <Link href='https://maps.app.goo.gl/QVoYXC8LbYkQkN3s7' className="underline">3650 N. Owyhee Storm Ave. Meridian, ID 83646</Link>. Our philosophy on church services is to laugh and learn, as we draw closer to God.
             </p>
             <div className="flex justify-end mt-4">
               <Link href="https://maps.app.goo.gl/QVoYXC8LbYkQkN3s7">
@@ -74,10 +63,10 @@ export default function FirstTimeHere() {
 
           <div className="bg-white shadow-md rounded-2xl p-6 flex flex-col justify-between">
             <div>
-            <h4 className="text-xl font-bold text-primary mb-4">Kids Ministry</h4>
-            <p className="text-gray-700">
-              Our team works hard to create a safe, clean, and fun environment for your child. Kids ministries are offered for ages birth through 5th grade. The kids’ check-in area and classrooms are easy to find and our leaders are eager to welcome your child. You can preregister your family and save time during the check-in process by clicking the link below!
-            </p>
+              <h4 className="text-xl font-bold text-primary mb-4">Kids Ministry</h4>
+              <p className="text-gray-700">
+                Our team works hard to create a safe, clean, and fun environment for your child. Kids ministries are offered for ages birth through 5th grade. The kids’ check-in area and classrooms are easy to find and our leaders are eager to welcome your child. You can preregister your family and save time during the check-in process by clicking the link below!
+              </p>
             </div>
             <div className="flex justify-end mt-4">
               <Link href="/refresh-youth">

@@ -45,8 +45,9 @@ export default function MensMinistry() {
           <div className="lg:w-1/2">
             <div className="w-full h-[250px] relative overflow-hidden rounded-2xl shadow-lg">
               <Image
-                src="/path-to-photo4.jpg" // Replace with the path to your image
+                src="/photos/womens/women-2.webp" // Replace with the path to your image
                 layout="fill"
+                objectPosition="0 35%"
                 objectFit="cover"
                 alt="Women's Ministry Image 3"
               />
@@ -70,6 +71,7 @@ export default function MensMinistry() {
           <div className="w-full h-[350px] relative overflow-hidden rounded-2xl shadow-lg">
             <Image
               src="/photos/womens/women-3.webp"
+              objectPosition="0 30%"
               layout="fill"
               objectFit="cover"
               alt="Women's Ministry Image 4"
