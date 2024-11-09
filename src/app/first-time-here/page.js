@@ -12,7 +12,7 @@ export default function FirstTimeHere() {
       {/* <h2 className="text-4xl font-bold text-gray-900 tracking-tighter sm:text-5xl md:text-6xl mb-12">First Time Here?</h2> */}
 
       {/* Hero Carousel Section */}
-      <div className="relative w-full h-[500px] mb-12">
+      <div className="relative w-full h-[500px] mb-12 rounded-xl overflow-hidden">
         <Image
           src='/photos/first-time-here/first-time-here.webp'
           layout="fill"
@@ -20,6 +20,7 @@ export default function FirstTimeHere() {
           objectPosition="0 35%"
           alt="Leadership Image"
           draggable="false"
+
         />
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
           <h1 className="text-white text-5xl font-bold">First Time Here?</h1>
