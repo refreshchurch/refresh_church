@@ -52,9 +52,9 @@ export default function Sermons() {
         } catch (error) {
           console.error("Error fetching YouTube data:", error);
           console.log("Falling back to static data");
-          setLatestVideo("https://www.youtube.com/embed/KZ1Pcm7PgbU");
-          setRecentVideos(staticRecentVideos);
-          setLoading(false);
+          // setLatestVideo("https://www.youtube.com/embed/KZ1Pcm7PgbU");
+          // setRecentVideos(staticRecentVideos);
+          // setLoading(false);
         }
       } else {
         // Fallback to static data

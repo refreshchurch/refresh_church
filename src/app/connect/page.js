@@ -11,10 +11,10 @@ export default function GetConnected() {
     { name: "Men's Ministry", link: "/mens-ministry", image: '/photos/mens/men-1.webp' },
     { name: "Women's Ministry", link: "/womens-ministry", image: '/photos/womens/women-1.webp' },
     { name: "Young Adults", link: "https://refresh.churchcenter.com/groups/all-groups/young-adults-garrett-cat-adams", image: '/photos/connect/young-adults.webp' },
-    { name: "Youth Ministry", link: "/refresh-youth", image: '/photos/youth/youth-1.webp' },
-    { name: "Kid's Ministry", link: "/r-kids", image: '/photos/home/r-kids-desktop.webp' },
-    { name: "Discovery", link: "/discovery", image: '/photos/home/discovery-desktop.webp' },
-    { name: "Baby Dedications", link: "https://refresh.churchcenter.com/people/forms/541850", image: '/photos/connect/baby-dedication.webp' },
+    { name: "Youth Ministry", link: "/refresh-youth", image: '/photos/youth/youth-5.webp' },
+    { name: "Kid's Ministry", link: "/r-kids", image: '/photos/background/WhiteBlue1_1.webp' },
+    { name: "Discovery", link: "/discovery", image: '/photos/background/DarkBlue1_1.webp' },
+    { name: "Baby Dedications", link: "https://refresh.churchcenter.com/people/forms/541850", image: '/photos/background/DarkOrange1_1.webp' },
     { name: "Serve Team", link: "https://refresh.churchcenter.com/people/forms/301611?_ga=2.212286996.1630180229.1675698110-905807684.1675698110", image: '/photos/connect/serve-team.webp' },
     // Add more ministries as needed
   ];
@@ -44,8 +44,8 @@ export default function GetConnected() {
                   className="transition-transform duration-300 ease-in-out transform group-hover:scale-105"
                 />
               </div>
-              <div className="absolute inset-0 bg-black bg-opacity-50 flex items-start justify-center">
-                <h3 className="text-2xl font-extrabold text-white text-center mt-10">{ministry.name}</h3>
+              <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                <h3 className="text-2xl font-extrabold text-white text-center">{ministry.name}</h3>
               </div>
             </div>
           </Link>

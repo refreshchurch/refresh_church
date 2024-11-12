@@ -1,5 +1,6 @@
 'use client';
 
+import { Button } from "flowbite-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -73,9 +74,9 @@ export default function FooterComponent() {
                 </a>
                 <div className="mt-4 w-full md:mt-0">
                   <div className="flex flex-wrap items-center gap-4 text-sm font-medium xl:justify-center">
-                    <a href="https://maps.app.goo.gl/QVoYXC8LbYkQkN3s7" title="" className="text-gray-900 hover:underline dark:text-white"> Sunday Service </a>
+                    <Button color="light" href="https://maps.app.goo.gl/QVoYXC8LbYkQkN3s7" target="_blank" rel="noopener noreferrer" title="" className="text-gray-900 hover:underline dark:text-white"> Sunday Service Directions</Button>
                     <div className="h-1.5 w-1.5 rounded-full bg-gray-300 dark:bg-gray-600"></div>
-                    <a href="https://maps.app.goo.gl/tttX16azxxXtdhbb9" title="" className="text-gray-900 hover:underline dark:text-white"> Refresh HQ </a>
+                    <Button color="light" href="https://maps.app.goo.gl/tttX16azxxXtdhbb9" target="_blank" rel="noopener noreferrer" title="" className="text-gray-900 hover:underline dark:text-white"> Refresh HQ Directions</Button>
                   </div>
                 </div>
                 <div className="flex space-x-4 md:pt-0 pt-3">

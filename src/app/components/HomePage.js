@@ -36,19 +36,20 @@ export default function HomePage({ showMobile, hydrated }) {
       {/* Middle */}
       <div className="grid md:grid-cols-[65%_1fr] grid-cols-1 gap-4 mb-4">
         <div className="flex flex-col gap-4">
-          <Link href="/" className="bg-white shadow-md rounded-2xl w-full aspect-video relative overflow-hidden transform transition-transform duration-350 hover:scale-[1.02]">
+          <Link href="/first-time-here" className="bg-white shadow-md rounded-2xl w-full aspect-video relative overflow-hidden transform transition-transform duration-350 hover:scale-[1.02]">
             <Image
-              src="https://refresh.church/wp-content/uploads/2023/01/Worship-Team-1024x576.jpg"
+              src="/photos/first-time-here/first-time-here.webp"
               layout="fill"
               objectFit="cover"
+              objectPosition="0 40%"
               alt="Leadership Image"
               draggable="false"
             />
-            <div className="absolute inset-0 bg-black bg-opacity-10 flex items-center justify-center">
+            <div className="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center">
               <p className="text-white sm:text-7xl text-5xl  font-bold z-100">First Time Here</p>
             </div>
           </Link>
-          <Link href="/first-time-here" className="bg-white shadow-md rounded-2xl w-full aspect-video relative overflow-hidden transform transition-transform duration-350 hover:scale-[1.02]">
+          <Link href="/leadership" className="bg-white shadow-md rounded-2xl w-full aspect-video relative overflow-hidden transform transition-transform duration-350 hover:scale-[1.02]">
             <Image
               src="/photos/home/tj.webp"
               layout="fill"
