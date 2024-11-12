@@ -167,7 +167,7 @@ export default function HomePage({ showMobile, hydrated }) {
                   Event Design 2
                 </p>
                 <ArrowUpRight className="w-7" />
-              </Link> */}
+              </Link> */} 
               <Link href="/" className="flex items-center gap-5 px-3 py-3 hover:bg-gray-100 rounded-lg cursor-pointer">
                 <div className="overflow-hidden rounded-full w-12 h-12">
                   <Image
