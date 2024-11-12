@@ -278,7 +278,7 @@ export default function Navbar() {
                       </Link>
                     </li>
                     <li>
-                      <Link href="https://refresh.churchcenter.com/people/forms/301611?_ga=2.212286996.1630180229.1675698110-905807684.1675698110" onClick={handleLinkClick}>
+                      <Link href="https://refresh.churchcenter.com/people/forms/301611?_ga=2.212286996.1630180229.1675698110-905807684.1675698110" target="_blank" rel="noopener noreferrer" onClick={handleLinkClick}>
                         <div className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">serve team</div>
                       </Link>
                     </li>

@@ -22,7 +22,7 @@ export default function Contact() {
           <h2 className="text-4xl font-bold text-white dark:text-white tracking-tighter sm:text-4xl md:text-5xl">Let's Connect</h2>
           <p className="text-xl text-gray-200 dark:text-gray-300">We’d love to get to know you.</p>
         </div>
-        <Link href="https://refresh.churchcenter.com/people/forms/214918">
+        <Link href="https://refresh.churchcenter.com/people/forms/214918" target="_blank" rel="noopener noreferrer">
           <div className="inline-block bg-primary text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-primaryDark transition duration-300 ease-in-out">
             Get in Touch
           </div>
@@ -50,7 +50,7 @@ export default function Contact() {
             <strong>Day:</strong> Sunday<br />
           </p>
           <p className="text-lg text-gray-700 mb-4">
-            <strong>Times:</strong> 9:00 AM & 11:00 AM<br />
+            <strong>Times:</strong> 9:00 AM & 10:30 AM<br />
           </p>
           <p className="text-lg text-gray-700">
             <strong>Location:</strong><br />

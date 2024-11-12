@@ -28,7 +28,7 @@ export default function HomePage({ showMobile, hydrated }) {
               draggable="false"
             />
             <Link href="/contact" className="text-white lg:text-2xl text-xl font-bold z-100 cursor-pointer"> <span className="sm:inline-block hidden">Sunday Services</span> Owhyee High School</Link>
-            <Link href="/contact" className="text-white lg:text-2xl text-xl font-bold z-100 pt-1 cursor-pointer">9 & 10 AM</Link>
+            <Link href="/contact" className="text-white lg:text-2xl text-xl font-bold z-100 pt-1 cursor-pointer">9 & 10:30 AM</Link>
           </div>
         </div>
       </div>
@@ -66,7 +66,7 @@ export default function HomePage({ showMobile, hydrated }) {
         <div className="flex flex-col gap-4">
           <div className="bg-white shadow-md rounded-2xl w-full h-[35%] relative overflow-hidden p-6">
             <h1 className="text-black text-3xl font-bold pb-[1px]">Learn More</h1>
-            <h3 className="text-gray-400 text-lg">Stuff for you</h3>
+            <h3 className="text-gray-400 text-lg">More than just a Sunday</h3>
             <ul className="mt-2 gap-y-2">
               <Link href="/r-kids" className="flex items-center gap-2 px-2 py-3 hover:bg-gray-100 rounded-lg cursor-pointer">
                 <Shapes className="w-7" />
@@ -171,7 +171,7 @@ export default function HomePage({ showMobile, hydrated }) {
               <Link href="/" className="flex items-center gap-5 px-3 py-3 hover:bg-gray-100 rounded-lg cursor-pointer">
                 <div className="overflow-hidden rounded-full w-12 h-12">
                   <Image
-                    src="/photos/placeholder.webp"
+                    src="/photos/background/GrayBlue1_1.webp"
                     width={48}
                     height={48}
                     alt="Leadership Image"
@@ -180,7 +180,7 @@ export default function HomePage({ showMobile, hydrated }) {
                   />
                 </div>
                 <p className="text-xl font-semibold">
-                  Event Design 3
+                  Event Placeholder
                 </p>
                 <ArrowUpRight className="w-7" />
               </Link>
