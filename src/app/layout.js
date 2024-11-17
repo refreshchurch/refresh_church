@@ -18,6 +18,20 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <link rel="icon" href="/r-favicon.svg" type="image/svg+xml" />
+        <script
+          type="text/javascript"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.pyvAccountKey = 'V4pQZqBu'; 
+              window.pyvDomain = 'https://lite.visitplanner.church';
+              var script = document.createElement('script'); 
+              script.async = true; 
+              script.type = 'text/javascript'; 
+              script.src = 'https://lite.visitplanner.church/embed/embed.js';
+              document.head.appendChild(script);
+            `,
+          }}
+        />
       </head>
       <body className={montserrat.className}>
         <Navbar />
