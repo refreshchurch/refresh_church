@@ -1,9 +1,34 @@
 "use client"
-import { AlarmClock, ArrowUpRight, Book, Boxes, Cable, Calendar, HandCoins, Handshake, Map, Plug, Shapes, Tv, User, User2, Users, Waves } from "lucide-react";
+import { ArrowUpRight, Boxes, Cable, Calendar, Handshake, Shapes, Tv, Users, Waves } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import Home from "../page";
+import HomeEventCard from "./HomeEventCard";
+import { useState, useEffect } from "react";
 
-export default function HomePage({ showMobile, hydrated }) {
+export default function HomePage() {
+  const [events, setEvents] = useState([]);
+  const [eventsLoading, setEventsLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchEvents = async () => {
+      try {
+        const response = await fetch('/api/events');
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        const data = await response.json();
+        console.log("data:", data);
+        setEvents(data);
+      } catch (error) {
+        console.error('Error fetching events:', error);
+      } finally {
+        setEventsLoading(false);
+      }
+    };
+
+    fetchEvents();
+  }, []);
 
   return (
     <div className="container mx-auto px-2 sm:px-4 py-8 ">
@@ -124,66 +149,41 @@ export default function HomePage({ showMobile, hydrated }) {
                   Events
                 </p>
               </Link>
-              {/* <Link href="/" className="flex items-center gap-2 px-2 py-3 hover:bg-gray-100 rounded-lg cursor-pointer">
-                <AlarmClock className="w-7"/>
-                <p className="text-xl font-semibold">
-                  9 & 10 AM 
+
+              {events
+                .filter((event) => event.attributes.visibility === "public")
+                .map((event, index) => (
+                  <HomeEventCard key={index} event={event} />
+                ))}
+              {/* <Link href={''} className="flex items-center gap-5 px-3 py-3 hover:bg-gray-100 rounded-lg cursor-pointer mt-3">
+                <div className="overflow-hidden rounded-full w-12 h-12 flex items-center">
+                  <Image
+                    src={"/photos/background/WhiteOrange1_1.webp"}
+                    alt='test'
+                    width={48}
+                    height={48}
+                    objectFit="cover"
+                    className="rounded-full"
+                  />
+                </div>
+                <p className="md:text-lg text-md font-semibold md:max-w-[270px] max-w-[170px] w-full">
+                  Test Event
                 </p>
-              </Link>
-              <Link href="/" className="flex items-center gap-2 px-2 py-3 hover:bg-gray-100 rounded-lg cursor-pointer">
-                <Map className="w-7"/>
-                <p className="text-xl font-semibold">
-                  Owhyee High School
-                </p>
+                <ArrowUpRight className="w-7" />
               </Link> */}
-              {/* <Link href="/" className="flex items-center gap-2 px-2 py-3 hover:bg-gray-100 rounded-lg cursor-pointer">
-                <div className="overflow-hidden rounded-full w-12 h-12">
-                  <Image
-                    src="/photos/placeholder.webp"
-                    width={48}
-                    height={48}
-                    alt="Leadership Image"
-                    draggable="false"
-                    className="object-cover w-full h-full"
-                  />
+
+              {eventsLoading ? (
+                <div className="space-y-4">
+                  {[1, 2, 3, 4].map((i) => (
+                    <div key={i} className="flex items-center gap-5 px-3 py-3 rounded-lg mt-3 animate-pulse">
+                      <div className="overflow-hidden rounded-full bg-gray-200 w-12 h-12"></div>
+                      <p className="text-xl font-semibold max-w-[270px] w-full bg-gray-200 rounded h-6"></p>
+                      <div className="w-7 h-6 bg-gray-200 rounded"></div>
+                    </div>
+                  ))}
                 </div>
-                <p className="text-xl font-semibold">
-                  Event Design 1
-                </p>
-                <ArrowUpRight className="w-7" />
-              </Link>
-              <Link href="/" className="flex items-center gap-5 px-3 py-3 hover:bg-gray-100 rounded-lg cursor-pointer border border-gray-300 shadow-sm">
-                <div className="overflow-hidden rounded-full w-12 h-12">
-                  <Image
-                    src="/photos/placeholder.webp"
-                    width={48}
-                    height={48}
-                    alt="Leadership Image"
-                    draggable="false"
-                    className="object-cover w-full h-full"
-                  />
-                </div>
-                <p className="text-xl font-semibold">
-                  Event Design 2
-                </p>
-                <ArrowUpRight className="w-7" />
-              </Link> */} 
-              <Link href="/" className="flex items-center gap-5 px-3 py-3 hover:bg-gray-100 rounded-lg cursor-pointer">
-                <div className="overflow-hidden rounded-full w-12 h-12">
-                  <Image
-                    src="/photos/background/GrayBlue1_1.webp"
-                    width={48}
-                    height={48}
-                    alt="Leadership Image"
-                    draggable="false"
-                    className="object-cover w-full h-full"
-                  />
-                </div>
-                <p className="text-xl font-semibold">
-                  Event Placeholder
-                </p>
-                <ArrowUpRight className="w-7" />
-              </Link>
+              ) : null}
+
             </ul>
           </div>
 

@@ -72,6 +72,7 @@ export default function FooterComponent() {
                     className="h-auto"
                   />
                 </a>
+                {/* Maps Desktop */}
                 <div className="mt-4 w-full md:mt-0 lg:block hidden">
                   <div className="flex flex-wrap items-center gap-4 text-sm font-medium xl:justify-center">
                     <a href="https://maps.app.goo.gl/QVoYXC8LbYkQkN3s7" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center h-auto hover:scale-105 transition duration-300 ease-in-out hover:cursor-pointer rounded-lg overflow-hidden">
@@ -93,6 +94,7 @@ export default function FooterComponent() {
                     </a>
                   </div>
                 </div>
+                {/* Maps Desktop */}
                 <div className="mt-4 w-full md:mt-0 block lg:hidden">
                   <div className="flex flex-col md:flex-row items-center gap-4 text-sm font-medium xl:justify-center">
                     <div className="flex flex-col items-center gap-2 w-full md:w-1/2">
@@ -102,7 +104,7 @@ export default function FooterComponent() {
                         </div>
                       </Link>
                       <a href="https://maps.app.goo.gl/QVoYXC8LbYkQkN3s7" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center h-auto hover:scale-105 transition duration-300 ease-in-out hover:cursor-pointer rounded-lg overflow-hidden">
-                        <Image src='/photos/maps/small-church.png' alt="Refresh Logo" width={138} height={100} className="h-auto" />
+                        <Image src='/photos/maps/small-church.png' alt="Refresh Logo" width={200} height={100} className="h-auto" />
                       </a>
                     </div>
                     <div className="flex flex-col items-center gap-2 w-full md:w-1/2">
@@ -112,7 +114,7 @@ export default function FooterComponent() {
                         </div>
                       </Link>
                       <a href="https://maps.app.goo.gl/tttX16azxxXtdhbb9" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center h-auto hover:scale-105 transition duration-300 ease-in-out hover:cursor-pointer rounded-lg overflow-hidden">
-                        <Image src='/photos/maps/small-hq.png' alt="Refresh Logo" width={138} height={100} className="h-auto" />
+                        <Image src='/photos/maps/small-hq.png' alt="Refresh Logo" width={200} height={100} className="h-auto" />
                       </a>
                     </div>
                   </div>
