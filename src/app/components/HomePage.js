@@ -205,7 +205,7 @@ export default function HomePage() {
             draggable="false"
           />
           <div className="absolute inset-0 bg-opacity-10 flex items-center justify-center">
-            <p className="text-white sm:text-7xl md:text-4xl lg:text-5xl font-bold z-100">Community</p>
+            <p className="text-white text-5xl sm:text-7xl md:text-4xl lg:text-5xl font-bold z-100">Community</p>
           </div>
         </Link>
         <Link href="/discovery" className="bg-white shadow-md rounded-2xl w-full aspect-video relative overflow-hidden transform transition-transform duration-350 hover:scale-[1.02]">
@@ -217,7 +217,7 @@ export default function HomePage() {
             draggable="false"
           />
           <div className="absolute inset-0  bg-opacity-10 flex items-center justify-center">
-            <p className="text-white sm:text-7xl md:text-4xl lg:text-5xl font-bold z-100">Discovery</p>
+            <p className="text-white text-5xl sm:text-7xl md:text-4xl lg:text-5xl font-bold z-100">Discovery</p>
           </div>
         </Link>
 
