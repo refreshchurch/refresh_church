@@ -89,7 +89,7 @@ export default function HomePage() {
         </div>
 
         <div className="flex flex-col gap-4">
-          <div className="bg-white shadow-md rounded-2xl w-full h-[35%] relative overflow-hidden p-6">
+          <div className="bg-white shadow-md rounded-2xl w-full md:h-[35%] h-[40%] relative overflow-hidden p-6">
             <h1 className="text-black text-3xl font-bold pb-[1px]">Learn More</h1>
             <h3 className="text-gray-400 text-lg">More than just a Sunday</h3>
             <ul className="mt-2 gap-y-2">
