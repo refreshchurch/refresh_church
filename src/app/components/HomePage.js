@@ -71,7 +71,7 @@ export default function HomePage() {
               draggable="false"
             />
             <div className="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center">
-              <p className="text-white sm:text-7xl text-5xl  font-bold z-100">First Time Here</p>
+              <p className="text-white sm:text-7xl text-5xl font-bold max-[400px]:text-4xl z-100">First Time Here</p>
             </div>
           </Link>
           <Link href="/leadership" className="bg-white shadow-md rounded-2xl w-full aspect-video relative overflow-hidden transform transition-transform duration-350 hover:scale-[1.02]">
@@ -152,6 +152,7 @@ export default function HomePage() {
 
               {events
                 .filter((event) => event.attributes.visibility === "public")
+                .slice(0, 2)
                 .map((event, index) => (
                   <HomeEventCard key={index} event={event} />
                 ))}
@@ -165,20 +166,22 @@ export default function HomePage() {
                     objectFit="cover"
                     className="rounded-full"
                   />
-                </div>
+                <
+/div>
                 <p className="md:text-lg text-md font-semibold md:max-w-[270px] max-w-[170px] w-full">
                   Test Event
                 </p>
                 <ArrowUpRight className="w-7" />
               </Link> */}
-
               {eventsLoading ? (
                 <div className="space-y-4">
-                  {[1, 2, 3, 4].map((i) => (
-                    <div key={i} className="flex items-center gap-5 px-3 py-3 rounded-lg mt-3 animate-pulse">
-                      <div className="overflow-hidden rounded-full bg-gray-200 w-12 h-12"></div>
-                      <p className="text-xl font-semibold max-w-[270px] w-full bg-gray-200 rounded h-6"></p>
-                      <div className="w-7 h-6 bg-gray-200 rounded"></div>
+                  {[1, 2 ].map((i) => (
+                    <div key={i} className="flex items-center gap-5 px-3 py-3 hover:bg-gray-100 rounded-lg cursor-pointer mt-3 animate-pulse">
+                      <div className="overflow-hidden rounded-full w-12 h-12 flex items-center min-w-[48px]">
+                        <div className="w-full h-full bg-gray-200 rounded"></div>
+                      </div>
+                      <div className="md:text-lg text-md font-semibold md:max-w-[270px] max-w-[170px] w-full h-4 bg-gray-200 rounded"></div>
+                      <div className="w-7 h-7 bg-gray-200 rounded"></div>
                     </div>
                   ))}
                 </div>
@@ -202,7 +205,7 @@ export default function HomePage() {
             draggable="false"
           />
           <div className="absolute inset-0 bg-opacity-10 flex items-center justify-center">
-            <p className="text-white sm:text-7xl text-5xl font-bold z-100">Community</p>
+            <p className="text-white sm:text-7xl md:text-4xl lg:text-5xl font-bold z-100">Community</p>
           </div>
         </Link>
         <Link href="/discovery" className="bg-white shadow-md rounded-2xl w-full aspect-video relative overflow-hidden transform transition-transform duration-350 hover:scale-[1.02]">
@@ -214,7 +217,7 @@ export default function HomePage() {
             draggable="false"
           />
           <div className="absolute inset-0  bg-opacity-10 flex items-center justify-center">
-            <p className="text-white sm:text-7xl text-5xl font-bold z-100">Discovery</p>
+            <p className="text-white sm:text-7xl md:text-4xl lg:text-5xl font-bold z-100">Discovery</p>
           </div>
         </Link>
 
