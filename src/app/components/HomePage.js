@@ -220,7 +220,6 @@ export default function HomePage() {
             <p className="text-white text-5xl sm:text-7xl md:text-4xl lg:text-5xl font-bold z-100">Discovery</p>
           </div>
         </Link>
-
       </div>
     </div>
   );

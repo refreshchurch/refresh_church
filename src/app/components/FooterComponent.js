@@ -58,11 +58,39 @@ export default function FooterComponent() {
           </div>
         </div>
       </footer> */}
-      <footer className="bg-white antialiased dark:bg-gray-800">
+      <footer className="bg-white antialiased dark:bg-gray-800 ">
+        <div className="container mx-auto px-2 sm:px-4 pt-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <Link href="https://maps.app.goo.gl/QVoYXC8LbYkQkN3s7" target="_blank" rel="noopener noreferrer" className="bg-white shadow-md rounded-2xl w-full aspect-video relative overflow-hidden transform transition-transform duration-350 hover:scale-[1.02] flex items-center justify-center">
+              <Image
+                src="/photos/maps/small-church.png"
+                layout="fill"
+                objectFit="cover"
+                alt="Dark Blue Background"
+                draggable="false"
+              />
+              <div className="absolute bg-primary text-white text-md font-semibold py-3 px-4 rounded-lg hover:bg-primaryDark transition duration-300 ease-in-out">
+                Sunday Service Directions
+              </div>
+            </Link>
+            <Link href="https://maps.app.goo.gl/tttX16azxxXtdhbb9" target="_blank" rel="noopener noreferrer" className="bg-white shadow-md rounded-2xl w-full aspect-video relative overflow-hidden transform transition-transform duration-350 hover:scale-[1.02] flex items-center justify-center">
+              <Image
+                src="/photos/maps/small-hq.png"
+                layout="fill"
+                objectFit="cover"
+                alt="Dark Blue Background"
+                draggable="false"
+              />
+              <div className="absolute bg-primary text-white text-md font-semibold py-3 px-4 rounded-lg hover:bg-primaryDark transition duration-300 ease-in-out">
+              Refresh HQ Directions
+              </div>
+            </Link>
+          </div>
+        </div>
         <div className="mx-auto max-w-screen-xl px-4 2xl:px-0">
           <div className="border-b border-gray-100 py-6 dark:border-gray-700 md:py-8">
             <div className="space-y-4 flex lg:items-center lg:gap-4 lg:space-y-0">
-              <div className="w-full gap-4 md:flex md:items-center md:gap-8">
+              <div className="w-full gap-4 md:flex md:items-center justify-between md:gap-8">
                 <a href="/" title="">
                   <Image
                     src='/photos/logo.webp'
@@ -72,29 +100,29 @@ export default function FooterComponent() {
                     className="h-auto"
                   />
                 </a>
-                {/* Maps Desktop */}
+                {/* Maps Desktop
                 <div className="mt-4 w-full md:mt-0 lg:block hidden">
                   <div className="flex flex-wrap items-center gap-4 text-sm font-medium xl:justify-center">
                     <a href="https://maps.app.goo.gl/QVoYXC8LbYkQkN3s7" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center h-auto hover:scale-105 transition duration-300 ease-in-out hover:cursor-pointer rounded-lg overflow-hidden">
-                      <Image src='/photos/maps/small-church.png' alt="Refresh Logo" width={138} height={100} className="h-auto" />
+                      <Image src='/photos/maps/small-church.png' alt="Refresh Logo" width={200} height={100} className="h-auto" />
                     </a>
                     <Link href="https://maps.app.goo.gl/QVoYXC8LbYkQkN3s7" target="_blank" rel="noopener noreferrer">
                       <div className="inline-block bg-primary text-white text-md font-semibold py-3 px-4 rounded-lg hover:bg-primaryDark transition duration-300 ease-in-out">
-                      Sunday Service Directions
+                        Sunday Service Directions
                       </div>
                     </Link>
                     <div className="h-1.5 w-1.5 rounded-full bg-gray-300 dark:bg-gray-600 hidden sm:block"></div>
-                    <Link href="https://maps.app.goo.gl/tttX16azxxXtdhbb9" target="_blank" rel="noopener noreferrer">
+                    <Link href=" " target="_blank" rel="noopener noreferrer">
                       <div className="inline-block bg-primary text-white text-md font-semibold py-3 px-4 rounded-lg hover:bg-primaryDark transition duration-300 ease-in-out">
-                      Refresh HQ Directions
+                        Refresh HQ Directions
                       </div>
                     </Link>
                     <a href="https://maps.app.goo.gl/tttX16azxxXtdhbb9" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center h-auto hover:scale-105 transition duration-300 ease-in-out hover:cursor-pointer rounded-lg overflow-hidden">
-                      <Image src='/photos/maps/small-hq.png' alt="Refresh HQ Map" width={138} height={100} className="h-auto" />
+                      <Image src='/photos/maps/small-hq.png' alt="Refresh HQ Map" width={200} height={100} className="h-auto" />
                     </a>
                   </div>
                 </div>
-                {/* Maps Desktop */}
+                Maps Desktop
                 <div className="mt-4 w-full md:mt-0 block lg:hidden">
                   <div className="flex flex-col md:flex-row items-center gap-4 text-sm font-medium xl:justify-center">
                     <div className="flex flex-col items-center gap-2 w-full md:w-1/2">
@@ -118,7 +146,7 @@ export default function FooterComponent() {
                       </a>
                     </div>
                   </div>
-                </div>
+                </div> */}
                 <div className="flex space-x-4 md:pt-0 pt-3">
                   <a href='https://www.instagram.com/refreshchurchtv/' target="_blank" rel="noopener noreferrer">
                     <svg className=" w-8 h-8 text-gray-600 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
