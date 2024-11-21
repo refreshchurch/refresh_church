@@ -11,87 +11,15 @@ export default function FooterComponent() {
   return (
     <>
       {/* OLD Footer */}
-      {/* <footer className="bg-gray-50 dark:bg-gray-800 py-8 shadow-sm mt-10">
-        <div className="max-w-screen-xl mx-auto px-4 md:px-8 lg:px-10">
-          <div className="flex flex-col items-start border-b pb-6 sm:flex-row sm:items-center sm:justify-around sm:ms-0 ms-10">
-            <p className="text-gray-700 dark:text-gray-400">
-              <strong>During the Week</strong><br />
-              Refresh HQ
-              <a href="https://maps.app.goo.gl/tttX16azxxXtdhbb9" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline ml-2">Get Directions</a>
-            </p>
-            <p className="text-gray-700 dark:text-gray-400">
-              <strong>Sunday’s at 9:00 AM & 10:30 AM</strong><br />
-              Owyhee High School
-              <a href="https://maps.app.goo.gl/QVoYXC8LbYkQkN3s7" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline ml-2">Get Directions</a>
-            </p>
-
-            <div className="flex space-x-4">
-              <a href='https://www.instagram.com/refreshchurchtv/' target="_blank" rel="noopener noreferrer">
-                <svg className=" w-8 h-8 text-gray-600 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                  <path fill="currentColor" fillRule="evenodd" d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z" clipRule="evenodd" />
-                </svg>
-              </a>
-
-              <a href="https://www.facebook.com/myrefreshchurch" target="_blank" rel="noopener noreferrer">
-                <svg className="pb-0.5 w-8 h-8 text-gray-600 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                  <path fillRule="evenodd" d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z" clipRule="evenodd" />
-                </svg>
-              </a>
-
-              <a href="https://www.youtube.com/@refreshchurchtv" target="_blank" rel="noopener noreferrer">
-                <svg className="w-8 h-8 text-gray-600 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                  <path fillRule="evenodd" d="M21.7 8.037a4.26 4.26 0 0 0-.789-1.964 2.84 2.84 0 0 0-1.984-.839c-2.767-.2-6.926-.2-6.926-.2s-4.157 0-6.928.2a2.836 2.836 0 0 0-1.983.839 4.225 4.225 0 0 0-.79 1.965 30.146 30.146 0 0 0-.2 3.206v1.5a30.12 30.12 0 0 0 .2 3.206c.094.712.364 1.39.784 1.972.604.536 1.38.837 2.187.848 1.583.151 6.731.2 6.731.2s4.161 0 6.928-.2a2.844 2.844 0 0 0 1.985-.84 4.27 4.27 0 0 0 .787-1.965 30.12 30.12 0 0 0 .2-3.206v-1.516a30.672 30.672 0 0 0-.202-3.206Zm-11.692 6.554v-5.62l5.4 2.819-5.4 2.801Z" clipRule="evenodd" />
-                </svg>
-              </a>
-            </div>
-          </div>
-
-          <div className="flex flex-wrap justify-center items-center text-sm font-medium text-gray-700 dark:text-gray-400 space-x-4 pb-4 mt-2">
-            <a href="/copyright" className="hover:underline">Copyright Notice</a>
-            <a href="/disclaimer" className="hover:underline">Disclaimer</a>
-            <a href="/privacy-policy" className="hover:underline">Privacy Policy</a>
-            <a href="/terms-and-conditions" className="hover:underline">Terms and Conditions</a>
-          </div>
-          
-          <div className="text-center text-sm text-gray-500 dark:text-gray-400">
-            <p>All rights reserved. ©2024</p>
-          </div>
-        </div>
-      </footer> */}
       <footer className="bg-white antialiased dark:bg-gray-800 ">
-        <div className="container mx-auto px-2 sm:px-4 pt-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <Link href="https://maps.app.goo.gl/QVoYXC8LbYkQkN3s7" target="_blank" rel="noopener noreferrer" className="bg-white shadow-md rounded-2xl w-full aspect-video relative overflow-hidden transform transition-transform duration-350 hover:scale-[1.02] flex items-center justify-center">
-              <Image
-                src="/photos/maps/small-church.png"
-                layout="fill"
-                objectFit="cover"
-                alt="Dark Blue Background"
-                draggable="false"
-              />
-              <div className="absolute bg-primary text-white text-md font-semibold py-3 px-4 rounded-lg hover:bg-primaryDark transition duration-300 ease-in-out">
-                Sunday Service Directions
-              </div>
-            </Link>
-            <Link href="https://maps.app.goo.gl/tttX16azxxXtdhbb9" target="_blank" rel="noopener noreferrer" className="bg-white shadow-md rounded-2xl w-full aspect-video relative overflow-hidden transform transition-transform duration-350 hover:scale-[1.02] flex items-center justify-center">
-              <Image
-                src="/photos/maps/small-hq.png"
-                layout="fill"
-                objectFit="cover"
-                alt="Dark Blue Background"
-                draggable="false"
-              />
-              <div className="absolute bg-primary text-white text-md font-semibold py-3 px-4 rounded-lg hover:bg-primaryDark transition duration-300 ease-in-out">
-              Refresh HQ Directions
-              </div>
-            </Link>
-          </div>
-        </div>
+
+
         <div className="mx-auto max-w-screen-xl px-4 2xl:px-0">
           <div className="border-b border-gray-100 py-6 dark:border-gray-700 md:py-8">
             <div className="space-y-4 flex lg:items-center lg:gap-4 lg:space-y-0">
-              <div className="w-full gap-4 md:flex md:items-center justify-between md:gap-8">
-                <a href="/" title="">
+              {/* OLD top bar w/ old maps */}
+              {/* <div className="w-full gap-4 md:flex md:items-center justify-between md:gap-8">
+                <Link href="/" title="">
                   <Image
                     src='/photos/logo.webp'
                     alt="Refresh Logo"
@@ -99,8 +27,8 @@ export default function FooterComponent() {
                     height={100}
                     className="h-auto"
                   />
-                </a>
-                {/* Maps Desktop
+                </Link>
+                old Maps Desktop
                 <div className="mt-4 w-full md:mt-0 lg:block hidden">
                   <div className="flex flex-wrap items-center gap-4 text-sm font-medium xl:justify-center">
                     <a href="https://maps.app.goo.gl/QVoYXC8LbYkQkN3s7" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center h-auto hover:scale-105 transition duration-300 ease-in-out hover:cursor-pointer rounded-lg overflow-hidden">
@@ -120,9 +48,10 @@ export default function FooterComponent() {
                     <a href="https://maps.app.goo.gl/tttX16azxxXtdhbb9" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center h-auto hover:scale-105 transition duration-300 ease-in-out hover:cursor-pointer rounded-lg overflow-hidden">
                       <Image src='/photos/maps/small-hq.png' alt="Refresh HQ Map" width={200} height={100} className="h-auto" />
                     </a>
+
                   </div>
                 </div>
-                Maps Desktop
+                old Maps Desktop
                 <div className="mt-4 w-full md:mt-0 block lg:hidden">
                   <div className="flex flex-col md:flex-row items-center gap-4 text-sm font-medium xl:justify-center">
                     <div className="flex flex-col items-center gap-2 w-full md:w-1/2">
@@ -146,7 +75,7 @@ export default function FooterComponent() {
                       </a>
                     </div>
                   </div>
-                </div> */}
+                </div>
                 <div className="flex space-x-4 md:pt-0 pt-3">
                   <a href='https://www.instagram.com/refreshchurchtv/' target="_blank" rel="noopener noreferrer">
                     <svg className=" w-8 h-8 text-gray-600 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -165,6 +94,67 @@ export default function FooterComponent() {
                       <path fillRule="evenodd" d="M21.7 8.037a4.26 4.26 0 0 0-.789-1.964 2.84 2.84 0 0 0-1.984-.839c-2.767-.2-6.926-.2-6.926-.2s-4.157 0-6.928.2a2.836 2.836 0 0 0-1.983.839 4.225 4.225 0 0 0-.79 1.965 30.146 30.146 0 0 0-.2 3.206v1.5a30.12 30.12 0 0 0 .2 3.206c.094.712.364 1.39.784 1.972.604.536 1.38.837 2.187.848 1.583.151 6.731.2 6.731.2s4.161 0 6.928-.2a2.844 2.844 0 0 0 1.985-.84 4.27 4.27 0 0 0 .787-1.965 30.12 30.12 0 0 0 .2-3.206v-1.516a30.672 30.672 0 0 0-.202-3.206Zm-11.692 6.554v-5.62l5.4 2.819-5.4 2.801Z" clipRule="evenodd" />
                     </svg>
                   </a>
+                </div>
+              </div> */}
+              {/* New top bar with new maps */}
+              <div className="container mx-auto px-2 sm:px-4">
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-4 ">
+
+                  <Link href="/" title="" className="flex items-center justify-start">
+                    <Image
+                      src='/photos/logo.webp'
+                      alt="Refresh Logo"
+                      width={138}
+                      height={100}
+                      className="h-auto"
+                    />
+                  </Link>
+
+                  <Link href="https://maps.app.goo.gl/QVoYXC8LbYkQkN3s7" target="_blank" rel="noopener noreferrer" className="bg-white shadow-md rounded-2xl aspect-video relative overflow-hidden transform transition-transform duration-350 hover:scale-[1.02] flex items-center justify-center md:h-full md:w-full h-3/4 w-3/4">
+                    <Image
+                      src="/photos/maps/small-church.png"
+                      layout="fill"
+                      objectFit="cover"
+                      alt="Dark Blue Background"
+                      draggable="false"
+                    />
+                    <div className="absolute bg-primary text-white text-sm lg:text-md font-semibold py-3 px-4 rounded-lg hover:bg-primaryDark transition duration-300 ease-in-out">
+                      Sunday Service Directions
+                    </div>
+                  </Link>
+
+                  <Link href="https://maps.app.goo.gl/tttX16azxxXtdhbb9" target="_blank" rel="noopener noreferrer" className="bg-white shadow-md rounded-2xl aspect-video relative overflow-hidden transform transition-transform duration-350 hover:scale-[1.02] flex items-center justify-center md:h-full md:w-full h-3/4 w-3/4">
+                    <Image
+                      src="/photos/maps/small-hq.png"
+                      layout="fill"
+                      objectFit="cover"
+                      alt="Dark Blue Background"
+                      draggable="false"
+                    />
+                    <div className="absolute bg-primary text-white text-sm lg:text-md font-semibold py-3 px-4 rounded-lg hover:bg-primaryDark transition duration-300 ease-in-out">
+                      Refresh HQ Directions
+                    </div>
+                  </Link>
+
+                  <div className="flex md:justify-end justify-start items-center space-x-4 md:pt-0 pt-3">
+                    <a href='https://www.instagram.com/refreshchurchtv/' target="_blank" rel="noopener noreferrer">
+                      <svg className=" w-8 h-8 text-gray-600 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path fill="currentColor" fillRule="evenodd" d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z" clipRule="evenodd" />
+                      </svg>
+                    </a>
+
+                    <a href="https://www.facebook.com/myrefreshchurch" target="_blank" rel="noopener noreferrer">
+                      <svg className="pb-0.5 w-8 h-8 text-gray-600 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path fillRule="evenodd" d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z" clipRule="evenodd" />
+                      </svg>
+                    </a>
+
+                    <a href="https://www.youtube.com/@refreshchurchtv" target="_blank" rel="noopener noreferrer">
+                      <svg className="w-8 h-8 text-gray-600 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path fillRule="evenodd" d="M21.7 8.037a4.26 4.26 0 0 0-.789-1.964 2.84 2.84 0 0 0-1.984-.839c-2.767-.2-6.926-.2-6.926-.2s-4.157 0-6.928.2a2.836 2.836 0 0 0-1.983.839 4.225 4.225 0 0 0-.79 1.965 30.146 30.146 0 0 0-.2 3.206v1.5a30.12 30.12 0 0 0 .2 3.206c.094.712.364 1.39.784 1.972.604.536 1.38.837 2.187.848 1.583.151 6.731.2 6.731.2s4.161 0 6.928-.2a2.844 2.844 0 0 0 1.985-.84 4.27 4.27 0 0 0 .787-1.965 30.12 30.12 0 0 0 .2-3.206v-1.516a30.672 30.672 0 0 0-.202-3.206Zm-11.692 6.554v-5.62l5.4 2.819-5.4 2.801Z" clipRule="evenodd" />
+                      </svg>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
