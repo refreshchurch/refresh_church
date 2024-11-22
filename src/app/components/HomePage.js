@@ -249,7 +249,7 @@ export default function HomePage() {
       <div className="flex flex-wrap gap-4 justify-center mb-4">
         <div className="bg-white shadow-md rounded-2xl w-full h-[200px] sm:h-[300px] lg:h-[350px] relative overflow-hidden">
           <Image
-            src='/photos/verse.jpg'
+            src='/photos/home/verse.webp'
             layout="fill"
             objectFit="cover"
             alt="Leadership Image"
@@ -257,10 +257,6 @@ export default function HomePage() {
           />
           <div className="absolute inset-0 bg-black bg-opacity-0 flex items-center justify-end flex-col mb-[23px]">
             <Link href="/connect">
-              {/* blue button */}
-              {/* <button className="bg-primary text-white text-md font-semibold px-6 py-3 rounded-full hover:bg-primaryDark transition duration-300 ease-in-out">
-                Learn More
-              </button> */}
               <button className="bg-white text-black text-md font-semibold px-5 py-2 rounded-full hover:text-white hover:bg-primaryDark transition duration-300 ease-in-out">
                 Learn More
               </button>
