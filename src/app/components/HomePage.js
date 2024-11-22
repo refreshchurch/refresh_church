@@ -55,7 +55,6 @@ export default function HomePage() {
             className='absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100'
           >
             <source src="/videos/landing-page.webm" type="video/webm" />
-            <source src="/videos/landing-page.mp4" type="video/mp4" />
             {/* Fallback for unsupported browsers */}
             Your browser does not support the video tag.
           </video>
