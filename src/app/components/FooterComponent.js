@@ -18,7 +18,7 @@ export default function FooterComponent() {
           <div className="border-b border-gray-100 py-6 dark:border-gray-700 md:py-8">
             <div className="space-y-4 flex lg:items-center lg:gap-4 lg:space-y-0">
               {/* OLD top bar w/ old maps */}
-              {/* <div className="w-full gap-4 md:flex md:items-center justify-between md:gap-8">
+              <div className="w-full gap-4 md:flex md:items-center justify-between md:gap-8">
                 <Link href="/" title="">
                   <Image
                     src='/photos/logo.webp'
@@ -28,8 +28,8 @@ export default function FooterComponent() {
                     className="h-auto"
                   />
                 </Link>
-                old Maps Desktop
-                <div className="mt-4 w-full md:mt-0 lg:block hidden">
+                {/* old Maps Desktop */}
+                <div className="mt-4 w-full md:mt-0 min-[1214px]:block hidden">
                   <div className="flex flex-wrap items-center gap-4 text-sm font-medium xl:justify-center">
                     <a href="https://maps.app.goo.gl/QVoYXC8LbYkQkN3s7" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center h-auto hover:scale-105 transition duration-300 ease-in-out hover:cursor-pointer rounded-lg overflow-hidden">
                       <Image src='/photos/maps/small-church.png' alt="Refresh Logo" width={200} height={100} className="h-auto" />
@@ -51,8 +51,8 @@ export default function FooterComponent() {
 
                   </div>
                 </div>
-                old Maps Desktop
-                <div className="mt-4 w-full md:mt-0 block lg:hidden">
+                {/* old Maps Desktop */}
+                <div className="mt-4 w-full md:mt-0 block min-[1214px]:hidden">
                   <div className="flex flex-col md:flex-row items-center gap-4 text-sm font-medium xl:justify-center">
                     <div className="flex flex-col items-center gap-2 w-full md:w-1/2">
                       <Link href="https://maps.app.goo.gl/QVoYXC8LbYkQkN3s7" target="_blank" rel="noopener noreferrer">
@@ -95,9 +95,9 @@ export default function FooterComponent() {
                     </svg>
                   </a>
                 </div>
-              </div> */}
+              </div>
               {/* New top bar with new maps */}
-              <div className="container mx-auto px-2 sm:px-4">
+              {/* <div className="container mx-auto px-2 sm:px-4">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-4 ">
 
                   <Link href="/" title="" className="flex items-center justify-start">
@@ -156,7 +156,7 @@ export default function FooterComponent() {
                     </a>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="py-6 md:py-8 lg:py-16">

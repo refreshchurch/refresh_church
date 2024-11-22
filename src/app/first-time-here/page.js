@@ -17,13 +17,13 @@ export default function FirstTimeHere() {
           src='/photos/first-time-here/first-time-here.webp'
           layout="fill"
           objectFit="cover"
-          objectPosition="0 35%"
+          objectPosition="center"
           alt="Leadership Image"
           draggable="false"
 
         />
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-          <h1 className="text-white sm:text-7xl text-5xl font-bold max-[400px]:text-4xl z-100">First Time Here?</h1>
+          <h1 className="text-white sm:text-7xl text-5xl font-bold max-[473px]:text-4xl z-100">First Time Here?</h1>
         </div>
       </div>
 
