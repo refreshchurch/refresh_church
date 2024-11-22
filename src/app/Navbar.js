@@ -5,6 +5,7 @@ import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
+// import { serverHooks } from 'next/dist/server/app-render/entry-base';
 
 export default function Navbar() {
   const [dropdown, setDropdown] = useState(null);
@@ -44,6 +45,7 @@ export default function Navbar() {
   const handleLinkClick = () => {
     console.log("handleLinkClick")
     setDropdown(null); // Close the dropdown
+    setMobileMenu(false);
   };
 
   return (
