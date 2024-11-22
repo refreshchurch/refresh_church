@@ -3,7 +3,7 @@ import "./globals.css";
 import Navbar from "./Navbar";
 import FooterComponent from "./components/FooterComponent.js"
 import { Analytics } from "@vercel/analytics/react"
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 import { Montserrat } from "next/font/google";
 
