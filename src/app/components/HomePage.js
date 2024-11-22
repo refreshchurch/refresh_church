@@ -9,11 +9,7 @@ import { useState, useEffect } from "react";
 export default function HomePage() {
   const [events, setEvents] = useState([]);
   const [eventsLoading, setEventsLoading] = useState(true);
-  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
 
-  const handleVideoLoad = () => {
-    setIsVideoLoaded(true);
-  };
 
   useEffect(() => {
     const fetchEvents = async () => {
@@ -40,6 +36,7 @@ export default function HomePage() {
       {/* Main */}
       <div className="flex flex-wrap gap-4 justify-center mb-4">
         <div className="bg-white shadow-md rounded-2xl w-full sm:aspect-17/9 aspect-square relative overflow-hidden">
+          {/* Old Image */}
           {/* <Image
             src='/photos/home/church-life-3.webp'
             layout="fill"
@@ -47,17 +44,7 @@ export default function HomePage() {
             alt="Church life Image"
             draggable="false"
           /> */}
-          {/* Placeholder Image */}
-          {/* {!isVideoLoaded && (
-            <Image
-              src="/photos/background/DarkBlue16_9.webp"
-              layout="fill"
-              objectFit="cover"
-              draggable="false"
-              alt="Background placeholder"
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-          )} */}
+
           {/* Background Video */}
           <video
             autoPlay
@@ -65,9 +52,6 @@ export default function HomePage() {
             loop
             playsInline
             preload="auto"
-            // onCanPlayThrough={handleVideoLoad}
-            // className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${isVideoLoaded ? 'opacity-100' : 'opacity-0'
-            //   }`}
             className='absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100'
           >
             <source src="/videos/landing-page.webm" type="video/webm" />
