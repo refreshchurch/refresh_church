@@ -38,7 +38,7 @@ export default function FirstTimeHere() {
             </p>
             <div className="flex justify-end mt-4">
               <Link href="https://maps.app.goo.gl/QVoYXC8LbYkQkN3s7">
-                <button className="flex items-center bg-primary text-white text-sm font-semibold py-2.5 px-6 rounded-full hover:bg-primaryDark transition duration-300 ease-in-out">
+                <button className="flex items-center bg-primaryDark text-white text-sm font-semibold py-2.5 px-6 rounded-full hover:bg-primary transition duration-300 ease-in-out">
                   Get Directions
                   <svg
                     className="w-4 h-4 ms-2 text-white"
@@ -71,7 +71,7 @@ export default function FirstTimeHere() {
             </div>
             <div className="flex justify-end mt-4">
               <Link href="/refresh-youth">
-                <button className="flex items-center bg-primary text-white text-sm font-semibold py-2.5 px-6 rounded-full hover:bg-primaryDark transition duration-300 ease-in-out">
+                <button className="flex items-center bg-primaryDark text-white text-sm font-semibold py-2.5 px-6 rounded-full hover:bg-primary transition duration-300 ease-in-out">
                   Preregister
                   <svg
                     className="w-4 h-4 ms-2 text-white"
@@ -111,7 +111,7 @@ export default function FirstTimeHere() {
             </div>
             <div className="flex justify-end mt-4">
               <Link href="/refresh-youth">
-                <button className="flex items-center bg-primary text-white text-sm font-semibold py-2.5 px-6 rounded-full hover:bg-primaryDark transition duration-300 ease-in-out">
+                <button className="flex items-center bg-primaryDark text-white text-sm font-semibold py-2.5 px-6 rounded-full hover:bg-primary transition duration-300 ease-in-out">
                   Learn more
                   <svg
                     className="w-4 h-4 ms-2 text-white"

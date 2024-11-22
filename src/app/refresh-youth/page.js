@@ -16,7 +16,7 @@ export default function YouthMinistry() {
           <p className="text-gray-700 text-lg mb-6">
             We believe ministering to the next generation is one of the most important ministries here at Refresh Church.
           </p>
-          <Link href="https://refresh.churchcenter.com/groups/small-groups/youth-small-group" className="inline-block bg-primary text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-primaryDark transition duration-300 ease-in-out">
+          <Link href="https://refresh.churchcenter.com/groups/small-groups/youth-small-group" className="inline-block bg-primaryDark text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-primary transition duration-300 ease-in-out">
             Join Us at The Well
           </Link>
         </div>
@@ -64,7 +64,7 @@ export default function YouthMinistry() {
           <p className="text-gray-700 text-lg mb-6">
             We believe in the power of community. Our youth leaders recognize that they have a unique influence in the lives of the middle and high school students they serve. Their goal is to encourage authentic faith as they invest in a relationship with your student(s) and help them build a relationship with Jesus and others around them.
           </p>
-          <Link href="https://refresh.churchcenter.com/groups/small-groups/youth-small-group" className="inline-block bg-primary text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-primaryDark transition duration-300 ease-in-out">
+          <Link href="https://refresh.churchcenter.com/groups/small-groups/youth-small-group" className="inline-block bg-primaryDark text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-primary transition duration-300 ease-in-out">
             Join Us for Youth Night
           </Link>
         </div>

@@ -35,13 +35,13 @@ export default function FooterComponent() {
                       <Image src='/photos/maps/small-church.png' alt="Refresh Logo" width={200} height={100} className="h-auto" />
                     </a>
                     <Link href="https://maps.app.goo.gl/QVoYXC8LbYkQkN3s7" target="_blank" rel="noopener noreferrer">
-                      <div className="inline-block bg-primary text-white text-md font-semibold py-3 px-4 rounded-lg hover:bg-primaryDark transition duration-300 ease-in-out">
+                      <div className="inline-block bg-primaryDark text-white text-md font-semibold py-3 px-4 rounded-lg hover:bg-primary transition duration-300 ease-in-out">
                         Sunday Service Directions
                       </div>
                     </Link>
                     <div className="h-1.5 w-1.5 rounded-full bg-gray-300 dark:bg-gray-600 hidden sm:block"></div>
                     <Link href=" " target="_blank" rel="noopener noreferrer">
-                      <div className="inline-block bg-primary text-white text-md font-semibold py-3 px-4 rounded-lg hover:bg-primaryDark transition duration-300 ease-in-out">
+                      <div className="inline-block bg-primaryDark text-white text-md font-semibold py-3 px-4 rounded-lg hover:bg-primary transition duration-300 ease-in-out">
                         Refresh HQ Directions
                       </div>
                     </Link>

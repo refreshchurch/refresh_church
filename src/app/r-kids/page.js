@@ -33,7 +33,8 @@ export default function KidMinistry() {
         }}
       >
         {/* Text content with its own background */}
-        <div className="relative z-10 text-black bg-[#daedec] rounded-xl p-6 max-w-3xl mx-auto">
+        {/* Old color top bg color : bg-[#daedec] */}
+        <div className="relative z-10 text-black bg-primaryDark text-white rounded-xl p-6 max-w-3xl mx-auto">
           <h3 className="text-2xl font-bold mb-4">Welcome to Our Kids Ministry</h3>
           <p className="text-lg">
             We believe ministry to children is one of the most important ministries here at Refresh Church.
@@ -70,7 +71,7 @@ export default function KidMinistry() {
         <div className="mb-12 flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2 h-[250px] relative overflow-hidden rounded-2xl shadow-lg mb-6 lg:mb-0">
             <Image
-              src='/photos/home/r-kids-desktop.webp'
+              src='/photos/kids/r-kids.webp'
               layout="fill"
               objectFit="cover"
               alt="Nursery"
@@ -131,7 +132,7 @@ export default function KidMinistry() {
         <p className="text-gray-700 text-lg mb-6 ">
           Are you passionate about working with children and helping them grow in their faith? We're always looking for dedicated volunteers to join our team. Get involved and make a difference in the lives of our kids today!
         </p>
-        <Link href="https://refresh.churchcenter.com/people/forms/301611" className="inline-block bg-primary text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-primaryDark transition duration-300 ease-in-out">
+        <Link href="https://refresh.churchcenter.com/people/forms/301611" className="inline-block bg-primaryDark text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-primary transition duration-300 ease-in-out">
           Join the Team
         </Link>
       </div>

@@ -16,7 +16,7 @@ export default function MensMinistry() {
           <p className="text-gray-700 text-lg mb-6">
           Women’s Ministry is the active pursuit of women in order to connect to God, His Word, and other women for the purpose of winning and growing in Christ.
           </p>
-          <Link href="/events" className="inline-block bg-primary text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-primaryDark transition duration-300 ease-in-out">
+          <Link href="/events" className="inline-block bg-primaryDark text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-primary transition duration-300 ease-in-out">
             Explore Upcoming Events
           </Link>
         </div>
@@ -63,7 +63,7 @@ export default function MensMinistry() {
           <p className="text-gray-700 text-lg mb-6">
           Whether we are crafting, hearing from other ladies of God about how He has moved in their life, or sharing stories over a cup of coffee, we have multiple ways in which other women can get connected to a community of Godly women.
           </p>
-          <Link href="/events" className="inline-block bg-primary text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-primaryDark transition duration-300 ease-in-out">
+          <Link href="/events" className="inline-block bg-primaryDark text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-primary transition duration-300 ease-in-out">
             View Upcoming Events
           </Link>
         </div>

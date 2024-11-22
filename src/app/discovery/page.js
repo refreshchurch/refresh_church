@@ -15,7 +15,7 @@ export default function Discovery() {
         <p className="text-gray-700 text-lg mb-6 text-left">
         Discovery classes are a great next-step for anyone who just committed their life to Christ, or are new to the church! The Discovery Process is a 4-part journey in which we will help you to find the purpose that God has for you. Because we believe that when you are living in the calling that He has on your life, you will live the most fulfilled life possible.
         </p>
-        <Link href="https://refresh.churchcenter.com/registrations/events/category/41297" className="inline-block bg-primary text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-primaryDark transition duration-300 ease-in-out">
+        <Link href="https://refresh.churchcenter.com/registrations/events/category/41297" className="inline-block bg-primaryDark text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-primary transition duration-300 ease-in-out">
           Sign Up for Discovery
         </Link>
       </div>

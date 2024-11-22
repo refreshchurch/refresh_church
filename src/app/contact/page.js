@@ -22,13 +22,13 @@ export default function Contact() {
     <>
       <div className="container mx-auto px-8 sm:px-36 py-12">
         {/* Enhanced Top Section */}
-        <div className="bg-primaryLight dark:bg-gray-800 rounded-2xl shadow-lg p-8 mb-12 flex flex-col sm:flex-row items-center justify-between text-center sm:text-left">
+        <div className="bg-primaryDark dark:bg-gray-800 rounded-2xl shadow-lg p-8 mb-12 flex flex-col sm:flex-row items-center justify-between text-center sm:text-left">
           <div className="mb-4 sm:mb-0">
             <h2 className="text-4xl font-bold text-white dark:text-white tracking-tighter sm:text-4xl md:text-5xl">Let's Connect</h2>
             <p className="text-xl text-gray-200 dark:text-gray-300">We’d love to get to know you.</p>
           </div>
           <Link href="https://refresh.churchcenter.com/people/forms/214918" target="_blank" rel="noopener noreferrer">
-            <div className="inline-block bg-primary text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-primaryDark transition duration-300 ease-in-out">
+            <div className="inline-block bg-primary text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-primaryLight transition duration-300 ease-in-out">
               Get in Touch
             </div>
           </Link>

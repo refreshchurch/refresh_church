@@ -16,7 +16,7 @@ export default function MensMinistry() {
           <p className="text-gray-700 text-lg mb-6">
           Men’s Ministry is the active pursuit of men in order to connect to God, His Word, and other men for the purpose of winning and growing in Christ.
           </p>
-          <Link href="/events" className="inline-block bg-primary text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-primaryDark transition duration-300 ease-in-out">
+          <Link href="/events" className="inline-block bg-primaryDark text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-primary transition duration-300 ease-in-out">
             Explore Upcoming Events
           </Link>
         </div>
@@ -61,7 +61,7 @@ export default function MensMinistry() {
           <p className="text-gray-700 text-lg mb-6">
             "Six-one-one,” is a program designed for men who dare to pursue a biblical worldview and live it out with unwavering conviction. We’re seeking those who hunger for more, who yearn to live a life of significance, anchored in who God has called them to be. If you are interested, sign up here!
           </p>
-          <Link href="https://refresh.churchcenter.com/people/forms/661960" className="inline-block bg-primary text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-primaryDark transition duration-300 ease-in-out">
+          <Link href="https://refresh.churchcenter.com/people/forms/661960" className="inline-block bg-primaryDark text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-primary transition duration-300 ease-in-out">
             View Application
           </Link>
         </div>
