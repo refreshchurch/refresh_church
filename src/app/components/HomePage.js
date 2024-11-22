@@ -9,6 +9,11 @@ import { useState, useEffect } from "react";
 export default function HomePage() {
   const [events, setEvents] = useState([]);
   const [eventsLoading, setEventsLoading] = useState(true);
+  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
+
+  const handleVideoLoad = () => {
+    setIsVideoLoaded(true);
+  };
 
   useEffect(() => {
     const fetchEvents = async () => {
@@ -35,13 +40,41 @@ export default function HomePage() {
       {/* Main */}
       <div className="flex flex-wrap gap-4 justify-center mb-4">
         <div className="bg-white shadow-md rounded-2xl w-full sm:aspect-17/9 aspect-square relative overflow-hidden">
-          <Image
+          {/* <Image
             src='/photos/home/church-life-3.webp'
             layout="fill"
             objectFit="cover"
             alt="Church life Image"
             draggable="false"
-          />
+          /> */}
+          {/* Placeholder Image */}
+          {/* {!isVideoLoaded && (
+            <Image
+              src="/photos/background/DarkBlue16_9.webp"
+              layout="fill"
+              objectFit="cover"
+              draggable="false"
+              alt="Background placeholder"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+          )} */}
+          {/* Background Video */}
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
+            // onCanPlayThrough={handleVideoLoad}
+            // className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${isVideoLoaded ? 'opacity-100' : 'opacity-0'
+            //   }`}
+            className='absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100'
+          >
+            <source src="/videos/landing-page.webm" type="video/webm" />
+            <source src="/videos/landing-page.mp4" type="video/mp4" />
+            {/* Fallback for unsupported browsers */}
+            Your browser does not support the video tag.
+          </video>
           <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center flex-col">
             <Image
               src="/photos/white-logo.webp"
@@ -193,6 +226,9 @@ export default function HomePage() {
 
       </div>
 
+      {/*TODO: consistant colors throughout, map buttons need to be dark */}
+      {/* Try new maps, cut new card is half height wise */}
+
       <div className="flex flex-wrap gap-4 justify-center mb-4">
         <div className="bg-white shadow-md rounded-2xl w-full sm:aspect-17/9 aspect-square relative overflow-hidden">
           <Image
@@ -238,7 +274,7 @@ export default function HomePage() {
           />
           <div className="absolute inset-0 bg-black bg-opacity-0 flex items-center justify-center flex-col mt-[400px]">
             <Link href="/connect">
-            {/* blue button */}
+              {/* blue button */}
               {/* <button className="bg-primary text-white text-md font-semibold px-6 py-3 rounded-full hover:bg-primaryDark transition duration-300 ease-in-out">
                 Learn More
               </button> */}
