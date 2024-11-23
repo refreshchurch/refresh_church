@@ -67,7 +67,15 @@ export default function HomePage() {
               alt="logo Image"
               draggable="false"
             />
-            <Link href="/contact" className="text-white lg:text-2xl text-xl font-bold z-100 cursor-pointer"> <span className="sm:inline-block hidden">Sunday Services</span> Owhyee High School</Link>
+            {/*  */}
+            <Link href="/contact" className="sm:block hidden text-white lg:text-2xl text-xl font-bold z-100 cursor-pointer"> 
+              Sunday Services at Owhyee High School
+            </Link>
+            {/* Sm screen Title */}
+            <Link href="/contact" className="block sm:hidden text-white lg:text-2xl text-xl font-bold z-100 cursor-pointer"> 
+              <span className="block">Sunday Services at</span>
+              <span className="block">Owhyee High School</span>
+            </Link>
             <Link href="/contact" className="text-white lg:text-2xl text-xl font-bold z-100 pt-1 cursor-pointer">9 & 10:30 AM</Link>
           </div>
         </div>

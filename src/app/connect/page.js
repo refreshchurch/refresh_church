@@ -7,15 +7,15 @@ import Image from "next/image";
 
 export default function GetConnected() {
   const ministries = [
-    { name: "Small Groups", link: "/small-groups", image: '/photos/connect/small-groups.webp' },
-    { name: "Men's Ministry", link: "/mens-ministry", image: '/photos/mens/men-1.webp' },
-    { name: "Women's Ministry", link: "/womens-ministry", image: '/photos/womens/women-1.webp' },
-    { name: "Young Adults", link: "https://refresh.churchcenter.com/groups/all-groups/young-adults-garrett-cat-adams", image: '/photos/connect/young-adults.webp' },
-    { name: "Youth Ministry", link: "/refresh-youth", image: '/photos/youth/youth-5.webp' },
-    { name: "Kid's Ministry", link: "/r-kids", image: '/photos/background/WhiteBlue1_1.webp' },
-    { name: "Discovery", link: "/discovery", image: '/photos/background/DarkBlue1_1.webp' },
-    { name: "Baby Dedications", link: "https://refresh.churchcenter.com/people/forms/541850", image: '/photos/background/DarkOrange1_1.webp' },
-    { name: "Serve Team", link: "https://refresh.churchcenter.com/people/forms/301611?_ga=2.212286996.1630180229.1675698110-905807684.1675698110", image: '/photos/connect/serve-team.webp' },
+    { name: "Small Groups", link: "/small-groups", image: '/photos/connect/small-groups.webp', external: false },
+    { name: "Men's Ministry", link: "/mens-ministry", image: '/photos/mens/men-1.webp', external: false },
+    { name: "Women's Ministry", link: "/womens-ministry", image: '/photos/womens/women-1.webp', external: false },
+    { name: "Young Adults", link: "https://refresh.churchcenter.com/groups/all-groups/young-adults-garrett-cat-adams", image: '/photos/connect/young-adults.webp', external: true },
+    { name: "Youth Ministry", link: "/refresh-youth", image: '/photos/youth/youth-5.webp', external: false },
+    { name: "Kid's Ministry", link: "/r-kids", image: '/photos/background/WhiteBlue1_1.webp', external: false },
+    { name: "Discovery", link: "/discovery", image: '/photos/background/DarkBlue1_1.webp', external: false },
+    { name: "Baby Dedications", link: "https://refresh.churchcenter.com/people/forms/541850", image: '/photos/background/DarkOrange1_1.webp', external: true },
+    { name: "Serve Team", link: "https://refresh.churchcenter.com/people/forms/301611?_ga=2.212286996.1630180229.1675698110-905807684.1675698110", image: '/photos/connect/serve-team.webp', external: true },
     // Add more ministries as needed
   ];
 
@@ -33,7 +33,11 @@ export default function GetConnected() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {ministries.map((ministry, index) => (
-          <Link key={index} href={ministry.link}>
+          <Link key={index}
+            href={ministry.link}
+            target={ministry.external ? "_blank" : "_self"}
+            rel={ministry.external ? "noopener noreferrer" : undefined}
+          >
             <div className="relative group cursor-pointer rounded-2xl shadow-lg overflow-hidden">
               <div className="relative w-full h-[250px]">
                 <Image
