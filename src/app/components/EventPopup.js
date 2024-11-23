@@ -8,7 +8,7 @@ export default function EventPopup({ imageUrl, eventUrl }) {
   const [aspectRatio, setAspectRatio] = useState(1)
 
   useEffect(() => {
-    const timer = setTimeout(() => setIsVisible(true), 1500) // Show popup after 5 seconds
+    const timer = setTimeout(() => setIsVisible(true), 1500) // Show popup after 1.5 seconds
     return () => clearTimeout(timer)
   }, [])
 
@@ -29,11 +29,16 @@ export default function EventPopup({ imageUrl, eventUrl }) {
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-[214748363612] p-4">
       <div 
-        className="relative bg-white rounded-2xl shadow-lg max-w-4xl w-full max-h-[90vh] overflow-hidden" 
-        style={{ aspectRatio: aspectRatio }}
+        className="relative bg-white rounded-lg shadow-lg overflow-hidden" 
+        style={{
+          width: '90vw', // Occupies 90% of viewport width
+          maxWidth: '600px', // Maximum width to prevent it from being too large
+          aspectRatio: aspectRatio, // Dynamically set aspect ratio
+        }}
       >
         <button
           onClick={() => setIsVisible(false)}
+          aria-label="Close popup"
           className="absolute top-2 right-2 text-white bg-black bg-opacity-50 rounded-full p-1 z-10"
         >
           <X size={24} />
@@ -44,8 +49,8 @@ export default function EventPopup({ imageUrl, eventUrl }) {
               src={imageUrl}
               alt="Event image"
               layout="fill"
-              objectFit="cover"
-              className="rounded-2xl"
+              objectFit="contain" // Ensures the full image is visible without being cut
+              className="rounded-lg"
             />
           </div>
         </Link>
