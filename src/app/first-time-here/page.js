@@ -18,7 +18,7 @@ export default function FirstTimeHere() {
           layout="fill"
           objectFit="cover"
           objectPosition="center"
-          alt="Leadership Image"
+          alt="First Time Here Image"
           draggable="false"
 
         />

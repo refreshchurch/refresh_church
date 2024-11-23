@@ -82,7 +82,7 @@ export default function HomePage() {
               layout="fill"
               objectFit="cover"
               objectPosition="0 40%"
-              alt="Leadership Image"
+              alt="First Time Here Image"
               draggable="false"
             />
             <div className="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center">
@@ -249,11 +249,13 @@ export default function HomePage() {
       <div className="flex flex-wrap gap-4 justify-center mb-4">
         <div className="bg-white shadow-md rounded-2xl w-full h-[200px] sm:h-[300px] lg:h-[350px] relative overflow-hidden">
           <Image
-            src='/photos/home/verse.webp'
+            src="/photos/home/verse.webp"
             layout="fill"
             objectFit="cover"
-            alt="Leadership Image"
+            objectPosition="center"
+            alt="Verse Image"
             draggable="false"
+            className="sm:scale-[1.2] scale-[1.6]"
           />
           <div className="absolute inset-0 bg-black bg-opacity-0 flex items-center justify-end flex-col mb-[23px]">
             <Link href="/connect">
