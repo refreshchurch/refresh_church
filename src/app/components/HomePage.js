@@ -5,6 +5,7 @@ import Link from "next/link";
 import Home from "../page";
 import HomeEventCard from "./HomeEventCard";
 import { useState, useEffect } from "react";
+import EventPopup from "./EventPopup";
 
 export default function HomePage() {
   const [events, setEvents] = useState([]);
@@ -33,18 +34,13 @@ export default function HomePage() {
 
   return (
     <div className="container mx-auto px-2 sm:px-4 py-8 ">
+      <EventPopup
+      imageUrl="/photos/popup/front.jpeg"
+      eventUrl="/events"
+      />
       {/* Main */}
       <div className="flex flex-wrap gap-4 justify-center mb-4">
         <div className="bg-white shadow-md rounded-2xl w-full sm:aspect-17/9 aspect-square relative overflow-hidden">
-          {/* Old Image */}
-          {/* <Image
-            src='/photos/home/church-life-3.webp'
-            layout="fill"
-            objectFit="cover"
-            alt="Church life Image"
-            draggable="false"
-          /> */}
-
           {/* Background Video */}
           <video
             autoPlay
