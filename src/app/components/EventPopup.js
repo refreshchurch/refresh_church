@@ -3,8 +3,6 @@ import Image from 'next/image'
 import { X } from 'lucide-react'
 import Link from 'next/link'
 
-const POPUP_SESSION_KEY = 'eventPopupSeen'
-
 export default function EventPopup({ id, imageUrl, eventUrl, delay = 4000 }) {
   const [isVisible, setIsVisible] = useState(false)
   const [aspectRatio, setAspectRatio] = useState(1)

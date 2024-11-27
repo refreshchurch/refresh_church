@@ -35,7 +35,7 @@ export default function HomePage() {
     <div className="container mx-auto px-2 sm:px-4 py-8 ">
       <EventPopup
       imageUrl="/photos/popup/Front.jpeg"
-      eventUrl="/events"
+      eventUrl="/"
       />
       {/* Main */}
       <div className="flex flex-wrap gap-4 justify-center mb-4">
