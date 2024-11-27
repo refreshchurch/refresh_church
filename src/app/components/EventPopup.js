@@ -8,7 +8,7 @@ export default function EventPopup({ imageUrl, eventUrl }) {
   const [aspectRatio, setAspectRatio] = useState(1)
 
   useEffect(() => {
-    const timer = setTimeout(() => setIsVisible(true), 1500) // Show popup after 1.5 seconds
+    const timer = setTimeout(() => setIsVisible(true), 4000) // Show popup after 1.5 seconds
     return () => clearTimeout(timer)
   }, [])
 
@@ -27,7 +27,7 @@ export default function EventPopup({ imageUrl, eventUrl }) {
   if (!isVisible) return null
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-[214748363612] p-4">
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-end justify-center z-[214748363612] p-4">
       <div 
         className="relative bg-white rounded-lg shadow-lg overflow-hidden" 
         style={{
