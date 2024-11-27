@@ -3,14 +3,19 @@ import Image from 'next/image'
 import { X } from 'lucide-react'
 import Link from 'next/link'
 
-export default function EventPopup({ imageUrl, eventUrl }) {
+const POPUP_SESSION_KEY = 'eventPopupSeen'
+
+export default function EventPopup({ id, imageUrl, eventUrl, delay = 4000 }) {
   const [isVisible, setIsVisible] = useState(false)
   const [aspectRatio, setAspectRatio] = useState(1)
 
   useEffect(() => {
-    const timer = setTimeout(() => setIsVisible(true), 4000) // Show popup after 1.5 seconds
-    return () => clearTimeout(timer)
-  }, [])
+    const hasSeenPopup = sessionStorage.getItem(`popup-${id}`)
+    if (!hasSeenPopup) {
+      const timer = setTimeout(() => setIsVisible(true), delay)
+      return () => clearTimeout(timer)
+    }
+  }, [id, delay])
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -23,21 +28,27 @@ export default function EventPopup({ imageUrl, eventUrl }) {
       }
     }
   }, [imageUrl])
+  
+  const handleClose = () => {
+    setIsVisible(false)
+    sessionStorage.setItem(`popup-${id}`, 'true')
+  }
 
   if (!isVisible) return null
+
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-end justify-center z-[214748363612] p-4">
       <div 
         className="relative bg-white rounded-lg shadow-lg overflow-hidden" 
         style={{
-          width: '90vw', // Occupies 90% of viewport width
-          maxWidth: '600px', // Maximum width to prevent it from being too large
-          aspectRatio: aspectRatio, // Dynamically set aspect ratio
+          width: '90vw',
+          maxWidth: '600px',
+          aspectRatio: aspectRatio,
         }}
       >
         <button
-          onClick={() => setIsVisible(false)}
+          onClick={handleClose}
           aria-label="Close popup"
           className="absolute top-2 right-2 text-white bg-black bg-opacity-50 rounded-full p-1 z-10"
         >
@@ -49,8 +60,9 @@ export default function EventPopup({ imageUrl, eventUrl }) {
               src={imageUrl}
               alt="Event image"
               layout="fill"
-              objectFit="contain" // Ensures the full image is visible without being cut
-              className="rounded-lg"
+              objectFit="contain"
+              className="rounded-lg draggable-none"
+              draggable="false"
             />
           </div>
         </Link>
