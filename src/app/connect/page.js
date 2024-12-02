@@ -27,7 +27,7 @@ export default function GetConnected() {
       </p> */}
       <div className="bg-primaryDark text-white p-6 rounded-lg mb-10 mx-auto w-full sm:w-4/4 lg:w-4/4">
         <p className="text-lg text-left">
-          Find the ministry that fits you and get connected to our church community. Whether you're looking for fellowship, spiritual growth, or ways to serve, there's a place for you here.
+        Find the community that fits you and get connected.
         </p>
       </div>
 
