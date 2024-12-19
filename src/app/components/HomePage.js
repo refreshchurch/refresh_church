@@ -168,10 +168,7 @@ export default function HomePage() {
                 </p>
               </Link>
 
-              {events
-                .filter((event) => event.attributes.visibility === "public")
-                .slice(0, 2)
-                .map((event, index) => (
+              {events.slice(0, 2).map((event, index) => (
                   <HomeEventCard key={index} event={event} />
                 ))}
               {/* <Link href={''} className="flex items-center gap-5 px-3 py-3 hover:bg-gray-100 rounded-lg cursor-pointer mt-3">

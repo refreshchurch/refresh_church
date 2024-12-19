@@ -117,9 +117,7 @@ export default function Events() {
             </>
           ) : (
             <>
-              {events
-                .filter((event) => event.attributes.visibility === "public")
-                .map((event, index) => (
+              {events.map((event, index) => (
                   <Card key={index} item={event} showMobile={showMobile}/>
                 ))}
             </>

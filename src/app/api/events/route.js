@@ -14,7 +14,14 @@ export async function GET() {
       }
     });
 
-    return NextResponse.json(response.data.data);
+    const filteredEvents = response.data.data.filter(
+      (event) => event.attributes.visibility === 'public'
+    );
+
+    // Set no-cache headers
+    const res = NextResponse.json(filteredEvents);
+    res.headers.set('Cache-Control', 'no-store'); // Prevent caching
+    return res;
   } catch (error) {
     console.error('Error fetching events from Planning Center:', error);
     return NextResponse.json({ error: 'Error fetching events' }, { status: 500 });
