@@ -22,7 +22,7 @@ export default function Leadership() {
     },
     {
       img: "/photos/leadership/yolanda.webp",
-      name: "Yolanda Pech",
+      name: "Yolonda Pech",
       title: "Pastoral Assistant and Administration",
     },
     {
