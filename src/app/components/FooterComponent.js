@@ -211,7 +211,7 @@ export default function FooterComponent() {
                   </li>
 
                   <li>
-                    <Link href="/shttps://refresh.churchcenter.com/people/forms/301611?_ga=2.212286996.1630180229.1675698110-905807684.1675698110" title="" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"> Serve Team</Link>
+                    <Link href="https://refresh.churchcenter.com/people/forms/301611?_ga=2.212286996.1630180229.1675698110-905807684.1675698110" title="" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"> Serve Team</Link>
                   </li>
 
                   <li>
