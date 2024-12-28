@@ -34,7 +34,7 @@ export default function HomePage() {
   return (
     <div className="container mx-auto px-2 sm:px-4 py-8 ">
       <EventPopup
-      imageUrl="/photos/popup/Front.jpeg"
+      imageUrl="/photos/popup/Sabbath-Sunday-2025.webp"
       eventUrl="/"
       />
       {/* Main */}
