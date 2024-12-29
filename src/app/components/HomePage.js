@@ -33,10 +33,10 @@ export default function HomePage() {
 
   return (
     <div className="container mx-auto px-2 sm:px-4 py-8 ">
-      <EventPopup
+      {/* <EventPopup
       imageUrl="/photos/popup/Sabbath-Sunday-2025.webp"
       eventUrl="/"
-      />
+      /> */}
       {/* Main */}
       <div className="flex flex-wrap gap-4 justify-center mb-4">
         <div className="bg-white shadow-md rounded-2xl w-full sm:aspect-17/9 aspect-square relative overflow-hidden">
