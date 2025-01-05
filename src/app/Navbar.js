@@ -12,6 +12,7 @@ export default function Navbar() {
   const [mobileMenu, setMobileMenu] = useState(false);
   const firstTimeRef = useRef(null);
   const yourFamilyRef = useRef(null);
+  const eventRef = useRef(null);
   const connectRef = useRef(null);
   const pathname = usePathname();
 
@@ -27,6 +28,7 @@ export default function Navbar() {
     if (
       (firstTimeRef.current && !firstTimeRef.current.contains(event.target)) &&
       (yourFamilyRef.current && !yourFamilyRef.current.contains(event.target)) &&
+      (eventRef.current && !eventRef.current.contains(event.target)) &&
       (connectRef.current && !connectRef.current.contains(event.target))
     ) {
       setDropdown(null);
@@ -64,7 +66,7 @@ export default function Navbar() {
           </div>
         </Link>
 
-        <button onClick={toggleMobileMenu} type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg min-[945px]:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+        <button onClick={toggleMobileMenu} type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg min-[1135px]:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
           <span className="sr-only">Open main menu</span>
           <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
@@ -192,15 +194,15 @@ export default function Navbar() {
           </ul>
         </div> */}
 
-        <div className={`${mobileMenu ? 'block' : 'hidden'} w-full min-[945px]:block min-[945px]:w-auto z-50`}>
-          <ul className="flex flex-col font-sm p-4 min-[945px]:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 min-[945px]:space-x-11 rtl:space-x-reverse min-[945px]:flex-row min-[945px]:mt-0 min-[945px]:border-0 min-[945px]:bg-white dark:bg-gray-800 min-[945px]:dark:bg-gray-900 dark:border-gray-700 mx-auto min-[945px]:justify-center">
+        <div className={`${mobileMenu ? 'block' : 'hidden'} w-full min-[1135px]:block min-[1135px]:w-auto z-50`}>
+          <ul className="flex flex-col font-sm p-4 min-[1210px]:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 min-[1135px]:space-x-11 rtl:space-x-reverse min-[1135px]:flex-row min-[1135px]:mt-0 min-[1135px]:border-0 min-[1135px]:bg-white dark:bg-gray-800 min-[1135px]:dark:bg-gray-900 dark:border-gray-700 mx-auto min-[1135px]:justify-center">
             <li>
               <Link href="/">
-                <div className={`${isActive('/') ? 'primary' : 'gray'} text-gray-900 text-xl block py-2 px-3 rounded hover:bg-gray-100 min-[945px]:hover:bg-transparent min-[945px]:border-0 min-[945px]:hover:text-primary min-[945px]:p-0 dark:text-white min-[945px]:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white min-[945px]:dark:hover:bg-transparent`}>home</div>
+                <div className={`${isActive('/') ? 'primary' : 'gray'} text-gray-900 text-xl block py-2 px-3 rounded hover:bg-gray-100 min-[1135px]:hover:bg-transparent min-[1135px]:border-0 min-[1135px]:hover:text-primary min-[1135px]:p-0 dark:text-white min-[1135px]:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white min-[1135px]:dark:hover:bg-transparent`}>home</div>
               </Link>
             </li>
             <li className="relative" ref={firstTimeRef}>
-              <button onClick={() => toggleDropdown('firstTime')} className="text-xl flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 min-[945px]:hover:bg-transparent min-[945px]:border-0 min-[945px]:hover:text-primary min-[945px]:p-0 min-[945px]:w-auto dark:text-white min-[945px]:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 min-[945px]:dark:hover:bg-transparent">first time here
+              <button onClick={() => toggleDropdown('firstTime')} className="text-xl flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 min-[1135px]:hover:bg-transparent min-[1135px]:border-0 min-[1135px]:hover:text-primary min-[1135px]:p-0 min-[1135px]:w-auto dark:text-white min-[1135px]:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 min-[1135px]:dark:hover:bg-transparent">first time here
                 <svg className="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                   <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
                 </svg>
@@ -228,7 +230,7 @@ export default function Navbar() {
               )}
             </li>
             <li className="relative" ref={yourFamilyRef}>
-              <button onClick={() => toggleDropdown('yourFamily')} className="text-xl flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 min-[945px]:hover:bg-transparent min-[945px]:border-0 min-[945px]:hover:text-primary min-[945px]:p-0 min-[945px]:w-auto dark:text-white min-[945px]:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 min-[945px]:dark:hover:bg-transparent">your family
+              <button onClick={() => toggleDropdown('yourFamily')} className="text-xl flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 min-[1135px]:hover:bg-transparent min-[1135px]:border-0 min-[1135px]:hover:text-primary min-[1135px]:p-0 min-[1135px]:w-auto dark:text-white min-[1135px]:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 min-[1135px]:dark:hover:bg-transparent">your family
                 <svg className="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                   <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
                 </svg>
@@ -260,8 +262,39 @@ export default function Navbar() {
                 </div>
               )}
             </li>
+            <li className="relative" ref={eventRef}>
+              <button onClick={() => toggleDropdown('events')} className="text-xl flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 min-[1135px]:hover:bg-transparent min-[1135px]:border-0 min-[1135px]:hover:text-primary min-[1135px]:p-0 min-[1135px]:w-auto dark:text-white min-[1135px]:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 min-[1135px]:dark:hover:bg-transparent">events
+                <svg className="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
+                </svg>
+              </button>
+              {dropdown === 'events' && (
+                <div className="absolute left-0 z-10 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                  <ul className="py-2 text-base text-gray-700 dark:text-gray-400">
+                    <li>
+                      <Link href="https://refresh.churchcenter.com/registrations/events/category/55742" target="_blank" rel="noopener noreferrer" onClick={handleLinkClick}>
+                        <div className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">kids events</div>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="https://refresh.churchcenter.com/registrations/events/category/49575" target="_blank" rel="noopener noreferrer" onClick={handleLinkClick}>
+                        <div className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">youth events</div>
+                      </Link>
+                    </li>
+                    <li>
+                      {/* <Link href="https://refresh.churchcenter.com/registrations/events" target="_blank" rel="noopener noreferrer" onClick={handleLinkClick}> */}
+                      <Link href="/events" onClick={handleLinkClick}>
+                        <div className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">all events</div>
+                      </Link>
+                    </li>
+                    <li>
+                    </li>
+                  </ul>
+                </div>
+              )}
+            </li>
             <li className="relative" ref={connectRef}>
-              <button onClick={() => toggleDropdown('connect')} className="text-xl flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 min-[945px]:hover:bg-transparent min-[945px]:border-0 min-[945px]:hover:text-primary min-[945px]:p-0 min-[945px]:w-auto dark:text-white min-[945px]:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 min-[945px]:dark:hover:bg-transparent">connect
+              <button onClick={() => toggleDropdown('connect')} className="text-xl flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 min-[1135px]:hover:bg-transparent min-[1135px]:border-0 min-[1135px]:hover:text-primary min-[1135px]:p-0 min-[1135px]:w-auto dark:text-white min-[1135px]:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 min-[1135px]:dark:hover:bg-transparent">connect
                 <svg className="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                   <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
                 </svg>
@@ -300,11 +333,11 @@ export default function Navbar() {
             </li>
             <li>
               <Link href="/contact">
-                <div className={`${isActive('/contact') ? 'primary' : 'gray'} text-gray-900 text-xl block py-2 px-3 rounded hover:bg-gray-100 min-[945px]:hover:bg-transparent min-[945px]:border-0 min-[945px]:hover:text-primary min-[945px]:p-0 dark:text-white min-[945px]:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white min-[945px]:dark:hover:bg-transparent`}>contact</div>
+                <div className={`${isActive('/contact') ? 'primary' : 'gray'} text-gray-900 text-xl block py-2 px-3 rounded hover:bg-gray-100 min-[1135px]:hover:bg-transparent min-[1135px]:border-0 min-[1135px]:hover:text-primary min-[1135px]:p-0 dark:text-white min-[1135px]:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white min-[1135px]:dark:hover:bg-transparent`}>contact</div>
               </Link>
             </li>
             <li className='flex items-center'>
-              <Link href="https://refresh.churchcenter.com/giving?open-in-church-center-modal=true" target="_blank" rel="noopener noreferrer" className="text-xl block py-2 px-3 me-1 text-primary rounded hover:bg-gray-100 min-[945px]:hover:bg-transparent min-[945px]:border-0 min-[945px]:hover:text-primary min-[945px]:p-0 dark:text-white min-[945px]:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white min-[945px]:dark:hover:bg-transparent">give</Link>
+              <Link href="https://refresh.churchcenter.com/giving?open-in-church-center-modal=true" target="_blank" rel="noopener noreferrer" className="text-xl block py-2 px-3 me-1 text-primary rounded hover:bg-gray-100 min-[1135px]:hover:bg-transparent min-[1135px]:border-0 min-[1135px]:hover:text-primary min-[1135px]:p-0 dark:text-white min-[1135px]:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white min-[1135px]:dark:hover:bg-transparent">give</Link>
               <svg className="w-4 h-4 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M18 14v4.833A1.166 1.166 0 0 1 16.833 20H5.167A1.167 1.167 0 0 1 4 18.833V7.167A1.166 1.166 0 0 1 5.167 6h4.618m4.447-2H20v5.768m-7.889 2.121 7.778-7.778" />
               </svg>
@@ -313,7 +346,7 @@ export default function Navbar() {
         </div>
 
 
-        <div className='items-bottom space-x-1.5 min-[1068px]:flex hidden '>
+        <div className='items-bottom space-x-1.5 min-[1215px]:flex hidden '>
           <a href='https://www.instagram.com/refreshchurchtv/' target="_blank" rel="noopener noreferrer">
             <svg className=" w-8 h-8 text-gray-600 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
               <path fill="currentColor" fillRule="evenodd" d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z" clipRule="evenodd" />

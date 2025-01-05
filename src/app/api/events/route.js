@@ -19,7 +19,7 @@ export async function GET() {
     );
 
     // Set no-cache headers
-    const res = NextResponse.json(filteredEvents);
+    const res = NextResponse.json(filteredEvents, { revalidate: 0 });
     res.headers.set('Cache-Control', 'no-store'); // Prevent caching
     return res;
   } catch (error) {
