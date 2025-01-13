@@ -5,6 +5,7 @@
 // import Image from "next/image";
 import { useEffect, useState } from "react";
 import Card from "../components/Card";
+import Link from "next/link";
 
 // Utility function to strip HTML tags
 const stripHtml = (html) => {
@@ -56,7 +57,7 @@ export default function SmallGroups() {
       {/* <div className="rounded-lg p-6  mx-auto w-full sm:w-4/4 lg:w-4/4 bg-no-repeat bg-center bg-cover" style={{ backgroundImage: `url(/photos/background/LightBlue32_9.webp)` }}>
         <div className="bg-black bg-opacity-65 rounded-lg " > */}
           <p className="text-lg font-semibold mb-10 text-white text-left p-6 bg-primaryDark rounded-lg">
-            Small groups are a key aspect of our spiritual growth. We get better when we are together. It is for this reason we've decided to make small groups a central part of what we do as a church. Check back each semester for new groups, dates, and times.
+            Small groups are a key aspect of our spiritual growth. We get better when we are together. It is for this reason we've decided to make small groups a central part of what we do as a church.
           </p>
         {/* </div>
       </div> */}
@@ -86,6 +87,12 @@ export default function SmallGroups() {
               ))}
           </>
         )}
+      </div>
+      <div className="text-center mt-12">
+        <h3 className="text-2xl font-semibold text-gray-900 mb-4">Want to Lead a Group?</h3>
+        <Link href="https://refresh.churchcenter.com/people/forms/311150" className="inline-block bg-primaryDark text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-primary transition duration-300 ease-in-out">
+          Leader Application
+        </Link>
       </div>
     </div>
   );
