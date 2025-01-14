@@ -36,6 +36,7 @@ export default function HomePage() {
       <EventPopup
       imageUrl="/photos/popup/worship_night.webp"
       eventUrl="/"
+      endDate={new Date('2025-01-19T19:30:00-07:00')} //// 7:30 PM MST UTC time
       />
       {/* Main */}
       <div className="flex flex-wrap gap-4 justify-center mb-4">
