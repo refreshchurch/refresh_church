@@ -3,17 +3,20 @@ import Image from 'next/image'
 import { X } from 'lucide-react'
 import Link from 'next/link'
 
-export default function EventPopup({ id, imageUrl, eventUrl, delay = 4000 }) {
+export default function EventPopup({ id, imageUrl, eventUrl, delay = 4000, endDate }) {
   const [isVisible, setIsVisible] = useState(false)
   const [aspectRatio, setAspectRatio] = useState(1)
 
   useEffect(() => {
     const hasSeenPopup = sessionStorage.getItem(`popup-${id}`)
-    if (!hasSeenPopup) {
+    const now = new Date()
+    const endDateTime = new Date(endDate)
+
+    if (!hasSeenPopup && now < endDateTime) {
       const timer = setTimeout(() => setIsVisible(true), delay)
       return () => clearTimeout(timer)
     }
-  }, [id, delay])
+  }, [id, delay, endDate])
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
