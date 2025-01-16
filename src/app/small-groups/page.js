@@ -1,11 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client"
 
-// import Link from "next/link";
-// import Image from "next/image";
 import { useEffect, useState } from "react";
 import Card from "../components/Card";
 import Link from "next/link";
+import { showSmallGroupPage } from "../../../constants";
+import { notFound } from "next/navigation";
 
 // Utility function to strip HTML tags
 const stripHtml = (html) => {
@@ -51,15 +51,20 @@ export default function SmallGroups() {
     fetchEvents();
   }, []);
 
+  // Redirect to 404 if showSmallGroupPage is false
+  if (!showSmallGroupPage) {
+    notFound()
+  }
+
   return (
     <div className="container mx-auto px-8 sm:px-36 py-12">
       <h2 className="mb-10 text-4xl font-bold text-gray-900 tracking-tighter ">Small Groups</h2>
       {/* <div className="rounded-lg p-6  mx-auto w-full sm:w-4/4 lg:w-4/4 bg-no-repeat bg-center bg-cover" style={{ backgroundImage: `url(/photos/background/LightBlue32_9.webp)` }}>
         <div className="bg-black bg-opacity-65 rounded-lg " > */}
-          <p className="text-lg font-semibold mb-10 text-white text-left p-6 bg-primaryDark rounded-lg">
-            Small groups are a key aspect of our spiritual growth. We get better when we are together. It is for this reason we've decided to make small groups a central part of what we do as a church.
-          </p>
-        {/* </div>
+      <p className="text-lg font-semibold mb-10 text-white text-left p-6 bg-primaryDark rounded-lg">
+        Small groups are a key aspect of our spiritual growth. We get better when we are together. It is for this reason we've decided to make small groups a central part of what we do as a church.
+      </p>
+      {/* </div>
       </div> */}
       <h2 className="mb-10 text-3xl font-bold text-gray-900 tracking-tighter sm:text-3xl text-center">All Groups</h2>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -83,7 +88,7 @@ export default function SmallGroups() {
                 (group) => group.attributes.events_visibility === "public" && group.attributes.public_church_center_web_url
               )
               .map((group, index) => (
-                <Card key={index} item={group} showMobile={showMobile}/>
+                <Card key={index} item={group} showMobile={showMobile} />
               ))}
           </>
         )}
