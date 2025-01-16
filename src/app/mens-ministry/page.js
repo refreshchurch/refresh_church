@@ -16,8 +16,8 @@ export default function MensMinistry() {
           <p className="text-gray-700 text-lg mb-6">
           Men’s Ministry is the active pursuit of men in order to connect to God, His Word, and other men for the purpose of winning and growing in Christ.
           </p>
-          {/* NOTE: Event link */}
-          <Link href="https://refresh.churchcenter.com/registrations/events" target="_blank" rel="noopener noreferrer" className="inline-block bg-primaryDark text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-primary transition duration-300 ease-in-out">
+          {/* NOTE: Event link (mens specifically) */}
+          <Link href="https://refresh.churchcenter.com/registrations/events/category/51058" target="_blank" rel="noopener noreferrer" className="inline-block bg-primaryDark text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-primary transition duration-300 ease-in-out">
           {/* <Link href="/events" className="inline-block bg-primaryDark text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-primary transition duration-300 ease-in-out"> */}
             Explore Upcoming Events
           </Link>
@@ -40,7 +40,7 @@ export default function MensMinistry() {
           <div className="lg:w-1/2 lg:pl-8 mb-8 lg:mb-0">
             <h3 className="text-2xl font-semibold text-gray-900 mb-4">Grow in Faith Together</h3>
             <p className="text-gray-700 text-lg">
-            We have gatherings a few times per quarter, sharing food and getting to know each other. These gatherings lend themselves to building community so that we can break off into smaller groups and take steps to see every person refreshed and every purpose discovered.
+            We gather together to share food and get to know each other. These gatherings lend themselves to building community so that we can break off into smaller groups and take steps to see every person refreshed and every purpose discovered.
             </p>
           </div>
           <div className="lg:w-1/2">
@@ -56,8 +56,8 @@ export default function MensMinistry() {
         </div>
       </div>
 
-      {/* Final Call to Action with Image */}
-      <div className="flex flex-col lg:flex-row items-center text-center lg:text-left mt-12">
+      {/* 611 Section */}
+      {/* <div className="flex flex-col lg:flex-row items-center text-center lg:text-left mt-12">
         <div className="lg:w-1/2 lg:pr-8">
           <h3 className="text-2xl font-semibold text-gray-900 mb-4">611 Men</h3>
           <p className="text-gray-700 text-lg mb-6">
@@ -77,7 +77,7 @@ export default function MensMinistry() {
             />
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

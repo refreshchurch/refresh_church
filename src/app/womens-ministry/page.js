@@ -40,8 +40,7 @@ export default function MensMinistry() {
           <div className="lg:w-1/2 lg:pl-8 mb-8 lg:mb-0">
             <h3 className="text-2xl font-semibold text-gray-900 mb-4">Grow in Faith Together</h3>
             <p className="text-gray-700 text-lg">
-            We spend time together every quarter sharing food, and getting to know each other. These gatherings lend themselves to building community so that we can break off into smaller groups and take steps to see every person refreshed and every purpose discovered. We have a variety of small groups available for women throughout the year! Check them out by clicking below!
-
+            We spend time together sharing food, and getting to know each other. These gatherings lend themselves to building community so that we can break off into smaller groups and take steps to see every person refreshed and every purpose discovered. We have a variety of small groups available for women throughout the year!
             </p>
           </div>
           <div className="lg:w-1/2">
@@ -65,10 +64,10 @@ export default function MensMinistry() {
           <p className="text-gray-700 text-lg mb-6">
           Whether we are crafting, hearing from other ladies of God about how He has moved in their life, or sharing stories over a cup of coffee, we have multiple ways in which other women can get connected to a community of Godly women.
           </p>
-          {/* NOTE: Event link */}
-          <Link href="https://refresh.churchcenter.com/registrations/events" target="_blank" rel="noopener noreferrer" className="inline-block bg-primaryDark text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-primary transition duration-300 ease-in-out">
+          {/* NOTE: Event link (women specifically)*/}
+          <Link href="https://refresh.churchcenter.com/registrations/events/category/51057" target="_blank" rel="noopener noreferrer" className="inline-block bg-primaryDark text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-primary transition duration-300 ease-in-out">
           {/* <Link href="/events" className="inline-block bg-primaryDark text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-primary transition duration-300 ease-in-out"> */}
-            View Upcoming Events
+            More Information
           </Link>
         </div>
         <div className="lg:w-1/2 mt-8 lg:mt-0">
