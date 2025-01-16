@@ -57,12 +57,12 @@ export default function Navbar() {
           <div className="flex items-center space-x-3 rtl:space-x-reverse">
             {/* <img src={logoImage} className="h-8" alt="Refresh Logo" /> */}
             <Image
-            src='/photos/logo.webp'
-            alt="Refresh Logo" 
-            width={128} // Set the width according to your preference
-            height={100} // Set the width according to your preference
-            className="h-auto" // Keep this class if you want to maintain the styling
-          />
+              src='/photos/logo.webp'
+              alt="Refresh Logo"
+              width={128} // Set the width according to your preference
+              height={100} // Set the width according to your preference
+              className="h-auto" // Keep this class if you want to maintain the styling
+            />
           </div>
         </Link>
 
@@ -282,8 +282,9 @@ export default function Navbar() {
                       </Link>
                     </li>
                     <li>
-                      {/* <Link href="https://refresh.churchcenter.com/registrations/events" target="_blank" rel="noopener noreferrer" onClick={handleLinkClick}> */}
-                      <Link href="/events" onClick={handleLinkClick}>
+                      {/* NOTE: Event link */}
+                      <Link href="https://refresh.churchcenter.com/registrations/events" target="_blank" rel="noopener noreferrer" onClick={handleLinkClick}>
+                        {/* <Link href="/events" onClick={handleLinkClick}> */}
                         <div className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">all events</div>
                       </Link>
                     </li>
@@ -323,7 +324,9 @@ export default function Navbar() {
                       </Link>
                     </li>
                     <li>
-                      <Link href="/events" onClick={handleLinkClick}>
+                      {/* NOTE: Event link */}
+                      <Link href="https://refresh.churchcenter.com/registrations/events" target="_blank" rel="noopener noreferrer" onClick={handleLinkClick}>
+                        {/* <Link href="/events" onClick={handleLinkClick}> */}
                         <div className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">events</div>
                       </Link>
                     </li>
