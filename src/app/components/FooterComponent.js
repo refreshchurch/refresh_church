@@ -219,7 +219,10 @@ export default function FooterComponent() {
                   </li>
 
                   <li>
-                    <Link href="/events" title="" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"> Events </Link>
+                    {/* NOTE: Event Link */}
+                    {/*  */}
+                    <Link href="https://refresh.churchcenter.com/registrations/events" target="_blank" rel="noopener noreferrer" title="" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"> Events </Link>
+                    {/* <Link href="/events" title="" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"> Events </Link> */}
                   </li>
                 </ul>
               </div>

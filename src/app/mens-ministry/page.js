@@ -16,7 +16,9 @@ export default function MensMinistry() {
           <p className="text-gray-700 text-lg mb-6">
           Men’s Ministry is the active pursuit of men in order to connect to God, His Word, and other men for the purpose of winning and growing in Christ.
           </p>
-          <Link href="/events" className="inline-block bg-primaryDark text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-primary transition duration-300 ease-in-out">
+          {/* NOTE: Event link */}
+          <Link href="https://refresh.churchcenter.com/registrations/events" target="_blank" rel="noopener noreferrer" className="inline-block bg-primaryDark text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-primary transition duration-300 ease-in-out">
+          {/* <Link href="/events" className="inline-block bg-primaryDark text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-primary transition duration-300 ease-in-out"> */}
             Explore Upcoming Events
           </Link>
         </div>
