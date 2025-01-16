@@ -4,9 +4,15 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Inbox, Laptop, Phone } from "lucide-react";
+import { showGivingPage } from "../../../constants";
 
 
 export default function Contact() {
+
+  if (!showGivingPage) {
+    return null;
+  }
+
   return (
     <>
       <div className="container mx-auto px-8 sm:px-36 py-12">
