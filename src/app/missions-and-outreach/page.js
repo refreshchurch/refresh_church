@@ -4,7 +4,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function MissionAndOutreach() {
+export default function MissionsAndOutreach() {
   return (
     <div className="container mx-auto px-8 sm:px-36 py-12">
       <h2 className="text-4xl font-bold text-gray-900 tracking-tighter sm:text-4xl md:text-5xl mb-12">Missions and Outreach</h2>
