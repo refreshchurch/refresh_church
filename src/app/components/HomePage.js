@@ -158,7 +158,9 @@ export default function HomePage() {
                   Serve
                 </p>
               </Link>
-              <Link href="https://refresh.churchcenter.com/giving?open-in-church-center-modal=true" className="flex items-center gap-2 px-2 py-3 hover:bg-gray-100 rounded-lg cursor-pointer" target="_blank" rel="noopener noreferrer">
+              {/* NOTE: Give Link */}
+              {/* <Link href="https://refresh.churchcenter.com/giving?open-in-church-center-modal=true" className="flex items-center gap-2 px-2 py-3 hover:bg-gray-100 rounded-lg cursor-pointer" target="_blank" rel="noopener noreferrer"> */}
+              <Link href="/give" className="flex items-center gap-2 px-2 py-3 hover:bg-gray-100 rounded-lg cursor-pointer" target="_blank" rel="noopener noreferrer">
                 <Handshake className="w-7" />
                 <p className="text-xl font-semibold">
                   Give
