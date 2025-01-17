@@ -4,6 +4,7 @@
 import Image from "next/image";
 
 export default function Leadership() {
+  
   const staff = [
     {
       img: "/photos/leadership/chris.webp",
@@ -53,10 +54,10 @@ export default function Leadership() {
           <h3 className="text-3xl font-bold text-primary mb-4">Pastor TJ & Leah</h3>
 
           <p className="text-gray-700 text-lg text-left">
-            In the summer of 2020, T.J. and Leah felt a clear call from God to plant a life-giving church in the Treasure Valley of Idaho. Refresh Church launched in September of 2021 and has built an incredible team to see people refreshed by the presence of God and discover their purpose in Him.
+          In the summer of 2020, T.J. and Leah felt a clear call from God to plant a life-giving church in the Treasure Valley of Idaho - Refresh church launched in 2021 and has been going strong ever since.
             <br />
             <br />
-            Pastor T.J. is a gifted teacher and communicator. He has a passion for making God’s word relatable and practical, and he has a heart for reaching people right where they are and introducing them to the refreshing message of Jesus. In their free time, T.J. and Leah like spending time outdoors with their four children Mckenna, Addison, Cecelia, and Layton.
+            Pastor T.J. is a gifted teacher and communicator and has a particular bent on making the bible approachable to everyday life and to see others find freedom and passion in their lives. In their free time, T.J. and Leah like spending time outdoors, camping, fishing, and enjoying great food with their four children Mckenna, Addison, Cecelia, and Layton.
           </p>
         </div>
       </div>
