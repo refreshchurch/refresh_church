@@ -7,7 +7,9 @@ import Image from "next/image";
 
 export default function GetConnected() {
   const ministries = [
-    { name: "Small Groups", link: "/small-groups", image: '/photos/connect/small-groups.webp', external: false },
+    // NOTE: Small Group Links
+    // { name: "Small Groups", link: "/small-groups", image: '/photos/connect/small-groups.webp', external: false },
+    { name: "Small Groups", link: "https://refresh.churchcenter.com/groups/all-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment", image: '/photos/connect/small-groups.webp', external: false },
     { name: "Men's Ministry", link: "/mens-ministry", image: '/photos/mens/men-1.webp', external: false },
     { name: "Women's Ministry", link: "/womens-ministry", image: '/photos/womens/women-1.webp', external: false },
     { name: "Young Adults", link: "https://refresh.churchcenter.com/groups/all-groups/young-adults-garrett-cat-adams", image: '/photos/connect/young-adults.webp', external: true },

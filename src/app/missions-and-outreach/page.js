@@ -4,22 +4,22 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function MensMinistry() {
+export default function MissionsAndOutreach() {
   return (
     <div className="container mx-auto px-8 sm:px-36 py-12">
-      <h2 className="text-4xl font-bold text-gray-900 tracking-tighter sm:text-4xl md:text-5xl mb-12">Men's Ministry</h2>
+      <h2 className="text-4xl font-bold text-gray-900 tracking-tighter sm:text-4xl md:text-5xl mb-12">Missions and Outreach</h2>
 
       {/* Introduction Section with Image */}
       <div className="flex flex-col lg:flex-row items-center mb-12">
         <div className="lg:w-1/2 mb-8 lg:mb-0 lg:pr-8">
-          <h3 className="text-2xl font-semibold text-gray-900 mb-4">Join Our Men's Ministry</h3>
+          <h3 className="text-2xl font-semibold text-gray-900 mb-4">First blurb</h3>
           <p className="text-gray-700 text-lg mb-6">
-          Men’s Ministry is the active pursuit of men in order to connect to God, His Word, and other men for the purpose of winning and growing in Christ.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras feugiat tortor sit amet ipsum imperdiet, et porttitor dolor rutrum. Quisque ac blandit est, vitae aliquet felis. Ut convallis quam a dui dictum aliquet. Vivamus finibus erat sed fringilla eleifend. Suspendisse tortor leo, malesuada a diam in, consectetur ultricies nisi.  
           </p>
           {/* NOTE: Event link (mens specifically) */}
           <Link href="https://refresh.churchcenter.com/registrations/events/category/51058" target="_blank" rel="noopener noreferrer" className="inline-block bg-primaryDark text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-primary transition duration-300 ease-in-out">
           {/* <Link href="/events" className="inline-block bg-primaryDark text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-primary transition duration-300 ease-in-out"> */}
-            Explore Upcoming Events
+            Button Text
           </Link>
         </div>
         <div className="lg:w-1/2">
@@ -38,9 +38,9 @@ export default function MensMinistry() {
       <div className="mb-12">
         <div className="flex flex-col lg:flex-row-reverse items-center">
           <div className="lg:w-1/2 lg:pl-8 mb-8 lg:mb-0">
-            <h3 className="text-2xl font-semibold text-gray-900 mb-4">Grow in Faith Together</h3>
+            <h3 className="text-2xl font-semibold text-gray-900 mb-4">blurb 2</h3>
             <p className="text-gray-700 text-lg">
-            We gather together to share food and get to know each other. These gatherings lend themselves to building community so that we can break off into smaller groups and take steps to see every person refreshed and every purpose discovered.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras feugiat tortor sit amet ipsum imperdiet, et porttitor dolor rutrum. Quisque ac blandit est, vitae aliquet felis. Ut convallis quam a dui dictum aliquet. Vivamus finibus erat sed fringilla eleifend. Suspendisse tortor leo, malesuada a diam in, consectetur ultricies nisi.
             </p>
           </div>
           <div className="lg:w-1/2">

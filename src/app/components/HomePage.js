@@ -125,7 +125,9 @@ export default function HomePage() {
                   Youth
                 </p>
               </Link>
-              <Link href="/small-groups" className="flex items-center gap-2 px-2 py-3 hover:bg-gray-100 rounded-lg cursor-pointer">
+              {/* NOTE: Small group link */}
+              {/* <Link href="/small-groups" className="flex items-center gap-2 px-2 py-3 hover:bg-gray-100 rounded-lg cursor-pointer"> */}
+              <Link href="https://refresh.churchcenter.com/groups/all-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment" className="flex items-center gap-2 px-2 py-3 hover:bg-gray-100 rounded-lg cursor-pointer">
                 {/* <User className="w-7" /> */}
                 <Boxes className="w-7" />
                 <p className="text-xl font-semibold">
@@ -156,7 +158,9 @@ export default function HomePage() {
                   Serve
                 </p>
               </Link>
-              <Link href="https://refresh.churchcenter.com/giving?open-in-church-center-modal=true" className="flex items-center gap-2 px-2 py-3 hover:bg-gray-100 rounded-lg cursor-pointer" target="_blank" rel="noopener noreferrer">
+              {/* NOTE: Give Link */}
+              {/* <Link href="https://refresh.churchcenter.com/giving?open-in-church-center-modal=true" className="flex items-center gap-2 px-2 py-3 hover:bg-gray-100 rounded-lg cursor-pointer" target="_blank" rel="noopener noreferrer"> */}
+              <Link href="/give" className="flex items-center gap-2 px-2 py-3 hover:bg-gray-100 rounded-lg cursor-pointer" target="_blank" rel="noopener noreferrer">
                 <Handshake className="w-7" />
                 <p className="text-xl font-semibold">
                   Give

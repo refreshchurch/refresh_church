@@ -309,7 +309,9 @@ export default function Navbar() {
                       </Link>
                     </li>
                     <li>
-                      <Link href="/small-groups" onClick={handleLinkClick}>
+                      {/* NOTE: Small Groups link */}
+                      {/* <Link href="/small-groups" onClick={handleLinkClick}> */}
+                      <Link href="/https://refresh.churchcenter.com/groups/all-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment" onClick={handleLinkClick}>
                         <div className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">small groups</div>
                       </Link>
                     </li>
@@ -340,10 +342,17 @@ export default function Navbar() {
               </Link>
             </li>
             <li className='flex items-center'>
-              <Link href="https://refresh.churchcenter.com/giving?open-in-church-center-modal=true" target="_blank" rel="noopener noreferrer" className="text-xl block py-2 px-3 me-1 text-primary rounded hover:bg-gray-100 min-[1135px]:hover:bg-transparent min-[1135px]:border-0 min-[1135px]:hover:text-primary min-[1135px]:p-0 dark:text-white min-[1135px]:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white min-[1135px]:dark:hover:bg-transparent">give</Link>
+              
+              {/* NOTE: Give link */}
+              {/* <Link href="https://refresh.churchcenter.com/giving?open-in-church-center-modal=true" target="_blank" rel="noopener noreferrer" className="text-xl block py-2 px-3 me-1 text-primary rounded hover:bg-gray-100 min-[1135px]:hover:bg-transparent min-[1135px]:border-0 min-[1135px]:hover:text-primary min-[1135px]:p-0 dark:text-white min-[1135px]:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white min-[1135px]:dark:hover:bg-transparent">give</Link>
               <svg className="w-4 h-4 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M18 14v4.833A1.166 1.166 0 0 1 16.833 20H5.167A1.167 1.167 0 0 1 4 18.833V7.167A1.166 1.166 0 0 1 5.167 6h4.618m4.447-2H20v5.768m-7.889 2.121 7.778-7.778" />
-              </svg>
+              </svg> */}
+            
+              <Link href="/give">
+                <div className={`${isActive('/give') ? 'primary' : 'gray'} text-gray-900 text-xl block py-2 px-3 rounded hover:bg-gray-100 min-[1135px]:hover:bg-transparent min-[1135px]:border-0 min-[1135px]:hover:text-primary min-[1135px]:p-0 dark:text-white min-[1135px]:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white min-[1135px]:dark:hover:bg-transparent`}>give</div>
+              </Link>
+
             </li>
           </ul>
         </div>

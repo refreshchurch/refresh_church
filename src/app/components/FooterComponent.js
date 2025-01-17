@@ -207,7 +207,9 @@ export default function FooterComponent() {
                   </li>
 
                   <li>
-                    <Link href="/small-groups" title="" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"> Small Groups </Link>
+                    {/* NOTES: Small Group Link */}
+                    {/* <Link href="/small-groups" title="" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"> Small Groups </Link> */}
+                    <Link href="https://refresh.churchcenter.com/groups/all-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment" title="" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"> Small Groups </Link>
                   </li>
 
                   <li>
