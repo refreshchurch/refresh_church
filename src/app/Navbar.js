@@ -309,7 +309,9 @@ export default function Navbar() {
                       </Link>
                     </li>
                     <li>
-                      <Link href="/small-groups" onClick={handleLinkClick}>
+                      {/* NOTE: Small Groups link */}
+                      {/* <Link href="/small-groups" onClick={handleLinkClick}> */}
+                      <Link href="/https://refresh.churchcenter.com/groups/all-groups?enrollment=open_signup%2Crequest_to_join&filter=enrollment" onClick={handleLinkClick}>
                         <div className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">small groups</div>
                       </Link>
                     </li>
