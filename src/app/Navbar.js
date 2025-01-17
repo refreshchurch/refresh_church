@@ -332,11 +332,11 @@ export default function Navbar() {
                         <div className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">events</div>
                       </Link>
                     </li>
-                    <li>
+                    {/* <li>
                         <Link href="/missions-and-outreach" onClick={handleLinkClick}>
                         <div className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">missions</div>
                       </Link>
-                    </li>
+                    </li> */}
                     <li>
                       <Link href="/connect" onClick={handleLinkClick}>
                         <div className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">ministries</div>
