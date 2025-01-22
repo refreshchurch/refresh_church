@@ -53,7 +53,7 @@ export default function Contact() {
               </div>
             </div>
           </Link>
-          <Link href="" target="_blank" rel="noopener noreferrer">
+          <Link href="">
             <div className="bg-white shadow-lg rounded-2xl p-6 h-[250px] justify-center flex flex-col items-center transform transition-all hover:scale-105">
               <Mail className="w-24 h-24" />
               <div className=" text-gray-900 mt-4 flex flex-col items-center justify-between">
