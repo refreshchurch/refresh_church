@@ -7,6 +7,7 @@ import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 // import { serverHooks } from 'next/dist/server/app-render/entry-base';
 
+
 export default function Navbar() {
   const [dropdown, setDropdown] = useState(null);
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -15,6 +16,14 @@ export default function Navbar() {
   const eventRef = useRef(null);
   const connectRef = useRef(null);
   const pathname = usePathname();
+
+  // const navClasses = isDarkTheme
+  //   ? "bg-zinc-900 border-zinc-700 text-gray-100"
+  //   : "bg-white border-gray-200 text-gray-900";
+
+  // const dropdownClasses = isDarkTheme
+  //   ? "bg-zinc-800 divide-zinc-700 text-gray-300"
+  //   : "bg-white divide-gray-100 text-gray-700";
 
   const toggleMobileMenu = () => {
     setMobileMenu(!mobileMenu)
