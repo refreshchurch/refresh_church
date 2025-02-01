@@ -7,6 +7,7 @@ import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 // import { serverHooks } from 'next/dist/server/app-render/entry-base';
 
+
 export default function Navbar() {
   const [dropdown, setDropdown] = useState(null);
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -15,6 +16,14 @@ export default function Navbar() {
   const eventRef = useRef(null);
   const connectRef = useRef(null);
   const pathname = usePathname();
+
+  // const navClasses = isDarkTheme
+  //   ? "bg-zinc-900 border-zinc-700 text-gray-100"
+  //   : "bg-white border-gray-200 text-gray-900";
+
+  // const dropdownClasses = isDarkTheme
+  //   ? "bg-zinc-800 divide-zinc-700 text-gray-300"
+  //   : "bg-white divide-gray-100 text-gray-700";
 
   const toggleMobileMenu = () => {
     setMobileMenu(!mobileMenu)
@@ -304,6 +313,11 @@ export default function Navbar() {
                 <div className="absolute left-0 z-10 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
                   <ul className="py-2 text-base text-gray-700 dark:text-gray-400">
                     <li>
+                      <Link href="/contact" onClick={handleLinkClick}>
+                        <div className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">contact</div>
+                      </Link>
+                    </li>
+                    <li>
                       <Link href="/discovery" onClick={handleLinkClick}>
                         <div className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">discovery</div>
                       </Link>
@@ -347,8 +361,8 @@ export default function Navbar() {
               )}
             </li>
             <li>
-              <Link href="/contact">
-                <div className={`${isActive('/contact') ? 'primary' : 'gray'} text-gray-900 text-xl block py-2 px-3 rounded hover:bg-gray-100 min-[1135px]:hover:bg-transparent min-[1135px]:border-0 min-[1135px]:hover:text-primary min-[1135px]:p-0 dark:text-white min-[1135px]:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white min-[1135px]:dark:hover:bg-transparent`}>contact</div>
+              <Link href="/stories">
+                <div className={`${isActive('/stories') ? 'primary' : 'gray'} text-gray-900 text-xl block py-2 px-3 rounded hover:bg-gray-100 min-[1135px]:hover:bg-transparent min-[1135px]:border-0 min-[1135px]:hover:text-primary min-[1135px]:p-0 dark:text-white min-[1135px]:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white min-[1135px]:dark:hover:bg-transparent`}>stories</div>
               </Link>
             </li>
             <li className='flex items-center'>
