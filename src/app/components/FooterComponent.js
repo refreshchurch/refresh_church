@@ -1,6 +1,7 @@
 'use client';
 
 import { Button } from "flowbite-react";
+import { ArrowUp, ArrowUpRightIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -175,6 +176,10 @@ export default function FooterComponent() {
                   <li>
                     <Link href="/beliefs" title="" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"> Beliefs </Link>
                   </li>
+
+                  <li>
+                    <Link href="/stories" title="" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"> Stories</Link>
+                  </li>
                 </ul>
               </div>
 
@@ -202,6 +207,7 @@ export default function FooterComponent() {
               <div>
                 <h6 className="mb-4 text-sm font-semibold uppercase text-gray-900 dark:text-white">Connect</h6>
                 <ul className="space-y-3">
+
                   <li>
                     <Link href="/discovery" title="" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"> Discovery</Link>
                   </li>
@@ -233,15 +239,22 @@ export default function FooterComponent() {
                 <h6 className="mb-4 text-sm font-semibold uppercase text-gray-900 dark:text-white">Socials</h6>
                 <ul className="space-y-3">
                   <li>
-                    <Link href="https://www.instagram.com/refreshchurchtv/'" title="" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"> Instagram</Link>
+                    <Link href="https://www.instagram.com/refreshchurchtv/'" target="_blank" rel="noopener noreferrer" title="" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"> Instagram</Link>
                   </li>
 
                   <li>
-                    <Link href="https://www.facebook.com/myrefreshchurch" title="" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"> Facebook </Link>
+                    <Link href="https://www.facebook.com/myrefreshchurch" target="_blank" rel="noopener noreferrer" title="" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"> Facebook </Link>
                   </li>
 
                   <li>
-                    <Link href="https://www.youtube.com/@refreshchurchtv" title="" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"> Youtube </Link>
+                    <Link href="https://www.youtube.com/@refreshchurchtv" target="_blank" rel="noopener noreferrer" title="" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"> Youtube </Link>
+                  </li>
+
+                  <li>
+                    <Link href="https://refreshchurchmerch.myshopify.com/" target="_blank" rel="noopener noreferrer" title="" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                      Merch
+                      <ArrowUpRightIcon className="inline-block h-4 w-4" />
+                    </Link>
                   </li>
                 </ul>
               </div>
