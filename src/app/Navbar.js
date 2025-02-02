@@ -381,7 +381,7 @@ export default function Navbar() {
             </li>
 
             <li className='text-primary'>
-              <Link className='flex items-center' href="/merch">
+              <Link className='flex items-center' href="https://refreshchurchmerch.myshopify.com/" target="_blank" rel="noopener noreferrer">
                 <div className={` text-xl block py-2 px-3 rounded hover:bg-gray-100 min-[1210px]:hover:bg-transparent min-[1210px]:border-0 min-[1210px]:hover:text-primary min-[1210px]:p-0 dark:text-white min-[1210px]:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white min-[1210px]:dark:hover:bg-transparent`}>merch</div>
               <ArrowUpRight className="w-4 h-4"/>
               </Link>
