@@ -9,7 +9,7 @@ const nextConfig = {
       return [
         {
           source: '/merch',
-          destination: 'https://your-shopify-store-url.com', // Replace with your actual Shopify store URL
+          destination: 'https://refreshchurchmerch.myshopify.com/', // Replace with your actual Shopify store URL
           permanent: false, // Set to true if this should be a permanent redirect
         },
       ];
