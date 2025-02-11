@@ -23,7 +23,7 @@ export default function YouthMinistry() {
         <div className="lg:w-1/2">
           <div className="w-full h-[350px] relative overflow-hidden rounded-2xl shadow-lg">
             <Image
-              src="/photos/youth/youth-4.webp"
+              src="/photos/youth/01.webp"
               layout="fill"
               objectFit="cover"
               alt="Youth Ministry Image 1"
@@ -45,7 +45,7 @@ export default function YouthMinistry() {
           <div className="lg:w-1/2">
             <div className="w-full h-[250px] relative overflow-hidden rounded-2xl shadow-lg">
               <Image
-                src="/photos/youth/youth-2.webp" // Replace with the actual path to the image
+                src="/photos/youth/02.webp" // Replace with the actual path to the image
                 layout="fill"
                 objectPosition="0 35%"
                 objectFit="cover"
@@ -71,7 +71,7 @@ export default function YouthMinistry() {
         <div className="lg:w-1/2 mt-8 lg:mt-0">
           <div className="w-full h-[350px] relative overflow-hidden rounded-2xl shadow-lg">
             <Image
-              src="/photos/youth/youth-3.webp" // Replace with the actual path to the image
+              src="/photos/youth/03.webp" // Replace with the actual path to the image
               layout="fill"
               objectPosition="0 10%"
               objectFit="cover"
@@ -82,7 +82,7 @@ export default function YouthMinistry() {
       </div>
 
       {/* Youth Program Photo Section */}
-      {/* <div className="mb-12">
+      {/* <div className="mb-12 mt-10">
         <h3 className="text-3xl font-bold text-gray-900 mb-8">Youth in Action</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="w-full h-[250px] relative overflow-hidden rounded-2xl shadow-lg">

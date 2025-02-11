@@ -59,7 +59,7 @@ export default function KidMinistry() {
           </div>
           <div className="lg:w-1/2 h-[250px] relative overflow-hidden rounded-2xl shadow-lg">
             <Image
-              src="/photos/kids/kids-1.webp"
+              src="/photos/kids/01.webp"
               layout="fill"
               objectFit="cover"
               alt="Your First Sunday"
@@ -71,7 +71,7 @@ export default function KidMinistry() {
         <div className="mb-12 flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2 h-[250px] relative overflow-hidden rounded-2xl shadow-lg mb-6 lg:mb-0">
             <Image
-              src='/photos/kids/r-kids.webp'
+              src='/photos/kids/02.webp'
               layout="fill"
               objectFit="cover"
               alt="Nursery"
@@ -96,7 +96,7 @@ export default function KidMinistry() {
           <div className="lg:w-1/2 h-[250px] relative overflow-hidden rounded-2xl shadow-lg">
             {/* Picture of the crafts */}
             <Image
-              src="/photos/kids/kids-3.webp"
+              src="/photos/kids/03.webp"
               layout="fill"
               objectFit="cover"
               alt="Elementary & Pre-Teen"
@@ -109,7 +109,7 @@ export default function KidMinistry() {
           <div className="lg:w-1/2 h-[250px] relative overflow-hidden rounded-2xl shadow-lg mb-6 lg:mb-0">
 
             <Image
-              src="/photos/kids/kids-2.webp"
+              src="/photos/kids/04.webp"
               layout="fill"
               objectFit="cover"
               alt="Toddlers & Pre-K"

@@ -82,10 +82,10 @@ export default function HomePage() {
         <div className="flex flex-col gap-4">
           <Link href="/first-time-here" className="bg-white shadow-md rounded-2xl w-full aspect-video relative overflow-hidden transform transition-transform duration-350 hover:scale-[1.02]">
             <Image
-              src="/photos/home/church-life-5.webp"
+              src="/photos/home/first-time-here.webp"
               layout="fill"
               objectFit="cover"
-              objectPosition="0 40%"
+              objectPosition="0 15%"
               alt="First Time Here Image"
               draggable="false"
             />
