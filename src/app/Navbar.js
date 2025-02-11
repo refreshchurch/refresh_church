@@ -392,7 +392,7 @@ export default function Navbar() {
           </ul>
         </div>
 
-
+        {/* SOCIALS */}
         {/* <div className='items-bottom space-x-1.5 min-[1215px]:flex hidden '>
           <a href='https://www.instagram.com/refreshchurchtv/' target="_blank" rel="noopener noreferrer">
             <svg className=" w-8 h-8 text-gray-600 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">

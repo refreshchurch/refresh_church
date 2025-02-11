@@ -13,14 +13,57 @@ export default function FirstTimeHere() {
 
       {/* Hero Carousel Section */}
       <div className="relative w-full h-[500px] mb-12 rounded-xl overflow-hidden">
+        {/* <Carousel
+          autoPlay
+          infiniteLoop
+          showThumbs={false}
+          showStatus={false}
+          interval={2000}
+          className="rounded-2xl overflow-hidden"
+        >
+          <div className="relative w-full h-[500px] mb-12 rounded-xl overflow-hidden">
+            <img
+              src="/photos/first-time-here/fth-01.webp"
+              className="w-full h-full object-contain user-select-none"
+              alt="Image 1"
+            />
+          </div>
+          <div className="relative block h-full">
+            <img
+              src="/photos//first-time-here/fth-02.webp"
+              className="w-full h-full object-cover user-select-none"
+              alt="Image 2"
+            />
+          </div>
+          <div className="relative block h-full">
+            <img
+              src="/photos/first-time-here/fth-03.webp"
+              className="w-full h-full object-cover user-select-none"
+              alt="Image 3"
+            />
+          </div>
+          <div className="relative block h-full">
+            <img
+              src="/photos/first-time-here/fth-04.webp"
+              className="w-full h-full object-cover user-select-none"
+              alt="Image 3"
+            />
+          </div>
+          <div className="relative block h-full">
+            <img
+              src="/photos/first-time-here/fth-05.webp"
+              className="w-full h-full object-cover user-select-none"
+              alt="Image 3"
+            />
+          </div>
+        </Carousel> */}
         <Image
-          src='/photos/first-time-here/first-time-here.webp'
+          src='/photos/first-time-here/fth-03.webp'
           layout="fill"
           objectFit="cover"
           objectPosition="center"
           alt="First Time Here Image"
           draggable="false"
-
         />
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
           <h1 className="text-white sm:text-7xl text-5xl font-bold max-[473px]:text-4xl z-100">First Time Here?</h1>
