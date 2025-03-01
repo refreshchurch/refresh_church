@@ -2,7 +2,32 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-      domains: ['placehold.co', 'example.com', 'another-example.com', 'refresh.church', 'registrations-production.s3.amazonaws.com', 'groups-production.s3.amazonaws.com', 'images.planningcenterusercontent.com'],
+      remotePatterns: [
+        {
+          protocol: "https",
+          hostname: "placehold.co",
+        },
+        {
+          protocol: "https",
+          hostname: "refresh.church",
+        },
+        {
+          protocol: "https",
+          hostname: "registrations-production.s3.amazonaws.com",
+        },
+        {
+          protocol: "https",
+          hostname: "groups-production.s3.amazonaws.com",
+        },
+        {
+          protocol: "https",
+          hostname: "images.planningcenterusercontent.com",
+        },
+        {
+          protocol: "https",
+          hostname: "i.ytimg.com", // YouTube thumbnails
+        },
+      ],
       dangerouslyAllowSVG: true,
     },
     async redirects() {
@@ -11,7 +36,7 @@ const nextConfig = {
           source: '/merch',
           destination: 'https://refreshchurchmerch.myshopify.com/', // Replace with your actual Shopify store URL
           permanent: false, // Set to true if this should be a permanent redirect
-        },
+        }
       ];
     },
   };
