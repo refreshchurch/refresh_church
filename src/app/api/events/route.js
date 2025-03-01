@@ -2,7 +2,13 @@ import { NextResponse } from "next/server";
 import axios from "axios";
 import Redis from "ioredis";
 
-const redis = new Redis(process.env.REDIS_URL);
+const redis = new Redis(process.env.REDIS_URL, {
+  tls: { rejectUnauthorized: false }, // Required for Upstash
+  maxRetriesPerRequest: 5, // Prevent excessive retries
+  enableAutoPipelining: true, // Optimize batch requests
+  lazyConnect: true, // Connect only when needed
+  connectTimeout: 10000, // 10-second timeout
+});
 
 export async function GET() {
   const CACHE_KEY = "planning_center_events";
