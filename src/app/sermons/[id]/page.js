@@ -20,11 +20,9 @@ export default function SermonPlayer() {
           `https://www.googleapis.com/youtube/v3/videos?key=${API_KEY}&part=snippet&id=${id}`
         );
         const data = await response.json();
-        console.log("fetched data:", data)
         if (data.items.length > 0) {
           setVideo(data.items[0].snippet);
         }
-        console.log("set data:", data)
       } catch (error) {
         console.error("Error fetching video details:", error);
       }
@@ -84,7 +82,7 @@ export default function SermonPlayer() {
           {/* Video Title */}
           <h2 className="text-2xl font-semibold text-gray-900">{video.title}</h2>
           <div className="flex items-center space-x-2 text-sm text-gray-600">
-            <Calendar className="w-5 h-5"/>
+            <Calendar className="w-5 h-5" />
             <p>{formatDate(video.publishedAt)}</p>
           </div>
           {/* Video Description */}
