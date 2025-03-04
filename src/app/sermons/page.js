@@ -19,13 +19,27 @@ export default function Sermons() {
     console.log("Sermons state changed:", sermons);
   }, [sermons]);
 
-  const fetchYouTubeData = async () => {
+  const fetchYouTubeData = async (pageToken = "") => {
     try {
-      const response = await fetch("/api/youtube");
+      const response = await fetch(`/api/youtube?pageToken=${pageToken}`);
       const data = await response.json();
-      setSermons(data.items || []);
+
+      if (data.items && data.items.length > 0) {
+        // Set latest video only on first load
+        if (!latestVideo) {
+          setLatestVideo(data.items[0]);
+        }
+
+        // Append new sermons without overriding existing ones
+        setSermons((prev) => [...prev, ...(pageToken ? data.items : data.items.slice(1))]);
+
+        // Update the next page token for infinite scrolling
+        setNextPageToken(data.nextPageToken || null);
+      }
     } catch (error) {
       console.error("Error fetching YouTube data:", error);
+    } finally {
+      setLoading(false);
     }
   };
 
