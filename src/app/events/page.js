@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import Image from "next/image";
 import Link from "next/link";
 import Card from '../components/Card';
-import showEventPage from '../../../constants';
+import { showEventPage } from '../../../constants';
 import { notFound } from 'next/navigation';
 
 // Utility function to strip HTML tags
@@ -54,8 +54,8 @@ export default function Events() {
     fetchEvents();
   }, []);
 
-  // Redirect to 404 if showEventPage is false
-  if (!showEventPage) {
+  //Redirect to 404 if showEventPage is false
+  if (showEventPage === false) {
     notFound();
   }
 
