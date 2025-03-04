@@ -17,8 +17,8 @@ export async function GET() {
     );
     const data = await response.json();
 
-    await redis.set("youtube-sermons", JSON.stringify(data), "EX", 3600); // Cache for 1 hour
-
+    await redis.set("youtube-sermons", JSON.stringify(data), "EX", 10800); // Cache for 3 hours
+    
     return NextResponse.json(data);
   } catch (error) {
     return NextResponse.json({ error: "Failed to fetch YouTube data" }, { status: 500 });

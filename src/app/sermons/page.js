@@ -64,10 +64,10 @@ export default function Sermons() {
           Sermons
         </h2>
         {loading ? (
-          <div className="relative w-full aspect-video overflow-hidden rounded-xl shadow-lg bg-gray-300 animate-pulse"></div>
+          <div className="relative w-full aspect-video overflow-hidden rounded-xl shadow-lg bg-gray-300 animate-pulse "></div>
         ) : latestVideo && (
           <Link href={`/sermons/${latestVideo.id.videoId}`} className="block pb-3">
-            <div className="relative w-full aspect-video overflow-hidden rounded-xl shadow-lg">
+            <div className="relative w-full aspect-video overflow-hidden rounded-xl shadow-lg transform transition-transform duration-350 hover:scale-[1.01]">
               <Image
                 width={500}
                 height={500}
@@ -107,7 +107,7 @@ export default function Sermons() {
                 href={`/sermons/${video.id.videoId}`}
                 ref={index === sermons.length - 1 ? lastSermonRef : null}
               >
-                <div className="relative w-full aspect-video overflow-hidden rounded-xl shadow-lg">
+                <div className="relative w-full aspect-video overflow-hidden rounded-xl shadow-lg transform transition-transform duration-350 hover:scale-[1.01]">
                   <Image
                     width={500}
                     height={500}
