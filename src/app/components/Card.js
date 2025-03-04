@@ -9,7 +9,6 @@ const stripHtml = (html) => {
 };
 
 export default function Card({ item, showMobile }) {
-  console.log("showMobile:", showMobile);
   return (
     <div className="bg-white shadow-lg rounded-xl overflow-hidden transform transition-all hover:scale-105">
       <div className="relative w-full sm:h-[275px] h-[200px]">

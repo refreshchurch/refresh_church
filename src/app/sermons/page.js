@@ -15,10 +15,6 @@ export default function Sermons() {
     fetchYouTubeData();
   }, []);
 
-  useEffect(() => {
-    console.log("Sermons state changed:", sermons);
-  }, [sermons]);
-
   const fetchYouTubeData = async (pageToken = "") => {
     try {
       const response = await fetch(`/api/youtube?pageToken=${pageToken}`);

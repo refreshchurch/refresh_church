@@ -27,7 +27,7 @@ export async function GET() {
 
       // Return cache immediately if still fresh
       if (age < STALE_THRESHOLD) {
-        console.log("eturning cached Planning Center events...");
+        console.log("returning cached Planning Center events...");
         return NextResponse.json(JSON.parse(cachedData));
       }
 
