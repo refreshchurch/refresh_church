@@ -77,6 +77,13 @@ export default function HomePage() {
         </div>
       </div>
 
+      {/* Invisible h tags */}
+      <div className="hidden">
+        <h1>Refresh Church</h1>
+        <h2>More than just a Sunday.</h2>
+        <h3></h3>
+      </div>
+
       {/* Middle */}
       <div className="grid md:grid-cols-[65%_1fr] grid-cols-1 gap-4 mb-4">
         <div className="flex flex-col gap-4">
@@ -102,15 +109,15 @@ export default function HomePage() {
               draggable="false"
             />
             <div className="absolute inset-0 bg-black bg-opacity-10 flex items-center justify-center">
-              <h1 className="text-white sm:text-7xl text-5xl font-bold z-100">Leadership</h1>
+              <h3 className="text-white sm:text-7xl text-5xl font-bold z-100">Leadership</h3>
             </div>
           </Link>
         </div>
 
         <div className="flex flex-col gap-4">
           <div className="bg-white shadow-md rounded-2xl w-full md:h-[35%] h-[40%] relative overflow-hidden p-6">
-            <h1 className="text-black text-3xl font-bold pb-[1px]">Learn More</h1>
-            <h3 className="text-gray-400 text-lg">More than just a Sunday</h3>
+            <h3 className="text-black text-3xl font-bold pb-[1px]">Learn More</h3>
+            <h5 className="text-gray-400 text-lg">More than just a Sunday</h5>
             <ul className="mt-2 gap-y-2">
               <Link href="/r-kids" className="flex items-center gap-2 px-2 py-3 hover:bg-gray-100 rounded-lg cursor-pointer">
                 <Shapes className="w-7" />
@@ -143,8 +150,8 @@ export default function HomePage() {
             </ul>
           </div>
           <div className="bg-white shadow-md rounded-2xl w-full h-[65%] relative overflow-hidden p-6">
-            <h2 className="text-black text-3xl font-bold">Get Involved</h2>
-            <h3 className="text-gray-400 text-xl ps-0.5">Next Steps</h3>
+            <h4 className="text-black text-3xl font-bold">Get Involved</h4>
+            <h5 className="text-gray-400 text-xl ps-0.5">Next Steps</h5>
             <ul className="mt-2 gap-y-2">
               <Link href="/connect" className="flex items-center gap-2 px-2 py-3 hover:bg-gray-100 rounded-lg cursor-pointer">
                 <Cable className="w-7" />
@@ -229,7 +236,7 @@ export default function HomePage() {
             draggable="false"
           /> */}
           <div className="absolute inset-0 bg-black bg-opacity-0 flex items-center justify-center flex-col">
-            <h2 className="text-gray-900 text-2xl sm:text-5xl font-bold z-100 mb-1 mt-5"> Connect with us Online</h2>
+            <h4 className="text-gray-900 text-2xl sm:text-5xl font-bold z-100 mb-1 mt-5"> Connect with us Online</h4>
             <div className="flex justify-end space-x-8 mt-3">
               <Link href='https://www.instagram.com/refreshchurchtv/' target="_blank" rel="noopener noreferrer">
                 <svg className=" w-16 h-16 sm:w-20 sm:h-20 hover:scale-110 duration-300 ease-in-out cursor-pointer text-gray-900 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
