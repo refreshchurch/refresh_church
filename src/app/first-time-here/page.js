@@ -9,17 +9,49 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import the ca
 
 const FaqData = [
   {
-    question: "This is a question?",
-    answer: "Filler text for what answer to said question."
+    question: "Where is your church located?",
+    answer: "Services are every Sunday @ Owyhee Highschool in Meridian, Idaho. Our office is open Mon - Thur at our HQ, located close to downtown Meridian, Idaho. "
   },
   {
-    question: "How long are the services?",
-    answer: "Filler text for how long are the services."
+    question: "Where do I park?",
+    answer: "Lots of parking! Follow signs to the northside of the school. "
   },
   {
-    question: "What's available for my children?",
-    answer: "Filler text for what's available for children."
-  }
+    question: "What denomination is your church affiliated with?",
+    answer: "We are a non-denominational church."
+  },
+  {
+    question: "What can I expect when I visit a service?",
+    answer: "Expect a “come as you are vibe” no need to dress any certain way, be comfortable. Expect someone to welcome you but not too awkward :) Kids ministry check in will be off to your left, coffee to the right by auditorium stairs. Stop by the connections booth for info or for signing up for anything."
+  },
+  {
+    question: "What time are your church services?",
+    answer: "9 am & 10:30 am"
+  },
+  {
+    question: "What do you offer for kids? (Do you offer Sunday School? Or “children’s ministry”?",
+    answer: "We have age appropriate environments for kids with a trained and happy team ready to go!"
+  },
+  {
+    question: "Who are the pastors?",
+    answer: "Pastor T.J & Leah Hankey Hankey started the church in 2021."
+  },
+  {
+    question: "Do I have to be a Christian to come to church?",
+    answer: "Nope. We like everyone!"
+  },
+  {
+    question: "How should I dress?",
+    answer: "However you want."
+  },
+  {
+    question: "How long are your church services?",
+    answer: "1 hour to an hour and 10 min usually."
+  },
+  {
+    question: "What style of church services do you have?",
+    answer: "Modern, fun, sorta loud music with an engaging message. Youth normally sit down front but can sit anywhere they like."
+  },
 ]
 
 const FistTimeHereCardData = [
@@ -82,7 +114,7 @@ function FaqItem({ item }) {
         className="w-full p-6 text-left flex justify-between items-center focus:outline-none "
         aria-expanded={isOpen}
       >
-        <h3 className="text-xl font-bold text-primary">{item.question}</h3>
+        <h3 className="text-xl font-bold text-gray-700">{item.question}</h3>
         <svg
           className={`w-6 h-6 text-primary transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}
           fill="none"
@@ -222,7 +254,7 @@ export default function FirstTimeHere() {
       </div>
 
       {/* FAQ Section */}
-      {/* <div className="mb-12 pt-5">
+      <div className="mb-12 pt-5">
         <h2 className="text-3xl font-semibold text-gray-900 mb-8">Frequently Asked Questions</h2>
         <div className="space-y-4">
           <div className="space-y-4">
@@ -231,7 +263,7 @@ export default function FirstTimeHere() {
             ))}
           </div>
         </div>
-      </div> */}
+      </div>
 
       {/* Church Slogan and Verse */}
       <div className="text-center mb-12 pt-8">
