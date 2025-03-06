@@ -222,7 +222,7 @@ export default function FirstTimeHere() {
       </div>
 
       {/* FAQ Section */}
-      <div className="mb-12 pt-10">
+      {/* <div className="mb-12 pt-5">
         <h2 className="text-3xl font-semibold text-gray-900 mb-8">Frequently Asked Questions</h2>
         <div className="space-y-4">
           <div className="space-y-4">
@@ -231,7 +231,7 @@ export default function FirstTimeHere() {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Church Slogan and Verse */}
       <div className="text-center mb-12 pt-8">
