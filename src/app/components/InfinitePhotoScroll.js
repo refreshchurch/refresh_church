@@ -6,7 +6,7 @@ export function InfinitePhotoScroll() {
   // Array of 16 placeholder images
   const images = Array.from({ length: 16 }, (_, i) => ({
     id: i + 1,
-    src: `/photos/easter/img${i + 1}.jpg` || `/photos/easter/img${i + 1}.JPG`,
+    src: `/photos/easter/img${i + 1}.webp`,
     alt: `Easter photo ${i + 1}`
   }))
 
