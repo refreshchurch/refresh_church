@@ -7,8 +7,18 @@ html{
   background-color: #F8F7F4;
 }
 
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 
-
+.animate-scroll {
+  animation: scroll 15s linear infinite;
+}
 
 
 @layer base {

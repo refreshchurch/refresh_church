@@ -21,7 +21,7 @@ export default function EventPopup({ id, imageUrl, eventUrl, delay = 4000, endDa
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const img = new window.Image()
-      img.src = imageUrl
+      img.src = imageUrl 
       img.onload = () => {
         if (img.width && img.height) {
           setAspectRatio(img.width / img.height)
