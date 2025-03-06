@@ -34,9 +34,9 @@ export default function HomePage() {
   return (
     <div className="container mx-auto px-2 sm:px-4 py-8 ">
       <EventPopup
-      imageUrl="/photos/popup/worship_night.webp"
-      eventUrl="/"
-      endDate={new Date('2025-01-19T19:30:00-07:00')} //// 7:30 PM MST UTC time
+        imageUrl="/photos/popup/worship_night.webp"
+        eventUrl="/"
+        endDate={new Date('2025-01-19T19:30:00-07:00')} //// 7:30 PM MST UTC time
       />
       {/* Main */}
       <div className="flex flex-wrap gap-4 justify-center mb-4">
@@ -64,11 +64,11 @@ export default function HomePage() {
               draggable="false"
             />
             {/*  */}
-            <Link href="/contact" className="sm:block hidden text-white lg:text-2xl text-xl font-bold z-100 cursor-pointer"> 
+            <Link href="/contact" className="sm:block hidden text-white lg:text-2xl text-xl font-bold z-100 cursor-pointer">
               Sunday Services at Owhyee High School
             </Link>
             {/* Sm screen Title */}
-            <Link href="/contact" className="block sm:hidden text-white lg:text-2xl text-xl font-bold z-100 cursor-pointer"> 
+            <Link href="/contact" className="block sm:hidden text-white lg:text-2xl text-xl font-bold z-100 cursor-pointer">
               <span className="block">Sunday Services at</span>
               <span className="block">Owhyee High School</span>
             </Link>
@@ -175,7 +175,7 @@ export default function HomePage() {
               </Link>
               {/* NOTE: Event Link */}
               <Link href="https://refresh.churchcenter.com/registrations/events" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-2 py-3 hover:bg-gray-100 rounded-lg cursor-pointer">
-              {/* <Link href="/events" className="flex items-center gap-2 px-2 py-3 hover:bg-gray-100 rounded-lg cursor-pointer"> */}
+                {/* <Link href="/events" className="flex items-center gap-2 px-2 py-3 hover:bg-gray-100 rounded-lg cursor-pointer"> */}
                 <Calendar className="w-7" />
                 <p className="text-xl font-semibold">
                   Events
@@ -183,8 +183,8 @@ export default function HomePage() {
               </Link>
 
               {events.slice(0, 2).map((event, index) => (
-                  <HomeEventCard key={index} event={event} />
-                ))}
+                <HomeEventCard key={index} event={event} />
+              ))}
               {/* <Link href={''} className="flex items-center gap-5 px-3 py-3 hover:bg-gray-100 rounded-lg cursor-pointer mt-3">
                 <div className="overflow-hidden rounded-full w-12 h-12 flex items-center">
                   <Image
@@ -281,6 +281,47 @@ export default function HomePage() {
         </div>
       </div>
 
+      {/* Video(s) Section */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+
+        {/* Refresh Intro Video */}
+        <div className="bg-white shadow-md rounded-2xl w-full aspect-video relative overflow-hidden transform transition-transform duration-350 hover:scale-[1.02]">
+          <video
+            // autoPlay
+            controls
+            muted
+            loop
+            playsInline
+            poster="/photos/home/invite-thumbnail.JPG"
+            preload="auto"
+            className='absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100'
+          >
+            <source src="/videos/refresh-invite.webm" type="video/webm" />
+            {/* Fallback for unsupported browsers */}
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        {/* Durrand Video */}
+        <div className="bg-white shadow-md rounded-2xl w-full aspect-video relative overflow-hidden transform transition-transform duration-350 hover:scale-[1.02]">
+          <video
+            // autoPlay
+            controls
+            muted
+            loop
+            playsInline
+            poster="/photos/home/durand-thumbnail.png"
+            preload="auto"
+            className='absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100'
+          >
+            <source src="/videos/durand-story.webm" type="video/webm" />
+            {/* Fallback for unsupported browsers */}
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+      </div>
+
       {/* Bottom */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
         <Link href="/connect" className="bg-white shadow-md rounded-2xl w-full aspect-video relative overflow-hidden transform transition-transform duration-350 hover:scale-[1.02]">
@@ -308,6 +349,7 @@ export default function HomePage() {
           </div>
         </Link>
       </div>
+
     </div>
   );
 }
