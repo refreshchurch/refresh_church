@@ -7,9 +7,9 @@ export default function EasterPage() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <div className="container mx-auto px-8 sm:px-36 py-12">
+      <div className="container mx-auto px-8 sm:px-36 pt-12 pb-6">
 
-        <section className="relative w-full h-[500px] mb-12 rounded-xl overflow-hidden">
+        <section className="relative w-full h-[500px] rounded-xl overflow-hidden">
           <Image
             src='/photos/easter/bg-with-text.png'
             layout="fill"
@@ -22,7 +22,13 @@ export default function EasterPage() {
           <h1 className="text-white sm:text-7xl text-5xl font-bold max-[473px]:text-4xl z-100">First Time Here?</h1>
         </div> */}
         </section>
+      </div>
 
+      <section className=" ">
+        <InfinitePhotoScroll />
+      </section>
+
+      <div className="container mx-auto px-8 sm:px-36 pt-12 pb-6">
         <div className="flex flex-col lg:flex-row items-center mb-12">
           <div className="lg:w-1/2 mb-8 lg:mb-0 lg:pr-8">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">EASTER at REFRESH</h1>
@@ -88,12 +94,22 @@ export default function EasterPage() {
             </div>
           </div>
         </div>
+        
 
       </div>
 
       {/* Photo Gallery with Infinite Scroll */}
       <section className="pt-6">
-        <InfinitePhotoScroll />
+        {/* <InfinitePhotoScroll /> */}
+        <div className="w-full h-[150px] relative overflow-hidden">
+              <Image
+                src="/photos/easter/banner-with-text.png"
+                layout="fill"
+                objectPosition="0 55%"
+                objectFit="cover"
+                alt="easter image 3"
+              />
+            </div>
       </section>
 
     </main>
