@@ -36,7 +36,7 @@ export default function HomePage() {
       <EventPopup
       imageUrl="/photos/popup/Easter-2025.png"
       eventUrl="/easter"
-      endDate={new Date('2025-04-20T17:00:00.000Z')} //// 11:00 AM MST UTC time
+      endDate={new Date('2025-04-20T17:00:00.000Z')} //// 4-10-20-25 @ 11:00 AM MST UTC time
       />
       {/* Main */}
       <div className="flex flex-wrap gap-4 justify-center mb-4">
