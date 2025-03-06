@@ -35,7 +35,7 @@ export default function HomePage() {
     <div className="container mx-auto px-2 sm:px-4 py-8 ">
       <EventPopup
       easter-test
-      imageUrl="/photos/popup/scaled.png"
+      imageUrl="/photos/popup/Easter-2025.png"
       eventUrl="/easter"
       endDate={new Date('2025-04-20T17:00:00.000Z')} //// 4-10-20-25 @ 11:00 AM MST UTC time
       />
