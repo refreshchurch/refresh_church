@@ -55,8 +55,8 @@ export default function EasterPage() {
         <div className="mb-12">
           <div className="flex flex-col lg:flex-row-reverse items-center">
             <div className="lg:w-1/2 lg:pl-8 mb-8 lg:mb-0">
-              <h1 className="text-3xl font-semibold text-gray-900 mb-4">Something For ...</h1>
-              <h2 className="text-gray-700 text-lg">Come for amazing worship... Paragraph</h2>
+              <h1 className="text-3xl font-semibold text-gray-900 mb-4">Something for families, kids, youth, and young adults.</h1>
+              <h2 className="text-gray-700 text-lg">Come for amazing worship, a great sermon, and to meet stellar people who are after the same things in life</h2>
             </div>
             <div className="lg:w-1/2">
               <div className="w-full h-[250px] relative overflow-hidden rounded-2xl shadow-lg">
@@ -74,9 +74,9 @@ export default function EasterPage() {
 
         <div className="flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2 mb-8 lg:mb-0 lg:pr-8">
-            <h1 className="text-4xl font-semibold text-gray-900 mb-4">We are better together</h1>
+            <h1 className="text-4xl font-semibold text-gray-900 mb-4">We are all better together</h1>
             <h2 className="text-primary font-semibold text-xl">
-              every person refreshed. every purpose discovered.
+              We believe that every person can be refreshed and every purpose can be discovered
             </h2>
             {/* <Link href="https://refresh.churchcenter.com/groups/small-groups/youth-small-group" className="inline-block bg-primaryDark text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-primary transition duration-300 ease-in-out">
               Join Us at The Well
@@ -94,7 +94,7 @@ export default function EasterPage() {
             </div>
           </div>
         </div>
-        
+
 
       </div>
 
@@ -102,14 +102,14 @@ export default function EasterPage() {
       <section className="pt-6">
         {/* <InfinitePhotoScroll /> */}
         <div className="w-full h-[150px] relative overflow-hidden">
-              <Image
-                src="/photos/easter/banner-with-text.png"
-                layout="fill"
-                objectPosition="0 55%"
-                objectFit="cover"
-                alt="easter image 3"
-              />
-            </div>
+          <Image
+            src="/photos/easter/banner-with-text.png"
+            layout="fill"
+            objectPosition="0 55%"
+            objectFit="cover"
+            alt="easter image 3"
+          />
+        </div>
       </section>
 
     </main>
