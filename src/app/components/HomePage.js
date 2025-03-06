@@ -292,7 +292,7 @@ export default function HomePage() {
             muted
             loop
             playsInline
-            poster=" "
+            poster="/photos/home/invite-thumbnail.JPG"
             preload="auto"
             className='absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100'
           >
@@ -307,13 +307,14 @@ export default function HomePage() {
           <video
             // autoPlay
             controls
+            muted
             loop
             playsInline
-            poster="https://img.youtube.com/vi/ysDpWS-sdQ8/maxresdefault.jpg"
+            poster="/photos/home/durand-thumbnail.png"
             preload="auto"
             className='absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100'
           >
-            <source src="/videos/durrand-story.webm" type="video/webm" />
+            <source src="/videos/durand-story.webm" type="video/webm" />
             {/* Fallback for unsupported browsers */}
             Your browser does not support the video tag.
           </video>
