@@ -21,15 +21,15 @@ export default function EasterPage() {
           <h1 className="mb-4 text-4xl font-bold tracking-tight md:text-6xl lg:text-7xl">Easter at Refresh Church 2025</h1>
           <h2 className="mb-6 text-xl font-medium md:text-3xl lg:text-4xl">Owyhee High School 9:30 am and 10:30 am</h2>
           <p className="max-w-2xl text-md md:text-xl">
-          Something for families, kids, youth, and young adults. Come for amazing worship, a great sermon, and to meet stellar people who are after the same things in life. We are all better together - we believe that every person can be refreshed and every purpose can be discovered. See you soon! 
+            Something for families, kids, youth, and young adults. Come for amazing worship, a great sermon, and to meet stellar people who are after the same things in life. We are all better together - we believe that every person can be refreshed and every purpose can be discovered. See you soon!
           </p>
         </div>
       </section>
 
-        <InfinitePhotoScroll />
+      <InfinitePhotoScroll />
       {/* Photo Gallery with Infinite Scroll */}
-      <section className="py-12">
-      </section>
+      {/* <section className="py-12">
+      </section> */}
     </main>
   )
 }
