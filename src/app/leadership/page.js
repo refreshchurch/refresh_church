@@ -29,7 +29,7 @@ export default function Leadership() {
     {
       img: "/photos/leadership/jeanine.webp",
       name: "Jeanine Abernathy",
-      title: "Children’s Ministry Assistant",
+      title: "Children’s Director",
     },
   ]
 
