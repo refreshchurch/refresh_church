@@ -42,7 +42,7 @@ export default function EasterPage() {
           <div className="lg:w-1/2 w-full">
             <div className="w-full h-[250px] relative overflow-hidden rounded-2xl shadow-lg">
               <Image
-                src="/photos/easter/img7.webp"
+                src="/photos/easter/img14.webp"
                 layout="fill"
                 objectFit="cover"
                 alt="easter image 1"
@@ -61,7 +61,7 @@ export default function EasterPage() {
             <div className="lg:w-1/2 w-full">
               <div className="w-full h-[250px] relative overflow-hidden rounded-2xl shadow-lg">
                 <Image
-                  src="/photos/easter/img2.webp"
+                  src="/photos/easter/img1.webp"
                   layout="fill"
                   objectPosition="0 50%"
                   objectFit="cover"
@@ -85,7 +85,7 @@ export default function EasterPage() {
           <div className="lg:w-1/2 w-full">
             <div className="w-full h-[250px] relative overflow-hidden rounded-2xl shadow-lg">
               <Image
-                src="/photos/easter/img4.webp"
+                src="/photos/easter/img13.webp"
                 layout="fill"
                 objectPosition="0 55%"
                 objectFit="cover"
