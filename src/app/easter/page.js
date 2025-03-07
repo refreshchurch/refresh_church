@@ -9,7 +9,7 @@ export default function EasterPage() {
       {/* Hero Section */}
       <div className="container mx-auto px-8 sm:px-36 pt-12 pb-6">
 
-        <section className="relative w-full h-[500px] rounded-xl overflow-hidden">
+        <section className="relative w-full h-[350px] md:h-[500px] rounded-xl overflow-hidden">
           <Image
             src='/photos/easter/bg-with-text.png'
             layout="fill"
@@ -39,7 +39,7 @@ export default function EasterPage() {
               Join Us at The Well
             </Link> */}
           </div>
-          <div className="lg:w-1/2">
+          <div className="lg:w-1/2 w-full">
             <div className="w-full h-[250px] relative overflow-hidden rounded-2xl shadow-lg">
               <Image
                 src="/photos/easter/img7.webp"
@@ -58,7 +58,7 @@ export default function EasterPage() {
               <h1 className="text-3xl font-semibold text-gray-900 mb-4">Something for families, kids, youth, and young adults.</h1>
               <h2 className="text-gray-700 text-lg">Come for amazing worship, a great sermon, and to meet stellar people who are after the same things in life</h2>
             </div>
-            <div className="lg:w-1/2">
+            <div className="lg:w-1/2 w-full">
               <div className="w-full h-[250px] relative overflow-hidden rounded-2xl shadow-lg">
                 <Image
                   src="/photos/easter/img2.webp"
@@ -82,7 +82,7 @@ export default function EasterPage() {
               Join Us at The Well
             </Link> */}
           </div>
-          <div className="lg:w-1/2">
+          <div className="lg:w-1/2 w-full">
             <div className="w-full h-[250px] relative overflow-hidden rounded-2xl shadow-lg">
               <Image
                 src="/photos/easter/img4.webp"
@@ -100,17 +100,19 @@ export default function EasterPage() {
 
       {/* Photo Gallery with Infinite Scroll */}
       <section className="pt-6">
-        {/* <InfinitePhotoScroll /> */}
-        <div className="w-full h-[150px] relative overflow-hidden">
+        <div className="w-full h-auto relative">
           <Image
             src="/photos/easter/banner-with-text.png"
-            layout="fill"
-            objectPosition="0 55%"
+            layout="responsive"
+            width={1920} // Adjust based on actual aspect ratio
+            height={500} // Adjust based on actual aspect ratio
             objectFit="cover"
-            alt="easter image 3"
+            objectPosition="center"
+            alt="easter image"
           />
         </div>
       </section>
+
 
     </main>
   )
