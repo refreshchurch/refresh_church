@@ -7,7 +7,7 @@ html{
   background-color: #F8F7F4;
 }
 
-@keyframes scroll {
+/* @keyframes scroll {
   0% {
     transform: translateX(0);
   }
@@ -17,9 +17,20 @@ html{
 }
 
 .animate-scroll {
-  animation: scroll 8s linear infinite;
+  animation: scroll 40s linear infinite;
+} */
+
+.scroll-container {
+  display: flex;
+  white-space: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
 }
 
+.scroll-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in Chrome */
+}
 
 @layer base {
   :root {
@@ -76,10 +87,6 @@ html{
     --chart-5: 340 75% 55%;
   }
 }
-
-
-
-
 
 @layer base {
   * {
