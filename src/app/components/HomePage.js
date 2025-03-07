@@ -34,10 +34,11 @@ export default function HomePage() {
   return (
     <div className="container mx-auto px-2 sm:px-4 py-8 ">
       <EventPopup
-      easter-test
-      imageUrl="/photos/popup/Easter-2025.png"
-      eventUrl="/easter"
-      endDate={new Date('2025-04-20T17:00:00.000Z')} //// 4-10-20-25 @ 11:00 AM MST UTC time
+        easter-test
+        // imageUrl="/photos/popup/Easter-2025.png"
+        imageUrl="/photos/easter/banner-with-text.png"
+        eventUrl="/easter"
+        endDate={new Date('2025-04-20T17:00:00.000Z')} //// 4-10-20-25 @ 11:00 AM MST UTC time
       />
       {/* Main */}
       <div className="flex flex-wrap gap-4 justify-center mb-4">
