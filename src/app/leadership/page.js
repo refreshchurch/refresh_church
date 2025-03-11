@@ -31,6 +31,16 @@ export default function Leadership() {
       name: "Jeanine Abernathy",
       title: "Children’s Director",
     },
+    {
+      img: "/photos/leadership/cat.png",
+      name: "Cat Howard",
+      title: "Outreach Coordinator",
+    },
+    {
+      img: "/photos/leadership/eric.jpg",
+      name: "Eric Kemp",
+      title: "Youth Director",
+    },
   ]
 
   return (
