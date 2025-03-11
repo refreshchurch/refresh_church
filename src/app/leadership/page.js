@@ -34,7 +34,7 @@ export default function Leadership() {
     {
       img: "/photos/leadership/cat.webp",
       name: "Cat Howard",
-      title: "Outreach Coordinator",
+      title: "Outreach / Young Adults",
     },
     {
       img: "/photos/leadership/eric.jpg",
