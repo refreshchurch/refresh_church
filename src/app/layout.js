@@ -53,6 +53,7 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
+        <meta name="google-site-verification" content="wGR4NHBUHrciapz3x7QEra-kdwuh6VS5640kdpnqRvU" />
       </head>
       <body className={montserrat.className}>
         <Navbar />
