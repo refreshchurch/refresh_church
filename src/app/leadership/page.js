@@ -32,7 +32,7 @@ export default function Leadership() {
       title: "Children’s Director",
     },
     {
-      img: "/photos/leadership/cat.png",
+      img: "/photos/leadership/cat.PNG",
       name: "Cat Howard",
       title: "Outreach Coordinator",
     },
@@ -89,15 +89,15 @@ export default function Leadership() {
 
         {staff.map((item, index) => (
           <div key={index} className="bg-white shadow-md rounded-2xl p-6 flex flex-col items-center text-center">
-            <Image
-              src={item.img} // Replace with the actual path to the image
-              layout="responsive"
-              width={200}
-              height={200}
-              objectFit="cover"
-              alt="Associate Pastors"
-              className="rounded-full mb-4"
-            />
+            <div className="w-48 h-48 relative">
+              <Image
+                src={item.img} // Replace with the actual path to the image
+                layout="fill"
+                objectFit="cover"
+                alt="Associate Pastors"
+                className="rounded-full mb-4"
+              />
+            </div>
             <h4 className="text-xl font-bold text-primary">{item.name}</h4>
             <p className="text-gray-600">{item.title}</p>
           </div>
