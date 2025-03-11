@@ -94,7 +94,7 @@ export default function Leadership() {
                 src={item.img} // Replace with the actual path to the image
                 layout="fill"
                 objectFit="cover"
-                alt="Associate Pastors"
+                alt={`${item.name} image`}
                 className="rounded-full mb-4"
               />
             </div>
