@@ -10,7 +10,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import the ca
 const FaqData = [
   {
     question: "Where is your church located?",
-    answer: "Services are every Sunday @ Owyhee Highschool in Meridian, Idaho. Our office is open Mon - Thur at our HQ, located close to downtown Meridian, Idaho. "
+    answer: "Services are every Sunday @ Owyhee High School in Meridian, Idaho. Our office is open Mon - Thur at our HQ, located close to downtown Meridian, Idaho. "
   },
   {
     question: "Where do I park?",
@@ -34,7 +34,7 @@ const FaqData = [
   },
   {
     question: "Who are the pastors?",
-    answer: "Pastor T.J & Leah Hankey Hankey started the church in 2021."
+    answer: "Pastor T.J & Leah Hankey started the church in 2021."
   },
   {
     question: "Do I have to be a Christian to come to church?",
