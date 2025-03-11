@@ -32,7 +32,7 @@ export default function Leadership() {
       title: "Children’s Director",
     },
     {
-      img: "/photos/leadership/cat.webp",
+      img: "/photos/leadership/CatAdams.PNG",
       name: "Cat Howard",
       title: "Outreach Coordinator",
     },
