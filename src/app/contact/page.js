@@ -2,22 +2,10 @@
 "use client"
 
 import { useMemo } from "react";
-import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
-import Link from "next/link";
-import Image from "next/image";
-
-const API_KEY = process.env.NEXT_PUBLIC_GOOGLE_MAP_API_KEY;
+import Link from "next/link"
+import { Phone } from "lucide-react";
 
 export default function Contact() {
-  // Google Maps API setup
-  // const { isLoaded } = useLoadScript({
-  //   googleMapsApiKey: API_KEY
-  // });
-
-  const isLoaded = true
-
-  const center = useMemo(() => ({ lat: 40.7128, lng: -74.0060 }), []);
-
   return (
     <>
       <div className="container mx-auto px-8 sm:px-36 py-12">
@@ -34,23 +22,17 @@ export default function Contact() {
           </Link>
         </div>
 
+        
+
         {/* Google Map and Service Times Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          <div className="w-full h-[400px]">
-            {isLoaded ? (
-              // <GoogleMap
-              //   mapContainerStyle={{ width: "100%", height: "100%" }}
-              //   center={center}
-              //   zoom={15}
-              // >
-              //   <Marker position={center} />
-              // </GoogleMap>
-              <a href="https://maps.app.goo.gl/QVoYXC8LbYkQkN3s7" target="_blank" rel="noopener noreferrer">
-                <Image src="/photos/maps/large-church.png" alt="Map" width={600} height={400} className="hover:cursor-pointer hover:scale-105 transition duration-300 ease-in-out" />
-              </a>
-            ) : (
-              <div>Loading map...</div>
-            )}
+          <div className="w-full h-[400px] flex flex-col justify-center">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112977.89695551472!2d-116.39294692438447!3d43.6345986584529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54afab6678a860ad%3A0x82e71e5f1b73360!2sRefresh%20Church!5e0!3m2!1sen!2sus!4v1741727976684!5m2!1sen!2sus" 
+              className="w-full h-3/4"
+              // style={{ border: 0 }} 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"/>
           </div>
           <div className="flex flex-col justify-center ms-3">
             <h3 className="text-3xl font-bold text-gray-900 mb-4">Service Times & Location</h3>
@@ -64,6 +46,12 @@ export default function Contact() {
               <strong>Location:</strong><br />
               <Link href='https://maps.app.goo.gl/QVoYXC8LbYkQkN3s7' target="_blank" rel="noopener noreferrer" className="hover:underline">
                 3650 N. Owyhee, Storm Ave, Meridian, ID 83646
+              </Link>
+            </p>
+            <p className="text-lg text-gray-700">
+              <strong>Contact:</strong><br />
+              <Link href="tel:208-844-2617" className="flex items-center space-x-1">
+                <Phone className="inline mr-2" /> (208) 844-2617
               </Link>
             </p>
 

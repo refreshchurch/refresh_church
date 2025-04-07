@@ -1,7 +1,7 @@
 'use client';
 
 import { Button } from "flowbite-react";
-import { ArrowUp, ArrowUpRightIcon } from "lucide-react";
+import { ArrowUp, ArrowUpRightIcon, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -11,7 +11,6 @@ export default function FooterComponent() {
 
   return (
     <>
-      {/* OLD Footer */}
       <footer className="bg-white antialiased dark:bg-gray-800 ">
 
 
@@ -29,7 +28,7 @@ export default function FooterComponent() {
                     className="h-auto"
                   />
                 </Link>
-                {/* old Maps Desktop */}
+                {/* old Maps mobile */}
                 <div className="mt-4 w-full md:mt-0 min-[1214px]:block hidden">
                   <div className="flex flex-wrap items-center gap-4 text-sm font-medium xl:justify-center">
                     <a href="https://maps.app.goo.gl/QVoYXC8LbYkQkN3s7" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center h-auto hover:scale-105 transition duration-300 ease-in-out hover:cursor-pointer rounded-lg overflow-hidden">
@@ -97,6 +96,7 @@ export default function FooterComponent() {
                   </a>
                 </div>
               </div>
+
               {/* New top bar with new maps */}
               {/* <div className="container mx-auto px-2 sm:px-4">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-4 ">
@@ -267,6 +267,12 @@ export default function FooterComponent() {
                   </li>
                   <li>
                     <Link href="/contact" title="" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"> Get Directions</Link>
+                  </li>
+                  <li>
+                    <a href="tel:208-844-2617" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white flex items-center">
+                    <Phone className="mr-2 h-4 w-4" /> 
+                    208-844-2617
+                    </a>
                   </li>
                 </ul>
               </div>
