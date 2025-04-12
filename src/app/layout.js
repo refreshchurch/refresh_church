@@ -5,8 +5,8 @@ import FooterComponent from "./components/FooterComponent.js"
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import Script from "next/script";
-
 import { Montserrat } from "next/font/google";
+import LeadConnectorForm from "./components/LeadConnectorForm";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -39,7 +39,7 @@ export default function RootLayout({ children }) {
           }}
         />
         {/* Visit Planner Script */}
-        <script
+        {/* <script
           type="text/javascript"
           dangerouslySetInnerHTML={{
             __html: `
@@ -52,7 +52,7 @@ export default function RootLayout({ children }) {
               document.head.appendChild(script);
             `,
           }}
-        />
+        /> */}
         <meta name="google-site-verification" content="wGR4NHBUHrciapz3x7QEra-kdwuh6VS5640kdpnqRvU" />
       </head>
       <body className={montserrat.className}>
@@ -61,6 +61,7 @@ export default function RootLayout({ children }) {
         <FooterComponent />
         <SpeedInsights />
         <Analytics />
+        <LeadConnectorForm/>
       </body>
     </html>
   );

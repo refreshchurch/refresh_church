@@ -1,7 +1,8 @@
 import Image from "next/image";
 import { InfinitePhotoScroll } from "../components/InfinitePhotoScroll";
 import Link from "next/link";
-
+import PlanVisitSticky from "../components/PlanVisitSticky";
+import { ArrowBigRight } from "lucide-react"
 
 export default function EasterPage() {
   return (
@@ -29,7 +30,8 @@ export default function EasterPage() {
       </section>
 
       <div className="container mx-auto px-8 sm:px-36 pt-12 pb-6">
-      <div className="flex flex-col lg:flex-row items-center mb-12">
+
+        <div className="flex flex-col lg:flex-row items-center mb-12">
           <div className="lg:w-1/2 mb-8 lg:mb-0 lg:pr-8">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">
               EASTER at REFRESH
@@ -38,14 +40,21 @@ export default function EasterPage() {
               <p className="font-semibold">
                 Services at Owyhee High School at 9am and 10:30am
               </p>
-              <p  className="text-base hover:underline" >
-                <a href="href='https://www.google.com/maps/place/Refresh+Church/@43.6345987,-116.3929469,17z/data=!3m1!4b1!4m5!3m4!1s0x54afab6678a860ad:0x82e71e5f1b73360!8m2!3d43.6345987!4d-116.3929469'">
-                3650 N Owyhee Storm Ave, Meridian, ID 83646
+              <p className="text-base hover:underline">
+                <a href="https://www.google.com/maps/place/Refresh+Church/@43.6345987,-116.3929469,17z/data=!3m1!4b1!4m5!3m4!1s0x54afab6678a860ad:0x82e71e5f1b73360!8m2!3d43.6345987!4d-116.3929469">
+                  3650 N Owyhee Storm Ave, Meridian, ID 83646
                 </a>
               </p>
               <p className="text-base">
                 Photo booth and coffee truck available before and after services.
               </p>
+              {/* ✅ Button 1 */}
+              {/* <Link
+                href="/plan-your-easter"
+                className="inline-block bg-primaryDark text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-primary transition duration-300 ease-in-out mt-4"
+              >
+                PLAN A VISIT
+              </Link> */}
             </div>
           </div>
           <div className="lg:w-1/2 w-full">
@@ -88,8 +97,11 @@ export default function EasterPage() {
             <h2 className="text-primary font-semibold text-xl">
               We believe that every person can be refreshed and every purpose can be discovered
             </h2>
-            {/* <Link href="https://refresh.churchcenter.com/groups/small-groups/youth-small-group" className="inline-block bg-primaryDark text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-primary transition duration-300 ease-in-out">
-              Join Us at The Well
+            {/* <Link
+              href="/plan-your-easter"
+              className="inline-block bg-primaryDark text-white text-lg font-semibold py-3 px-6 mt-3 rounded-full hover:bg-primary transition duration-300 ease-in-out"
+            >
+              Plan Your Visit
             </Link> */}
           </div>
           <div className="lg:w-1/2 w-full">
@@ -104,39 +116,40 @@ export default function EasterPage() {
             </div>
           </div>
         </div>
+
       </div>
 
 
       <div className="my-12 px-4 sm:px-0">
-          <div className="max-w-4xl mx-auto">
-            <h1 className="text-2xl font-bold text-gray-900 mb-6 text-center lg:text-left">
-              Something for families, kids, singles, youth, and young adults
-            </h1>
-            <div className="text-gray-700 text-lg space-y-4">
-              <p>
-                Come for amazing worship, a great sermon, and to meet stellar people who are after the same things in life. We are a non-denominational church in Meridian, Idaho.
-              </p>
-              <p>
-                Many of us in our congregation come from Meridian, Star, Nampa, Caldwell, Eagle, Boise, and Emmett, Idaho. Services are just over an hour long.
-              </p>
-              <p>
-                There are kid-designed environments for babies through pre-teen. Our youth (Junior High and High School) sit in the services, but we do offer a youth group on Wednesdays at our HQ office in Meridian, Idaho.
-              </p>
-              <p>
-                Expect friendly faces, free coffee (coffee truck on Easter Sunday), great music, and a relatable sermon.
-              </p>
-              <p>
-                Please stop by and say hello in the lobby or at the connection booth—most of the time staff and pastors are around to greet you and your family. We would love to see if Refresh Church is for you and will help in any way we can with your faith journey.
-              </p>
-              <p>
-                We believe life is <strong className="text-primary">BETTER</strong> together and would <strong className="text-primary">LOVE</strong> for you to give us a look!
-              </p>
-              <p className="italic">
-                – Refresh Leadership
-              </p>
-            </div>
+        <div className="max-w-4xl mx-auto">
+          <h1 className="text-2xl font-bold text-gray-900 mb-6 text-center lg:text-left">
+            Something for families, kids, singles, youth, and young adults
+          </h1>
+          <div className="text-gray-700 text-lg space-y-4">
+            <p>
+              Come for amazing worship, a great sermon, and to meet stellar people who are after the same things in life. We are a non-denominational church in Meridian, Idaho.
+            </p>
+            <p>
+              Many of us in our congregation come from Meridian, Star, Nampa, Caldwell, Eagle, Boise, and Emmett, Idaho. Services are just over an hour long.
+            </p>
+            <p>
+              There are kid-designed environments for babies through pre-teen. Our youth (Junior High and High School) sit in the services, but we do offer a youth group on Wednesdays at our HQ office in Meridian, Idaho.
+            </p>
+            <p>
+              Expect friendly faces, free coffee (coffee truck on Easter Sunday), great music, and a relatable sermon.
+            </p>
+            <p>
+              Please stop by and say hello in the lobby or at the connection booth—most of the time staff and pastors are around to greet you and your family. We would love to see if Refresh Church is for you and will help in any way we can with your faith journey.
+            </p>
+            <p>
+              We believe life is <strong className="text-primary">BETTER</strong> together and would <strong className="text-primary">LOVE</strong> for you to give us a look!
+            </p>
+            <p className="italic">
+              – Refresh Leadership
+            </p>
           </div>
         </div>
+      </div>
 
 
 
@@ -155,6 +168,13 @@ export default function EasterPage() {
           />
         </div>
       </section>
+
+      <PlanVisitSticky
+        message="Plan your visit for Easter Sunday!"
+        buttonText={<ArrowBigRight/>}
+        href="/plan-your-easter"
+        canBeClosed={false} 
+      />
 
 
     </main>
