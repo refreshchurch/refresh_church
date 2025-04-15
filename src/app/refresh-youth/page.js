@@ -20,7 +20,7 @@ export default function YouthMinistry() {
             Join Us at The Well
           </Link>
         </div>
-        <div className="lg:w-1/2">
+        <div className="lg:w-1/2 w-full">
           <div className="w-full h-[350px] relative overflow-hidden rounded-2xl shadow-lg">
             <Image
               src="/photos/youth/01.webp"
@@ -42,7 +42,7 @@ export default function YouthMinistry() {
               We meet at the Refresh HQ: 601 E Schiller Ln in Meridian. <br />Our gathering consists of group games, devotional time, small group discussion, Bible study, and prayer. We also enjoy snacks, friendship, and lots of laughs
             </p>
           </div>
-          <div className="lg:w-1/2">
+          <div className="lg:w-1/2 w-full">
             <div className="w-full h-[250px] relative overflow-hidden rounded-2xl shadow-lg">
               <Image
                 src="/photos/youth/02.webp" // Replace with the actual path to the image
@@ -68,7 +68,7 @@ export default function YouthMinistry() {
             Join Us for Youth Night
           </Link>
         </div>
-        <div className="lg:w-1/2 mt-8 lg:mt-0">
+        <div className="lg:w-1/2 w-full mt-8 lg:mt-0">
           <div className="w-full h-[350px] relative overflow-hidden rounded-2xl shadow-lg">
             <Image
               src="/photos/youth/03.webp" // Replace with the actual path to the image

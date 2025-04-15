@@ -22,7 +22,7 @@ export default function MensMinistry() {
             Explore Upcoming Events
           </Link>
         </div>
-        <div className="lg:w-1/2">
+        <div className="lg:w-1/2 w-full">
           <div className="w-full h-[350px] relative overflow-hidden rounded-2xl shadow-lg">
             <Image
               src="/photos/mens/men-1.webp"
@@ -43,7 +43,7 @@ export default function MensMinistry() {
             We gather together to share food and get to know each other. These gatherings lend themselves to building community so that we can break off into smaller groups and take steps to see every person refreshed and every purpose discovered.
             </p>
           </div>
-          <div className="lg:w-1/2">
+          <div className="lg:w-1/2 w-full">
             <div className="w-full h-[250px] relative overflow-hidden rounded-2xl shadow-lg">
               <Image
                 src="/photos/mens/men-2.webp" 
