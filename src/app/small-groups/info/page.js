@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ClipboardList, FileText, GraduationCap, Rocket, BookOpenCheck } from "lucide-react";
 import { showSmallGroupInfoPage } from "../../../../constants";
+import { notFound } from "next/navigation";
 
 // Redirect to 404 if showSmallGroupInfoPage is false
 if (!showSmallGroupInfoPage) {
