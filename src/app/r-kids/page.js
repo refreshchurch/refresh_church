@@ -58,7 +58,7 @@ export default function KidMinistry() {
             Pre-Register Here!
           </Link>
           </div>
-          <div className="lg:w-1/2 h-[250px] relative overflow-hidden rounded-2xl shadow-lg">
+          <div className="lg:w-1/2 w-full h-[250px] relative overflow-hidden rounded-2xl shadow-lg">
             <Image
               src="/photos/kids/01.webp"
               layout="fill"
@@ -69,8 +69,8 @@ export default function KidMinistry() {
         </div>
 
         {/* Nursery */}
-        <div className="mb-12 flex flex-col lg:flex-row items-center">
-          <div className="lg:w-1/2 h-[250px] relative overflow-hidden rounded-2xl shadow-lg mb-6 lg:mb-0">
+        <div className="mb-12 flex flex-col-reverse lg:flex-row items-center">
+          <div className="lg:w-1/2 w-full h-[250px] relative overflow-hidden rounded-2xl shadow-lg mb-6 lg:mb-0">
             <Image
               src='/photos/kids/02.webp'
               layout="fill"
@@ -94,7 +94,7 @@ export default function KidMinistry() {
               For our preschoolers the message is simple. We want them to know that God loves them, God made them, and Jesus wants to be their friend. They are engaged and challenged with age-appropriate worship and Bible teaching by loving and consistent leaders. We combine childhood development techniques and practical theology to make each message relevant to your child.
             </p>
           </div>
-          <div className="lg:w-1/2 h-[250px] relative overflow-hidden rounded-2xl shadow-lg">
+          <div className="lg:w-1/2 w-full h-[250px] relative overflow-hidden rounded-2xl shadow-lg">
             {/* Picture of the crafts */}
             <Image
               src="/photos/kids/03.webp"
@@ -106,9 +106,8 @@ export default function KidMinistry() {
         </div>
 
         {/* Elementary & Pre-Teen */}
-        <div className="mb-12 flex flex-col lg:flex-row items-center">
-          <div className="lg:w-1/2 h-[250px] relative overflow-hidden rounded-2xl shadow-lg mb-6 lg:mb-0">
-
+        <div className="mb-12 flex flex-col-reverse lg:flex-row items-center">
+          <div className="lg:w-1/2 w-full h-[250px] relative overflow-hidden rounded-2xl shadow-lg mb-6 lg:mb-0">
             <Image
               src="/photos/kids/04.webp"
               layout="fill"

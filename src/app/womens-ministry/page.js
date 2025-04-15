@@ -22,7 +22,7 @@ export default function MensMinistry() {
             Explore Upcoming Events
           </Link>
         </div>
-        <div className="lg:w-1/2">
+        <div className="lg:w-1/2 w-full">
           <div className="w-full h-[350px] relative overflow-hidden rounded-2xl shadow-lg">
             <Image
               src="/photos/womens/women-1.webp"
@@ -43,7 +43,7 @@ export default function MensMinistry() {
             We spend time together sharing food, and getting to know each other. These gatherings lend themselves to building community so that we can break off into smaller groups and take steps to see every person refreshed and every purpose discovered. We have a variety of small groups available for women throughout the year!
             </p>
           </div>
-          <div className="lg:w-1/2">
+          <div className="lg:w-1/2 w-full">
             <div className="w-full h-[250px] relative overflow-hidden rounded-2xl shadow-lg">
               <Image
                 src="/photos/womens/women-2.webp" // Replace with the path to your image
@@ -58,7 +58,7 @@ export default function MensMinistry() {
       </div>
 
       {/* Final Call to Action with Image */}
-      <div className="flex flex-col lg:flex-row items-center text-center lg:text-left mt-12">
+      <div className="flex flex-col lg:flex-row items-center text-left lg:text-left mt-12">
         <div className="lg:w-1/2 lg:pr-8">
           <h3 className="text-2xl font-semibold text-gray-900 mb-4">Get Connected!</h3>
           <p className="text-gray-700 text-lg mb-6">
@@ -70,7 +70,7 @@ export default function MensMinistry() {
             More Information
           </Link>
         </div>
-        <div className="lg:w-1/2 mt-8 lg:mt-0">
+        <div className="lg:w-1/2 w-full mt-8 lg:mt-0">
           <div className="w-full h-[350px] relative overflow-hidden rounded-2xl shadow-lg">
             <Image
               src="/photos/womens/women-3.webp"

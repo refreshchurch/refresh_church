@@ -8,9 +8,9 @@ import { showSmallGroupInfoPage } from "../../../../constants";
 import { notFound } from "next/navigation";
 
 // Redirect to 404 if showSmallGroupInfoPage is false
-if (!showSmallGroupInfoPage) {
-  notFound()
-}
+// if (!showSmallGroupInfoPage) {
+//    notFound()
+// }
 
 export default function SmallGroupsPage() {
   return (
@@ -28,13 +28,14 @@ export default function SmallGroupsPage() {
             Find Your Group!
           </Link>
         </div>
-        <div className="lg:w-1/2">
-          <div className="w-full h-[350px] relative overflow-hidden rounded-2xl shadow-lg">
+        <div className="lg:w-1/2 w-full">
+          <div className="w-full h-[350px] sm:h-[300px] relative overflow-hidden rounded-2xl shadow-lg">
             <Image
-              src="/photos/smallgroups/group-1.webp"
-              layout="fill"
-              objectFit="cover"
+              src="/photos/small-groups/01.jpg"
               alt="Small Groups Community"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
         </div>
@@ -47,26 +48,26 @@ export default function SmallGroupsPage() {
           <p className="text-gray-700 text-lg mb-6">
             You don't need to have it all together to lead a Small Group—you just have to be willing to let God use you. We believe God uses Small Groups to change people's lives, and as a leader, you get to be a part of that. God is not looking for perfection, but willingness to walk out what He has called you to do.
           </p>
-          <Link href="/small-groups/lead" className="inline-block bg-primaryDark text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-primary transition duration-300 ease-in-out">
+          {/* <Link href="/small-groups/lead" className="inline-block bg-primaryDark text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-primary transition duration-300 ease-in-out">
             Take Your Next Step
-          </Link>
+          </Link> */}
         </div>
-        <div className="lg:w-1/2">
-          <div className="w-full h-[250px] relative overflow-hidden rounded-2xl shadow-lg">
+        <div className="lg:w-1/2 w-full">
+          <div className="w-full h-[350px] sm:h-[300px] relative overflow-hidden rounded-2xl shadow-lg">
             <Image
-              src="/photos/smallgroups/group-2.webp"
-              layout="fill"
-              objectFit="cover"
-              alt="Lead a Group"
+              src="/photos/small-groups/02.jpg"
+              alt="Small Groups Community"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
         </div>
       </div>
 
       {/* Lead a Group Details */}
-      {/* Lead a Group Details */}
-      <div className="mb-12">
-        <h3 className="text-3xl font-bold text-gray-900 mb-8">Lead a Group</h3>
+      <div className="mb-12 pt-10">
+        <h3 className="text-3xl font-bold text-gray-900 mb-8">4 Steps To Leading A Group</h3>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Step 1 */}
@@ -123,7 +124,7 @@ export default function SmallGroupsPage() {
         </div>
 
         {/* Already a Leader */}
-        <div className="mt-12 border border-gray-200 rounded-2xl p-6 shadow-sm">
+        {/* <div className="mt-12 border border-gray-200 rounded-2xl p-6 shadow-sm">
           <div className="flex items-center gap-4 mb-4">
             <BookOpenCheck className="text-primaryDark w-7 h-7" />
             <h4 className="text-xl font-semibold text-gray-800">Already a Leader?</h4>
@@ -137,7 +138,7 @@ export default function SmallGroupsPage() {
           >
             Small Group Leader Resources
           </Link>
-        </div>
+        </div> */}
       </div>
 
     </div>
