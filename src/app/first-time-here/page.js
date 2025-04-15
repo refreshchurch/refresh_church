@@ -68,8 +68,8 @@ const FistTimeHereCardData = [
     description: "Our team works hard to create a safe, clean, and fun environment for your child. Kids ministries are offered for ages birth through 5th grade. The kids’ check-in area and classrooms are easy to find and our leaders are eager to welcome your child. You can preregister your family and save time during the check-in process by clicking the link below!",
     isButton: true,
     buttonText: "Pre-Register",
-    buttonUrl: "/refresh-youth",
-    isExternalLink: false
+    buttonUrl: "https://refresh.churchcenter.com/people/forms/303995",
+    isExternalLink: true
   },
   {
     title: "Students",

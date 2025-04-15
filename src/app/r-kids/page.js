@@ -53,9 +53,10 @@ export default function KidMinistry() {
               When you arrive at Refresh, walk over to the Check In area located near the refreshments. Here you will be greeted and assisted as you register your children for the first time. We will then direct you to one of our 5 environments.
 
               We care about the safety of your children and use two-part name tags with a unique family security number required for pick up.
-
-              You can pre-register your kids <a className="text-primary" href="https://refresh.churchcenter.com/people/forms/303995">here.</a>
             </p>
+            <Link href="https://refresh.churchcenter.com/people/forms/303995" target="_blank" rel="noopener noreferrer" className="inline-block bg-primaryDark text-white text-lg font-semibold py-3 mt-2 px-6 rounded-full hover:bg-primary transition duration-300 ease-in-out">
+            Pre-Register Here!
+          </Link>
           </div>
           <div className="lg:w-1/2 h-[250px] relative overflow-hidden rounded-2xl shadow-lg">
             <Image

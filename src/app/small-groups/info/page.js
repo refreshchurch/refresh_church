@@ -4,6 +4,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ClipboardList, FileText, GraduationCap, Rocket, BookOpenCheck } from "lucide-react";
+import { showSmallGroupInfoPage } from "../../../../constants";
+
+// Redirect to 404 if showSmallGroupInfoPage is false
+if (!showSmallGroupInfoPage) {
+  notFound()
+}
 
 export default function SmallGroupsPage() {
   return (
@@ -56,82 +62,82 @@ export default function SmallGroupsPage() {
         </div>
       </div>
 
-{/* Lead a Group Details */}
-{/* Lead a Group Details */}
-<div className="mb-12">
-  <h3 className="text-3xl font-bold text-gray-900 mb-8">Lead a Group</h3>
+      {/* Lead a Group Details */}
+      {/* Lead a Group Details */}
+      <div className="mb-12">
+        <h3 className="text-3xl font-bold text-gray-900 mb-8">Lead a Group</h3>
 
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-    {/* Step 1 */}
-    <div className="border border-gray-200 rounded-2xl p-6 shadow-sm">
-      <div className="flex items-center gap-4 mb-4">
-        <ClipboardList className="text-primaryDark w-7 h-7" />
-        <h4 className="text-xl font-semibold text-gray-800">Step 1: Decide on an Activity or Study</h4>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* Step 1 */}
+          <div className="border border-gray-200 rounded-2xl p-6 shadow-sm">
+            <div className="flex items-center gap-4 mb-4">
+              <ClipboardList className="text-primaryDark w-7 h-7" />
+              <h4 className="text-xl font-semibold text-gray-800">Step 1: Decide on an Activity or Study</h4>
+            </div>
+            <p className="text-gray-700 text-lg">
+              At Refresh Church, we use a free market approach to Small Groups. This means we want people to gather together based on the things they enjoy and are important to them. Start by deciding what your group will be centered around.
+            </p>
+          </div>
+
+          {/* Step 2 */}
+          <div className="border border-gray-200 rounded-2xl p-6 shadow-sm">
+            <div className="flex items-center gap-4 mb-4">
+              <FileText className="text-primaryDark w-7 h-7" />
+              <h4 className="text-xl font-semibold text-gray-800">Step 2: Fill Out the Application</h4>
+            </div>
+            <p className="text-gray-700 text-lg mb-4">
+              This helps us support you in the best way possible. It's not exclusive — just a way to get to know you and help set you up to lead well!
+            </p>
+            <Link
+              href="https://refresh.churchcenter.com/people/forms/311150"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-primaryDark text-white text-sm font-semibold py-2 px-4 rounded-full hover:bg-primary transition duration-300 ease-in-out"
+            >
+              Small Group Leader Application
+            </Link>
+          </div>
+
+          {/* Step 3 */}
+          <div className="border border-gray-200 rounded-2xl p-6 shadow-sm">
+            <div className="flex items-center gap-4 mb-4">
+              <GraduationCap className="text-primaryDark w-7 h-7" />
+              <h4 className="text-xl font-semibold text-gray-800">Step 3: Attend Training</h4>
+            </div>
+            <p className="text-gray-700 text-lg">
+              In about 45 minutes, we'll equip you with everything you need to lead a group and partner with you for a great experience.
+            </p>
+          </div>
+
+          {/* Step 4 */}
+          <div className="border border-gray-200 rounded-2xl p-6 shadow-sm">
+            <div className="flex items-center gap-4 mb-4">
+              <Rocket className="text-primaryDark w-7 h-7" />
+              <h4 className="text-xl font-semibold text-gray-800">Step 4: Launch Your Group</h4>
+            </div>
+            <p className="text-gray-700 text-lg">
+              Start inviting! Reach out to coworkers, friends, neighbors, or anyone looking to get involved — a personal invite is powerful.
+            </p>
+          </div>
+        </div>
+
+        {/* Already a Leader */}
+        <div className="mt-12 border border-gray-200 rounded-2xl p-6 shadow-sm">
+          <div className="flex items-center gap-4 mb-4">
+            <BookOpenCheck className="text-primaryDark w-7 h-7" />
+            <h4 className="text-xl font-semibold text-gray-800">Already a Leader?</h4>
+          </div>
+          <p className="text-gray-700 text-lg mb-4">
+            If you're already leading a Small Group, check out this list of suggested resources to support your group!
+          </p>
+          <Link
+            href="#"
+            className="inline-block bg-primaryDark text-white text-sm font-semibold py-2 px-4 rounded-full hover:bg-primary transition duration-300 ease-in-out"
+          >
+            Small Group Leader Resources
+          </Link>
+        </div>
       </div>
-      <p className="text-gray-700 text-lg">
-        At Refresh Church, we use a free market approach to Small Groups. This means we want people to gather together based on the things they enjoy and are important to them. Start by deciding what your group will be centered around.
-      </p>
-    </div>
-
-    {/* Step 2 */}
-    <div className="border border-gray-200 rounded-2xl p-6 shadow-sm">
-      <div className="flex items-center gap-4 mb-4">
-        <FileText className="text-primaryDark w-7 h-7" />
-        <h4 className="text-xl font-semibold text-gray-800">Step 2: Fill Out the Application</h4>
-      </div>
-      <p className="text-gray-700 text-lg mb-4">
-        This helps us support you in the best way possible. It's not exclusive — just a way to get to know you and help set you up to lead well!
-      </p>
-      <Link
-        href="https://refresh.churchcenter.com/people/forms/311150"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-block bg-primaryDark text-white text-sm font-semibold py-2 px-4 rounded-full hover:bg-primary transition duration-300 ease-in-out"
-      >
-        Small Group Leader Application
-      </Link>
-    </div>
-
-    {/* Step 3 */}
-    <div className="border border-gray-200 rounded-2xl p-6 shadow-sm">
-      <div className="flex items-center gap-4 mb-4">
-        <GraduationCap className="text-primaryDark w-7 h-7" />
-        <h4 className="text-xl font-semibold text-gray-800">Step 3: Attend Training</h4>
-      </div>
-      <p className="text-gray-700 text-lg">
-        In about 45 minutes, we'll equip you with everything you need to lead a group and partner with you for a great experience.
-      </p>
-    </div>
-
-    {/* Step 4 */}
-    <div className="border border-gray-200 rounded-2xl p-6 shadow-sm">
-      <div className="flex items-center gap-4 mb-4">
-        <Rocket className="text-primaryDark w-7 h-7" />
-        <h4 className="text-xl font-semibold text-gray-800">Step 4: Launch Your Group</h4>
-      </div>
-      <p className="text-gray-700 text-lg">
-        Start inviting! Reach out to coworkers, friends, neighbors, or anyone looking to get involved — a personal invite is powerful.
-      </p>
-    </div>
-  </div>
-
-  {/* Already a Leader */}
-  <div className="mt-12 border border-gray-200 rounded-2xl p-6 shadow-sm">
-    <div className="flex items-center gap-4 mb-4">
-      <BookOpenCheck className="text-primaryDark w-7 h-7" />
-      <h4 className="text-xl font-semibold text-gray-800">Already a Leader?</h4>
-    </div>
-    <p className="text-gray-700 text-lg mb-4">
-      If you're already leading a Small Group, check out this list of suggested resources to support your group!
-    </p>
-    <Link
-      href="#"
-      className="inline-block bg-primaryDark text-white text-sm font-semibold py-2 px-4 rounded-full hover:bg-primary transition duration-300 ease-in-out"
-    >
-      Small Group Leader Resources
-    </Link>
-  </div>
-</div>
 
     </div>
   );
