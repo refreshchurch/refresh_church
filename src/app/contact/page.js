@@ -4,10 +4,27 @@
 import { useMemo } from "react";
 import Link from "next/link"
 import { Phone } from "lucide-react";
+import Head from "next/head";
 
 export default function Contact() {
   return (
     <>
+      {/* Meta title and description for SEO */}
+      <Head>
+        <title>Sunday Services at 9 & 10:30AM - Refresh Church Meridian, ID</title>
+        <meta
+          name="description"
+          content="Contact Refresh Church in Meridian. Sunday Services start at 9 & 10:30 AM at Owyhee High School. Family-friendly environment with programs for all ages."
+        />
+      </Head>
+
+      {/* Invisible h tags */}
+      <div className="hidden">
+        <h1>Sunday Services at Refresh Church in Meridian, ID</h1>
+        <h2></h2>
+        <h3></h3>
+      </div>
+
       <div className="container mx-auto px-8 sm:px-36 py-12">
         {/* Enhanced Top Section */}
         <div className="bg-primaryDark dark:bg-gray-800 rounded-2xl shadow-lg p-8 mb-12 flex flex-col sm:flex-row items-center justify-between text-center sm:text-left">
@@ -22,17 +39,17 @@ export default function Contact() {
           </Link>
         </div>
 
-        
+
 
         {/* Google Map and Service Times Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
           <div className="w-full h-[400px] flex flex-col justify-center">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112977.89695551472!2d-116.39294692438447!3d43.6345986584529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54afab6678a860ad%3A0x82e71e5f1b73360!2sRefresh%20Church!5e0!3m2!1sen!2sus!4v1741727976684!5m2!1sen!2sus" 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112977.89695551472!2d-116.39294692438447!3d43.6345986584529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54afab6678a860ad%3A0x82e71e5f1b73360!2sRefresh%20Church!5e0!3m2!1sen!2sus!4v1741727976684!5m2!1sen!2sus"
               className="w-full h-3/4"
               // style={{ border: 0 }} 
-              allowfullscreen="" 
-              loading="lazy" 
-              referrerpolicy="no-referrer-when-downgrade"/>
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" />
           </div>
           <div className="flex flex-col justify-center ms-3">
             <h3 className="text-3xl font-bold text-gray-900 mb-4">Service Times & Location</h3>

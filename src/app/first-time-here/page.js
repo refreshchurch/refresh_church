@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import the carousel styles
+import Head from "next/head";
 
 const FaqData = [
   {
@@ -180,12 +181,27 @@ function FirstTimeHereCard({ item }) {
 
 export default function FirstTimeHere() {
   return (
-    <div className="container mx-auto px-8 sm:px-36 py-12">
-      {/* <h2 className="text-4xl font-bold text-gray-900 tracking-tighter sm:text-5xl md:text-6xl mb-12">First Time Here?</h2> */}
+    <>
+      {/* Meta title and description for SEO */}
+      <Head>
+        <title>Discover Community at Refresh - A Non-Denominational Church</title>
+        <meta
+          name="description"
+          content="Experience a non-denominational church in Meridian, ID where every person is refreshed & every purpose is discovered. Explore services, kids ministry, and more."
+        />
+      </Head>
+      {/* Invisible h tags for SEO */}
+      <div className="hidden">
+        <h1>First Time at Refresh Church?</h1>
+        <h2>What to Expect at our Non-Denominational Church in Meridian, ID.</h2>
+        <h3></h3>
+      </div>
 
-      {/* Hero Carousel Section */}
-      <div className="relative w-full h-[500px] mb-12 rounded-xl overflow-hidden">
-        {/* <Carousel
+      <div className="container mx-auto px-8 sm:px-36 py-12">
+
+        {/* Hero Carousel Section */}
+        <div className="relative w-full h-[500px] mb-12 rounded-xl overflow-hidden">
+          {/* <Carousel
           autoPlay
           infiniteLoop
           showThumbs={false}
@@ -229,48 +245,49 @@ export default function FirstTimeHere() {
             />
           </div>
         </Carousel> */}
-        <Image
-          src='/photos/first-time-here/fth-03.webp'
-          layout="fill"
-          objectFit="cover"
-          objectPosition="center"
-          alt="First Time Here Image"
-          draggable="false"
-        />
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-          <h1 className="text-white sm:text-7xl text-5xl font-bold max-[473px]:text-4xl z-100">First Time Here?</h1>
+          <Image
+            src='/photos/first-time-here/fth-03.webp'
+            layout="fill"
+            objectFit="cover"
+            objectPosition="center"
+            alt="First Time Here Image"
+            draggable="false"
+          />
+          <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+            <h3 className="text-white sm:text-7xl text-5xl font-bold max-[473px]:text-4xl z-100">First Time Here?</h3>
+          </div>
         </div>
-      </div>
 
-      {/* What to Expect Section */}
-      <div className="mb-12">
-        <h3 className="text-3xl font-semibold text-gray-900 mb-8">What to Expect</h3>
-        {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {FistTimeHereCardData.map((item, index) => (
-            <FirstTimeHereCard key={index} item={item} />
-          ))}
-        </div>
-      </div>
-
-      {/* FAQ Section */}
-      <div className="mb-12 pt-5">
-        <h2 className="text-3xl font-semibold text-gray-900 mb-8">Frequently Asked Questions</h2>
-        <div className="space-y-4">
-          <div className="space-y-4">
-            {FaqData.map((item, index) => (
-              <FaqItem key={index} item={item} />
+        {/* What to Expect Section */}
+        <div className="mb-12">
+          <h3 className="text-3xl font-semibold text-gray-900 mb-8">What to Expect</h3>
+          {/* Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {FistTimeHereCardData.map((item, index) => (
+              <FirstTimeHereCard key={index} item={item} />
             ))}
           </div>
         </div>
-      </div>
 
-      {/* Church Slogan and Verse */}
-      <div className="text-center mb-12 pt-8">
-        <h3 className="text-2xl font-bold text-primary lowercase mb-4">every person refreshed. every purpose discovered.</h3>
-        <p className="text-xl text-gray-700 italic">"A generous person will prosper; whoever refreshes others will be refreshed." - Proverbs 11:25</p>
-      </div>
+        {/* FAQ Section */}
+        <div className="mb-12 pt-5">
+          <h2 className="text-3xl font-semibold text-gray-900 mb-8">Frequently Asked Questions</h2>
+          <div className="space-y-4">
+            <div className="space-y-4">
+              {FaqData.map((item, index) => (
+                <FaqItem key={index} item={item} />
+              ))}
+            </div>
+          </div>
+        </div>
 
-    </div>
+        {/* Church Slogan and Verse */}
+        <div className="text-center mb-12 pt-8">
+          <h3 className="text-2xl font-bold text-primary lowercase mb-4">every person refreshed. every purpose discovered.</h3>
+          <p className="text-xl text-gray-700 italic">"A generous person will prosper; whoever refreshes others will be refreshed." - Proverbs 11:25</p>
+        </div>
+
+      </div>
+    </>
   );
 }
