@@ -6,7 +6,6 @@ import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import Script from "next/script";
 import { Montserrat } from "next/font/google";
-import LeadConnectorForm from "./components/LeadConnectorForm";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -61,7 +60,6 @@ export default function RootLayout({ children }) {
         <FooterComponent />
         <SpeedInsights />
         <Analytics />
-        <LeadConnectorForm/>
       </body>
     </html>
   );
