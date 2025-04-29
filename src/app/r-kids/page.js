@@ -127,7 +127,7 @@ export default function KidMinistry() {
       </div>
 
       {/* Join the Team Section */}
-      <div className="text-center mt-12">
+      {/* <div className="text-center mt-12">
         <h3 className="text-2xl font-semibold text-gray-900 mb-4">Join the Kids Ministry Team</h3>
         <p className="text-gray-700 text-lg mb-6 ">
           Are you passionate about working with children and helping them grow in their faith? We're always looking for dedicated volunteers to join our team. Get involved and make a difference in the lives of our kids today!
@@ -135,7 +135,19 @@ export default function KidMinistry() {
         <Link href="https://refresh.churchcenter.com/people/forms/301611" className="inline-block bg-primaryDark text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-primary transition duration-300 ease-in-out">
           Join the Team
         </Link>
+      </div> */}
+
+      {/* Baby Dedication Section */}
+      <div className="text-center mt-12">
+        <h3 className="text-2xl font-semibold text-gray-900 mb-4">Baby Dedications</h3>
+        <p className="text-gray-700 text-lg mb-6 ">
+          Looking for Baby Dedication? Register here!
+        </p>
+        <Link href="https://refresh.churchcenter.com/people/forms/541850" className="inline-block bg-primaryDark text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-primary transition duration-300 ease-in-out">
+          Register Here
+        </Link>
       </div>
+
     </div>
   );
 }
