@@ -357,6 +357,13 @@ export default function Navbar() {
                         <div className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">ministries</div>
                       </Link>
                     </li>
+                    <li>
+                      {/* NOTE: Baptism link */}
+                      <Link href="https://refresh.churchcenter.com/people/forms/303582" target="_blank" rel="noopener noreferrer" onClick={handleLinkClick}>
+                        {/* <Link href="/events" onClick={handleLinkClick}> */}
+                        <div className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">baptisms</div>
+                      </Link>
+                    </li>
                   </ul>
                 </div>
               )}
