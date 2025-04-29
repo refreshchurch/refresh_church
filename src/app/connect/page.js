@@ -18,6 +18,7 @@ export default function GetConnected() {
     { name: "Discovery", link: "/discovery", image: '/photos/background/DarkBlue1_1.webp', external: false },
     // { name: "Missions and Outreach", link: "/missions-and-outreach", image: '/photos/background/LightOrange1_1.webp', external: false },
     { name: "Baby Dedications", link: "https://refresh.churchcenter.com/people/forms/541850", image: '/photos/background/DarkOrange1_1.webp', external: true },
+    { name: "Baptisms", link: "https://refresh.churchcenter.com/people/forms/303582 ", image: '/photos/background/LightOrange1_1.webp', external: true },
     { name: "Serve Team", link: "https://refresh.churchcenter.com/people/forms/301611?_ga=2.212286996.1630180229.1675698110-905807684.1675698110", image: '/photos/connect/serve-team.webp', external: true },
     // Add more ministries as needed
   ];
