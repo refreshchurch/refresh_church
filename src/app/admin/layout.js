@@ -11,6 +11,9 @@ import {
 import { redirect } from "next/navigation"
 import { createClient } from "@/lib/supabase/server"
 import { Suspense } from "react"
+import { Button } from "@/components/ui/button"
+import Link from "next/link"
+import { SquareArrowLeft } from "lucide-react"
 
 export const metadata = {
   title: "Admin Panel",
@@ -36,6 +39,14 @@ export default async function AdminLayout({ children }) {
             <Suspense fallback={null}>
               <AdminBreadcrumb />
             </Suspense>
+          </div>
+          <div className="ml-auto mr-4">
+            <Button asChild variant="outline" size="sm">
+              <Link href="/" className="flex items-center gap-2">
+                <SquareArrowLeft className="h-4 w-4" />
+                Return to Site
+              </Link>
+            </Button>
           </div>
         </header>
         <div className="flex flex-1 flex-col gap-4 p-4 pt-0">

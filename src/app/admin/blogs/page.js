@@ -4,6 +4,9 @@ import { BlogsTable } from "@/components/blogs-table"
 import { BlogForm } from "@/components/blog-form"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Button } from "@/components/ui/button"
+import Link from "next/link"
+import { ExternalLink } from "lucide-react"
 
 export default async function BlogsPage() {
   const supabase = await createClient()
@@ -15,7 +18,14 @@ export default async function BlogsPage() {
         <div>
           <h1 className="text-3xl font-bold tracking-tight">Blogs</h1>
           <p className="text-muted-foreground">Create and manage blog posts for your website.</p>
+          <Button asChild variant="outline" className="text-xs" size="sm">
+            <Link href="/blog" className="flex items-center gap-1 mt-2">
+              <ExternalLink className="h-2 w-2" />
+              View Public Blog
+            </Link>
+          </Button>
         </div>
+
       </div>
 
       <Tabs defaultValue="all-blogs">
@@ -48,6 +58,13 @@ export default async function BlogsPage() {
           </Card>
         </TabsContent>
       </Tabs>
+
+      {/* <Button asChild variant="outline">
+        <Link href="/blog" className="flex items-center gap-2 mt-2 text-sm">
+          <ExternalLink className="h-2 w-2" />
+          View Public Blog
+        </Link>
+      </Button> */}
     </div>
   )
 }
