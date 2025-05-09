@@ -7,12 +7,13 @@ import FooterComponent from './components/FooterComponent'
 export default function LayoutWrapper({ children }) {
   const pathname = usePathname()
   const isAdmin = pathname.startsWith('/admin')
+  const isAuth = pathname.startsWith('/auth')
 
   return (
     <>
-      {!isAdmin && <Navbar />}
+      {!isAdmin && !isAuth && <Navbar />}
       {children}
-      {!isAdmin && <FooterComponent />}
+      {!isAdmin && !isAuth && <FooterComponent />}
     </>
   )
 }
