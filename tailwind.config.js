@@ -13,23 +13,14 @@ module.exports = {
   	extend: {
   		colors: {
   			primary: '#28827a',
-			// {
-  			// 	DEFAULT: 'hsl(var(--primary))',
-  			// 	foreground: 'hsl(var(--primary-foreground))'
-  			// },
   			primaryDark: '#315860',
   			primaryLight: '#719ba4',
-  			secondary:'#ffed4a', 
-			//  {
-  			// 	DEFAULT: 'hsl(var(--secondary))',
-  			// 	foreground: 'hsl(var(--secondary-foreground))'
-  			// },
+  			secondary: '#ffed4a',
   			accent: {
   				DEFAULT: 'hsl(var(--accent))',
   				foreground: 'hsl(var(--accent-foreground))'
   			},
   			background: '#F8F7F4',
-  			// background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
   				DEFAULT: 'hsl(var(--card))',
@@ -56,6 +47,16 @@ module.exports = {
   				'3': 'hsl(var(--chart-3))',
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
+  			},
+  			sidebar: {
+  				DEFAULT: 'hsl(var(--sidebar-background))',
+  				foreground: 'hsl(var(--sidebar-foreground))',
+  				primary: 'hsl(var(--sidebar-primary))',
+  				'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
+  				accent: 'hsl(var(--sidebar-accent))',
+  				'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
+  				border: 'hsl(var(--sidebar-border))',
+  				ring: 'hsl(var(--sidebar-ring))'
   			}
   		},
   		aspectRatio: {

@@ -6,6 +6,7 @@ import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import Script from "next/script";
 import { Montserrat } from "next/font/google";
+import LayoutWrapper from "./layoutWrapper";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -55,9 +56,7 @@ export default function RootLayout({ children }) {
         <meta name="google-site-verification" content="wGR4NHBUHrciapz3x7QEra-kdwuh6VS5640kdpnqRvU" />
       </head>
       <body className={montserrat.className}>
-        <Navbar />
-        {children}
-        <FooterComponent />
+        <LayoutWrapper>{children}</LayoutWrapper>
         <SpeedInsights />
         <Analytics />
       </body>
