@@ -113,7 +113,7 @@ export function BlogForm({ initialData = {} }) {
                 <Input placeholder="enter-url-slug" {...field} />
               </FormControl>
               <FormDescription>
-                The URL-friendly version of the title. Auto-generated from title but can be edited.
+                The URL-friendly version of the title. Must be unique and contain only lowercase letters, numbers, and hyphens.
               </FormDescription>
               <FormMessage />
             </FormItem>
