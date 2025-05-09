@@ -12,7 +12,8 @@ import {
   PieChart,
   Settings2,
   SquareTerminal,
-  Users
+  Users,
+  House
 } from 'lucide-react'
 
 import { NavMain } from '@/components/nav-main'
@@ -46,6 +47,13 @@ const data = {
     //   plan: 'Free',
     // },
   ],
+  // projects: [
+  //   {
+  //     name: "Home",
+  //     url: "/admin",
+  //     icon: House,
+  //   },
+  // ],
   navMain: [
     {
       title: 'Content',
@@ -54,19 +62,19 @@ const data = {
       isActive: true,
       items: [
         { title: 'Blogs', url: '/admin/blogs' },
-        { title: 'H-tags', url: '/admin/h-tags' },
+        // { title: 'H-tags', url: '/admin/h-tags' },
       ],
     },
-    {
-      title: 'Users',
-      url: '#',
-      icon: Users,
-      isActive: true,
-      items: [
-        { title: 'Add User', url: '/admin/add-user' },
-        { title: 'User Roles', url: '/admin/user-roles' },
-      ],
-    },
+    // {
+    //   title: 'Users',
+    //   url: '#',
+    //   icon: Users,
+    //   isActive: true,
+    //   items: [
+    //     { title: 'Add User', url: '/admin/add-user' },
+    //     { title: 'User Roles', url: '/admin/user-roles' },
+    //   ],
+    // },
   ],
 }
 
@@ -89,6 +97,7 @@ export function AppSidebar({ ...props }) {
         <TeamSwitcher teams={data.teams} />
       </SidebarHeader>
       <SidebarContent>
+        {/* <NavProjects projects={data.projects} /> */}
         <NavMain items={data.navMain} />
       </SidebarContent>
       <SidebarFooter>
