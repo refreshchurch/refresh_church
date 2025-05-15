@@ -58,13 +58,6 @@ export default async function BlogsPage() {
           </Card>
         </TabsContent>
       </Tabs>
-
-      {/* <Button asChild variant="outline">
-        <Link href="/blog" className="flex items-center gap-2 mt-2 text-sm">
-          <ExternalLink className="h-2 w-2" />
-          View Public Blog
-        </Link>
-      </Button> */}
     </div>
   )
 }
