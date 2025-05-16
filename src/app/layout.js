@@ -14,11 +14,8 @@ export const metadata = {
 };
 
 export default async function RootLayout({ children }) {
-  const supabase = createClient();
-  const { data: schemas } = await supabase
-    .from("site_schemas")
-    .select("schema_json")
-    .eq("enabled", true);
+  const supabase = await createClient();
+  const { data: schemas } = await supabase.from("site_schemas").select("schema_json").eq("enabled", true);
 
   return (
     <html lang="en">
