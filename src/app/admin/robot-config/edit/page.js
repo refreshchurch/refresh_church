@@ -2,5 +2,5 @@
 import { redirect } from 'next/navigation'
 
 export default function EditBlogPage() {
-  redirect('/admin/site-schema')
+  redirect('/admin/robot-config')
 }
