@@ -1,12 +1,10 @@
-import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "./Navbar";
-import FooterComponent from "./components/FooterComponent.js"
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import Script from "next/script";
 import { Montserrat } from "next/font/google";
 import LayoutWrapper from "./layoutWrapper";
+import { createClient } from "@/lib/supabase/server";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -15,7 +13,12 @@ export const metadata = {
   description: "Refreshing souls",
 };
 
-export default function RootLayout({ children }) {
+export default async function RootLayout({ children }) {
+  const supabase = createClient();
+  const { data: schemas } = await supabase
+    .from("site_schemas")
+    .select("schema_json")
+    .eq("enabled", true);
 
   return (
     <html lang="en">
@@ -54,6 +57,13 @@ export default function RootLayout({ children }) {
           }}
         /> */}
         <meta name="google-site-verification" content="wGR4NHBUHrciapz3x7QEra-kdwuh6VS5640kdpnqRvU" />
+        {schemas?.map((s, i) => (
+          <script
+            key={i}
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: s.schema_json }}
+          />
+        ))}
       </head>
       <body className={montserrat.className}>
         <LayoutWrapper>{children}</LayoutWrapper>
