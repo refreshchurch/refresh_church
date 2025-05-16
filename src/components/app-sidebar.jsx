@@ -65,6 +65,17 @@ const data = {
         // { title: 'H-tags', url: '/admin/h-tags' },
       ],
     },
+    {
+      title: 'Site Setting',
+      url: '#',
+      icon: Settings2,
+      isActive: true,
+      items: [
+        { title: 'Robot.txt', url: '/admin/robot-config' },
+        { title: 'Site Schema', url: '/admin/site-schema' },
+        // { title: 'H-tags', url: '/admin/h-tags' },
+      ],
+    },
     // {
     //   title: 'Users',
     //   url: '#',
