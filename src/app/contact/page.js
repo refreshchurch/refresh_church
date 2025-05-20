@@ -65,12 +65,12 @@ export default function Contact() {
                 3650 N. Owyhee, Storm Ave, Meridian, ID 83646
               </Link>
             </p>
-            <p className="text-lg text-gray-700">
+            {/* <p className="text-lg text-gray-700">
               <strong>Contact:</strong><br />
               <Link href="tel:208-844-2617" className="flex items-center space-x-1">
                 <Phone className="inline mr-2" /> (208) 844-2617
               </Link>
-            </p>
+            </p> */}
 
           </div>
         </div>
