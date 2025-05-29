@@ -21,6 +21,7 @@ export default async function RootLayout({ children }) {
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.png" type="image/svg+xml" />
+        <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
         {/* Google Analytics Script */}
         <Script
           strategy="afterInteractive"

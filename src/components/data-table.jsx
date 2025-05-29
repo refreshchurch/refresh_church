@@ -116,17 +116,17 @@ export function DataTable({
                         <DropdownMenuLabel>Actions</DropdownMenuLabel>
                         <DropdownMenuSeparator />
                         {editPath && (
-                          <DropdownMenuItem onClick={() => handleEdit(item.id)}>
-                            <Pencil className="mr-2 h-4 w-4" />
+                          <DropdownMenuItem onClick={() => handleEdit(item.id)} className="cursor-pointer">
+                            <Pencil className="mr-2 h-4 w-4 " />
                             Edit
                           </DropdownMenuItem>
                         )}
                         {onDelete && (
                           <DropdownMenuItem
                             onClick={() => confirmDelete(item.id)}
-                            className="text-destructive focus:text-destructive"
+                            className="text-destructive focus:text-destructive cursor-pointer"
                           >
-                            <Trash2 className="mr-2 h-4 w-4" />
+                            <Trash2 className="mr-2 h-4 w-4 cursor-pointer" />
                             Delete
                           </DropdownMenuItem>
                         )}
@@ -150,7 +150,7 @@ export function DataTable({
           </AlertDialogHeader>
           <AlertDialogFooter>
             <AlertDialogCancel>Cancel</AlertDialogCancel>
-            <AlertDialogAction onClick={handleDelete} className="bg-destructive text-destructive-foreground">
+            <AlertDialogAction onClick={handleDelete} className="bg-destructive text-destructive-foreground cursor-pointer">
               Delete
             </AlertDialogAction>
           </AlertDialogFooter>
