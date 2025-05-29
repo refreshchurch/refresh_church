@@ -73,7 +73,7 @@ const data = {
       items: [
         { title: 'Robot.txt', url: '/admin/robot-config' },
         { title: 'Site Schema', url: '/admin/site-schema' },
-        // { title: 'H-tags', url: '/admin/h-tags' },
+        { title: 'Site Map', url: '/admin/site-map' },
       ],
     },
     // {

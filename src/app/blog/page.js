@@ -13,7 +13,7 @@ export default async function BlogIndexPage() {
     .from("blogs")
     .select("*")
     .order("created_at", { ascending: false })
-
+  console.log('Blogs:', blogs)
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="mb-8 text-center">
