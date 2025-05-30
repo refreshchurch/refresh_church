@@ -32,7 +32,7 @@ export default async function SiteMapPage() {
           <Card>
             <CardHeader>
               <CardTitle>All Site Maps</CardTitle>
-              <CardDescription>View and manage all your site maps.</CardDescription>
+              <CardDescription>View and manage all your site maps (excluding the dynamically generated sitemap)</CardDescription>
             </CardHeader>
             <CardContent>
               <Suspense fallback={<div>Loading site maps...</div>}>
