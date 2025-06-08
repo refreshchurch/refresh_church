@@ -44,9 +44,8 @@ export default function Contact() {
               </div>
             </div>
           </Link>
-          <Link href="sms:855-770-3634&body=Give">
+          <Link href="sms:+1 (855) 770-3634&body=Text2Give">
             <div className="bg-white shadow-lg rounded-2xl p-6 h-[250px] justify-center flex flex-col items-center transform transition-all hover:scale-105">
-              {/* <Phone className="w-24 h-24" /> */}
               <MessageCircle className="w-24 h-24" />
               <div className=" text-gray-900 mt-4 flex flex-col items-center justify-between">
                 <h4 className="text-2xl font-semibold">Text</h4>
