@@ -3,14 +3,35 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react"
 import { Inbox, Laptop, Mail, MessageCircle, Phone } from "lucide-react";
 import { showGivingPage } from "../../../constants";
+import { CopiedToClipboard } from "@/components/copy-to-clipboard";
 
 
 export default function Contact() {
+  const [showCopied, setShowCopied] = useState(false)
+
+  const handleCopyAddress = async () => {
+    try {
+      await navigator.clipboard.writeText("P.O. Box 487, Eagle, ID 83616")
+      setShowCopied(true)
+    } catch (err) {
+      console.error("Failed to copy address:", err)
+    }
+  }
 
   if (!showGivingPage) {
     return null;
+  }
+
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText("Hello, this text was copied!")
+      setShowCopied(true)
+    } catch (err) {
+      console.error("Failed to copy text: ", err)
+    }
   }
 
   return (
@@ -44,7 +65,7 @@ export default function Contact() {
               </div>
             </div>
           </Link>
-          <Link href="sms:+1 (855) 770-3634&body=Text2Give">
+          <Link href="sms:+1 (855) 770-3634&body=GIVE $">
             <div className="bg-white shadow-lg rounded-2xl p-6 h-[250px] justify-center flex flex-col items-center transform transition-all hover:scale-105">
               <MessageCircle className="w-24 h-24" />
               <div className=" text-gray-900 mt-4 flex flex-col items-center justify-between">
@@ -53,15 +74,19 @@ export default function Contact() {
               </div>
             </div>
           </Link>
-          <Link href="">
+          <div
+            role="button" 
+            onClick={handleCopyAddress}
+            tabIndex={0}
+            onKeyDown={(e) => { if (e.key === "Enter") handleCopyAddress() }}>
             <div className="bg-white shadow-lg rounded-2xl p-6 h-[250px] justify-center flex flex-col items-center transform transition-all hover:scale-105">
               <Mail className="w-24 h-24" />
               <div className=" text-gray-900 mt-4 flex flex-col items-center justify-between">
                 <h4 className="text-2xl font-semibold">Mail-In</h4>
-                <p className="text-md">P.O. Box 487 <br/>Eagle, ID 83616</p>
+                <p className="text-md">P.O. Box 487 <br />Eagle, ID 83616</p>
               </div>
             </div>
-          </Link>
+          </div>
         </div>
 
         <div className="flex justify-center">
@@ -74,6 +99,7 @@ export default function Contact() {
 
 
       </div>
+      <CopiedToClipboard show={showCopied} onHide={() => setShowCopied(false)} />
     </>
   );
 }
