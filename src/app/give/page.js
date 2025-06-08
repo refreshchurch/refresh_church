@@ -44,12 +44,12 @@ export default function Contact() {
               </div>
             </div>
           </Link>
-          <Link href="tel:84321">
+          <Link href="sms:855-770-3634&body=Give">
             <div className="bg-white shadow-lg rounded-2xl p-6 h-[250px] justify-center flex flex-col items-center transform transition-all hover:scale-105">
               <Phone className="w-24 h-24" />
               <div className=" text-gray-900 mt-4 flex flex-col items-center justify-between">
                 <h4 className="text-2xl font-semibold">Text</h4>
-                <p className="text-lg">(84321)</p>
+                <p className="text-lg">(855-770-3634)</p>
               </div>
             </div>
           </Link>
