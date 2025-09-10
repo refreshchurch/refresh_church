@@ -67,7 +67,7 @@ export default function Contact() {
             </p>
             {/* <p className="text-lg text-gray-700">
               <strong>Contact:</strong><br />
-              <Link href="tel:208-844-2617" className="flex items-center space-x-1">
+              <Link href="tel:208-590-7789" className="flex items-center space-x-1">
                 <Phone className="inline mr-2" /> (208) 844-2617
               </Link>
             </p> */}

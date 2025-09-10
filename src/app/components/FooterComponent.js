@@ -269,9 +269,9 @@ export default function FooterComponent() {
                     <Link href="/contact" title="" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"> Get Directions</Link>
                   </li>
                   {/* <li>
-                    <a href="tel:208-844-2617" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white flex items-center">
+                    <a href="tel:208-590-7789" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white flex items-center">
                     <Phone className="mr-2 h-4 w-4" /> 
-                    208-844-2617
+                    208-590-7789
                     </a>
                   </li> */}
                 </ul>
