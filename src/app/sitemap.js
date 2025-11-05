@@ -103,7 +103,7 @@ export default async function sitemap() {
       const metadata = getRouteMetadata(route)
       if (metadata) {
         sitemapEntries.push({
-          url: `https://refreshchurch.org${route}`,
+          url: `https://refresh.church${route}`,
           lastModified: new Date(),
           changeFrequency: metadata.changefreq,
           priority: parseFloat(metadata.priority)
@@ -115,7 +115,7 @@ export default async function sitemap() {
     if (blogs) {
       for (const blog of blogs) {
         sitemapEntries.push({
-          url: `https://refreshchurch.org/blog/${blog.slug}`,
+          url: `https://refresh.church/blog/${blog.slug}`,
           lastModified: new Date(blog.updated_at),
           changeFrequency: 'monthly',
           priority: 0.6
@@ -127,7 +127,7 @@ export default async function sitemap() {
     if (sermons) {
       for (const sermon of sermons) {
         sitemapEntries.push({
-          url: `https://refreshchurch.org/sermons/${sermon.id.videoId}`,
+          url: `https://refresh.church/sermons/${sermon.id.videoId}`,
           lastModified: new Date(sermon.snippet.publishedAt),
           changeFrequency: 'monthly',
           priority: 0.7
@@ -161,7 +161,7 @@ export default async function sitemap() {
     console.error('Error generating sitemap:', error)
     // Return a basic sitemap in case of error
     return [{
-      url: 'https://refreshchurch.org',
+      url: 'https://refresh.church',
       lastModified: new Date(),
       changeFrequency: 'daily',
       priority: 1.0
