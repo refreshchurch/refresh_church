@@ -43,11 +43,11 @@ export default function HomePage() {
         />
       </Head>
       {/* Invisible h tags */}
-      <div className="hidden">
+      {/* <div className="hidden">
         <h1>Welcome to Refresh Church in Meridian, ID</h1>
         <h2></h2>
         <h3></h3>
-      </div>
+      </div> */}
 
       <div className="container mx-auto px-2 sm:px-4 py-8 ">
         <EventPopup
