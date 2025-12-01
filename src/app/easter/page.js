@@ -26,7 +26,7 @@ export default function EasterPage() {
       </div>
 
       <section className=" ">
-        <InfinitePhotoScroll />
+        <InfinitePhotoScroll event="easter" />
       </section>
 
       <div className="container mx-auto px-8 sm:px-36 pt-12 pb-6">
