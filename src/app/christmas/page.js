@@ -41,7 +41,7 @@ export default function ChristmasPage() {
                 </a>
               </p>
               <p className="text-lg">
-              Enjoy hot cocoa and treats, amazing music, kids choir, and a Christmas story message. Services will last no more than an hour and have a &quot;come as you are&quot; vibe
+              Enjoy hot cocoa and treats, amazing music, kids choir, and a Christmas story message. Services will last no more than an hour and have a &quot;come as you are&quot; vibe. Bring the whole family!
               </p>
               {/* ✅ Button 1 */}
               {/* <Link
