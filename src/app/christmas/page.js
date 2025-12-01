@@ -9,7 +9,7 @@ export default function ChristmasPage() {
       <section className="relative w-full overflow-hidden m-0" style={{ aspectRatio: '1920/1000' }}>
         <div className="absolute inset-0" style={{ top: '-15%', height: '115%' }}>
           <Image
-            src='/photos/christmas/horizontal.webp'
+            src='/photos/christmas/with-time.webp'
             width={1920}
             height={1080}
             className="w-full h-full object-cover"
