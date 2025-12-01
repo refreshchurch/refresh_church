@@ -41,7 +41,7 @@ export default function ChristmasPage() {
                 </a>
               </p>
               <p className="text-lg">
-                Join us for a family service where everyone worships together. Child care will not be available.
+              Enjoy hot cocoa and treats, amazing music, kids choir, and a Christmas story message. Services will last no more than an hour and have a &quot;come as you are&quot; vibe
               </p>
               {/* ✅ Button 1 */}
               {/* <Link
@@ -65,13 +65,13 @@ export default function ChristmasPage() {
         </div>
 
 
-{/* section 2 */}
+        {/* section 2 */}
         <div className="mb-12">
           <div className="flex flex-col lg:flex-row-reverse items-center">
             <div className="lg:w-1/2 lg:pl-8 mb-8 lg:mb-0">
               <h1 className="text-3xl font-semibold text-gray-900 mb-4">Join Refresh Church this holiday season!</h1>
               <div className="text-gray-700 text-lg space-y-3">
-                <p>Enjoy hot cocoa and treats, amazing music, kids choir, and a Christmas story message. Services will last no more than an hour and have a &quot;come as you are&quot; vibe.</p>
+                <p>Family service, Kids activity booklet included.</p>
                 <p>Services are at Owyhee High School with plenty of parking.</p>
               </div>
             </div>
@@ -89,7 +89,7 @@ export default function ChristmasPage() {
           </div>
         </div>
 
-{/* section 3 */}
+        {/* section 3 */}
         <div className="flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2 mb-8 lg:mb-0 lg:pr-8">
             <h1 className="text-4xl font-semibold text-gray-900 mb-4">What to Expect</h1>
@@ -119,11 +119,10 @@ export default function ChristmasPage() {
           </div>
         </div>
 
+        {/* google reviews */}
         <div className="my-16">
           <GoogleReviewsCarousel />
         </div>
-
-
       </div>
 
       {/* Banner */}
