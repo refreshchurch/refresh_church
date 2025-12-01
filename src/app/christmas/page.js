@@ -71,7 +71,7 @@ export default function ChristmasPage() {
             <div className="lg:w-1/2 lg:pl-8 mb-8 lg:mb-0">
               <h1 className="text-3xl font-semibold text-gray-900 mb-4">Join Refresh Church this holiday season!</h1>
               <div className="text-gray-700 text-lg space-y-3">
-                <p>Enjoy hot cocoa and treats, amazing music, kids choir, and a Christmas story message. Services will last no more than an hour and have a "come as you are" vibe.</p>
+                <p>Enjoy hot cocoa and treats, amazing music, kids choir, and a Christmas story message. Services will last no more than an hour and have a &quot;come as you are&quot; vibe.</p>
                 <p>Services are at Owyhee High School with plenty of parking.</p>
               </div>
             </div>
