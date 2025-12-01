@@ -6,21 +6,21 @@ export default function ChristmasPage() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <div className="container mx-auto px-8 sm:px-36 pt-12 pb-6">
-
-        <section className="relative w-full h-[350px] md:h-[500px] rounded-xl overflow-hidden">
+      <section className="relative w-full overflow-hidden m-0" style={{ aspectRatio: '1920/1000' }}>
+        <div className="absolute inset-0" style={{ top: '-15%', height: '115%' }}>
           <Image
             src='/photos/christmas/horizontal.webp'
-            layout="fill"
-            objectFit="cover"
-            objectPosition="center"
+            width={1920}
+            height={1080}
+            className="w-full h-full object-cover"
+            style={{ objectPosition: 'center top' }}
             alt="First Time Here Image"
             draggable="false"
           />
-        </section>
-      </div>
+        </div>
+      </section>
 
-      <section className=" ">
+      <section className="m-0">
         <InfinitePhotoScroll event="christmas" />
       </section>
 
