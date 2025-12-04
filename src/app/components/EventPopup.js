@@ -6,6 +6,7 @@ import Link from 'next/link'
 export default function EventPopup({ id, imageUrl, eventUrl, delay = 4000, endDate }) {
   const [isVisible, setIsVisible] = useState(false)
   const [aspectRatio, setAspectRatio] = useState(1)
+  const [dimensions, setDimensions] = useState({ width: '90vw', height: 'auto' })
 
   useEffect(() => {
     const hasSeenPopup = sessionStorage.getItem(`popup-${id}`)
@@ -21,11 +22,40 @@ export default function EventPopup({ id, imageUrl, eventUrl, delay = 4000, endDa
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const img = new window.Image()
+      let cleanup = null
+      
       img.src = imageUrl 
       img.onload = () => {
         if (img.width && img.height) {
-          setAspectRatio(img.width / img.height)
+          const ratio = img.width / img.height
+          setAspectRatio(ratio)
+          
+          // Calculate dimensions that fit within viewport
+          const calculateDimensions = () => {
+            const maxWidth = Math.min(window.innerWidth * 0.9, 600)
+            const maxHeight = window.innerHeight - 32 // Account for padding (2rem = 32px)
+            
+            // Calculate width and height based on aspect ratio
+            let width = maxWidth
+            let height = width / ratio
+            
+            // If height exceeds maxHeight, scale down width
+            if (height > maxHeight) {
+              height = maxHeight
+              width = height * ratio
+            }
+            
+            setDimensions({ width: `${width}px`, height: `${height}px` })
+          }
+          
+          calculateDimensions()
+          window.addEventListener('resize', calculateDimensions)
+          cleanup = () => window.removeEventListener('resize', calculateDimensions)
         }
+      }
+      
+      return () => {
+        if (cleanup) cleanup()
       }
     }
   }, [imageUrl])
@@ -43,9 +73,8 @@ export default function EventPopup({ id, imageUrl, eventUrl, delay = 4000, endDa
       <div 
         className="relative bg-white rounded-lg shadow-lg overflow-hidden" 
         style={{
-          width: '90vw',
-          maxWidth: '600px',
-          aspectRatio: aspectRatio,
+          width: dimensions.width,
+          height: dimensions.height,
         }}
       >
         <button
