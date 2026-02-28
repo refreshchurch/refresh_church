@@ -22,9 +22,9 @@ export default function Leadership() {
       title: "Worship & Production Pastor",
     },
     {
-      img: "/photos/leadership/yolanda.webp",
-      name: "Yolonda Pech",
-      title: "Pastoral Assistant and Administration",
+      img: "/photos/leadership/nicole.webp",
+      name: "Nicole Sherwood",
+      title: "Pastoral & Admin Assistant",
     },
     {
       img: "/photos/leadership/jeanine.webp",
