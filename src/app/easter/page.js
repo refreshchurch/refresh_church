@@ -12,10 +12,10 @@ export default function EasterPage() {
 
         <section className="relative w-full h-[350px] md:h-[500px] rounded-xl overflow-hidden">
           <Image
-            src='/photos/easter/bg-with-text.png'
+            src='/photos/easter/2.webp'
             layout="fill"
             objectFit="cover"
-            objectPosition="center"
+            objectPosition="center 41%"
             alt="First Time Here Image"
             draggable="false"
           />
@@ -46,7 +46,7 @@ export default function EasterPage() {
                 </a>
               </p>
               <p className="text-base">
-                Photo booth and coffee truck available before and after services.
+              Coffee truck available before and after services.
               </p>
               {/* ✅ Button 1 */}
               {/* <Link
@@ -127,7 +127,7 @@ export default function EasterPage() {
           </h1>
           <div className="text-gray-700 text-lg space-y-4">
             <p>
-              Come for amazing worship, a great sermon, and to meet stellar people who are after the same things in life. We are a non-denominational church in Meridian, Idaho.
+              Celebrating the resurrection with amazing worship, a great sermon, and to meet stellar people who are after the same things in life. We are a non-denominational church in Meridian, Idaho.
             </p>
             <p>
               Many of us in our congregation come from Meridian, Star, Nampa, Caldwell, Eagle, Boise, and Emmett, Idaho. Services are just over an hour long.
@@ -153,29 +153,25 @@ export default function EasterPage() {
 
 
 
-
       {/* Banner */}
       <section className="pt-6">
-        <div className="w-full h-auto relative">
-          <Image
-            src="/photos/easter/banner-with-text.png"
-            layout="responsive"
-            width={1920} // Adjust based on actual aspect ratio
-            height={500} // Adjust based on actual aspect ratio
-            objectFit="cover"
-            objectPosition="center"
-            alt="easter image"
-          />
+        <div className="relative w-full aspect-[50/9] overflow-hidden">
+            <Image
+              src="/photos/easter/2.webp"
+              fill
+              objectPosition="center 10%"
+              className="object-cover object-center"
+              alt="easter image"
+            />
         </div>
       </section>
 
-      <PlanVisitSticky
+      {/* <PlanVisitSticky
         message="Plan your visit for Easter Sunday!"
         buttonText={<ArrowBigRight/>}
         href="/plan-your-easter"
         canBeClosed={false} 
-      />
-
+      /> */}
 
     </main>
   )
