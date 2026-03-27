@@ -16,6 +16,9 @@ module.exports = {
   			primaryDark: '#315860',
   			primaryLight: '#719ba4',
   			secondary: '#ffed4a',
+  			youthTeal: '#3ebeb3',
+  			youthDark: '#1f8079',
+  			youthCream: '#e6dccf',
   			accent: {
   				DEFAULT: 'hsl(var(--accent))',
   				foreground: 'hsl(var(--accent-foreground))'
