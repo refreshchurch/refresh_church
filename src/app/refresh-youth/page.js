@@ -10,10 +10,11 @@ export default function YouthMinistry() {
 
       {/* Hero Section */}
       <section className="bg-youthDark w-full py-24 px-6 flex flex-col items-center text-center">
-        <div className="relative w-full max-w-xl h-24 mb-8">
+        <div className="relative w-full max-w-2xl h-32 mb-8">
           <Image
             src="/photos/youth-restyle/Refresh Youth Branding PNGs/Refresh Youth PNG/Refresh Youth- Logo - White Text.png"
             fill
+            sizes="(max-width: 768px) 90vw, 672px"
             style={{ objectFit: "contain" }}
             alt="Refresh Youth"
             priority
@@ -63,8 +64,31 @@ export default function YouthMinistry() {
         </div>
       </section>
 
-      {/* When & Where — Time and Location */}
+      {/* Why Refresh Youth? */}
       <section className="bg-white w-full py-20 px-6">
+        <div className="max-w-6xl mx-auto">
+          <div className="inline-block w-2 h-10 bg-youthTeal rounded-full mb-6" />
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight mb-10">
+            Why Refresh Youth?
+          </h2>
+          {/* TODO: Replace with 4 talking points from the culture guide */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {[1, 2, 3, 4].map((n) => (
+              <div key={n} className="flex items-start gap-4 p-6 rounded-2xl border border-youthTeal/30 bg-youthCream/40">
+                <span className="flex-shrink-0 w-9 h-9 rounded-full bg-youthTeal text-white font-bold flex items-center justify-center text-lg">
+                  {n}
+                </span>
+                <p className="text-gray-500 italic text-base leading-relaxed">
+                  Talking point {n} — coming soon from the culture guide.
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* When & Where — Time and Location */}
+      <section className="bg-youthCream w-full py-20 px-6">
         <div className="max-w-6xl mx-auto flex flex-col lg:flex-row-reverse items-center gap-12">
           <div className="lg:w-1/2">
             <div className="inline-block w-2 h-10 bg-youthTeal rounded-full mb-6" />
@@ -82,7 +106,7 @@ export default function YouthMinistry() {
                 <span className="font-semibold">Refresh HQ: 601 E Schiller Ln, Meridian.</span>
               </p>
               <p className="text-gray-700 text-lg leading-relaxed mt-4">
-                Our gathering includes group games, devotional time, small group discussion, Bible study, prayer, snacks, friendship, and lots of laughs.
+                Our gathering includes group games, teaching, fellowship, small group discussion, prayer, snacks, and fun!
               </p>
             </div>
           </div>
@@ -116,9 +140,18 @@ export default function YouthMinistry() {
             <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-5">
               Join the Community
             </h2>
-            <p className="text-youthCream text-lg leading-relaxed mb-8">
+            <p className="text-youthCream text-lg leading-relaxed mb-6">
               We believe in the power of community. Our youth leaders invest in a relationship with your student
               and help them build authentic faith — one Wednesday night at a time.
+            </p>
+            <p className="text-youthCream/80 text-base mb-8">
+              Questions? Reach out to{" "}
+              <a
+                href="mailto:eric@refresh.church"
+                className="underline text-youthCream hover:text-white transition-colors"
+              >
+                eric@refresh.church
+              </a>
             </p>
             <Link
               href="https://refresh.churchcenter.com/groups/small-groups/youth-small-group"
