@@ -313,6 +313,11 @@ export default function Navbar() {
               {dropdown === 'connect' && (
                 <div className="absolute left-0 z-10 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
                   <ul className="py-2 text-base text-gray-700 dark:text-gray-400">
+                  <li>
+                      <Link href="/stories" onClick={handleLinkClick}>
+                        <div className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">stories</div>
+                      </Link>
+                    </li>
                     <li>
                       <Link href="/contact" onClick={handleLinkClick}>
                         <div className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">contact</div>
@@ -369,8 +374,8 @@ export default function Navbar() {
               )}
             </li>
             <li>
-              <Link href="/stories">
-                <div className={`${isActive('/stories') ? 'primary' : 'gray'} text-gray-900 text-xl block py-2 px-3 rounded hover:bg-gray-100 min-[1210px]:hover:bg-transparent min-[1210px]:border-0 min-[1210px]:hover:text-primary min-[1210px]:p-0 dark:text-white min-[1210px]:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white min-[1210px]:dark:hover:bg-transparent`}>stories</div>
+              <Link href="/land">
+                <div className={`${isActive('/land') ? 'primary' : 'gray'} text-gray-900 text-xl block py-2 px-3 rounded hover:bg-gray-100 min-[1210px]:hover:bg-transparent min-[1210px]:border-0 min-[1210px]:hover:text-primary min-[1210px]:p-0 dark:text-white min-[1210px]:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white min-[1210px]:dark:hover:bg-transparent`}>land</div>
               </Link>
             </li>
             <li className='flex items-center'>
