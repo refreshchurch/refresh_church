@@ -9,30 +9,27 @@ const LAND_VIDEO_POSTER = "/photos/land/01.png";
 const LAND_VIDEO_SRC = "/videos/land.MOV";
 
 const LAND_PHOTOS = [
+  // {
+  //   src: "/photos/land/01.png",
+  //   alt: "View of Refresh Church land in Meridian, Idaho",
+  // },
   {
-    src: "/photos/land/01.png",
-    alt: "View of Refresh Church land in Meridian, Idaho",
-  },
-  {
-    src: "/photos/land/02.png",
-    alt: "Refresh Church property landscape",
-  },
-  {
-    src: "/photos/land/03.png",
-    alt: "Land purchased for future Refresh Church ministry",
-  },
-  {
-    src: "/photos/land/04.png",
-    alt: "Open land at the Refresh Church site",
+    src: "/photos/land/09.png",
+    alt: "Wide view of purchased land for Refresh Church",
   },
   {
     src: "/photos/land/05.png",
     alt: "Meridian land for Refresh Church",
   },
   {
-    src: "/photos/land/06.png",
-    alt: "Ground and horizon on Refresh Church land",
+    src: "/photos/land/10.png",
+    alt: "Refresh Church land in the Treasure Valley",
   },
+  {
+    src: "/photos/land/04.png",
+    alt: "Open land at the Refresh Church site",
+  },
+
   {
     src: "/photos/land/07.png",
     alt: "Refresh Church land from another angle",
@@ -41,13 +38,15 @@ const LAND_PHOTOS = [
     src: "/photos/land/08.png",
     alt: "Property lines and terrain at Refresh Church land",
   },
+
   {
-    src: "/photos/land/09.png",
-    alt: "Wide view of purchased land for Refresh Church",
+    src: "/photos/land/03.png",
+    alt: "Land purchased for future Refresh Church ministry",
   },
+
   {
-    src: "/photos/land/10.png",
-    alt: "Refresh Church land in the Treasure Valley",
+    src: "/photos/land/02.png",
+    alt: "Refresh Church property landscape",
   },
 ];
 
@@ -94,15 +93,15 @@ export default function LandPage() {
       </h1>
       <div className="bg-primaryDark text-white p-6 rounded-lg mb-10 w-full">
         <p className="text-lg text-left">
-        God has made a way for Refresh Church to purchase land in Meridian. We
-        are grateful for this step toward long-term ministry in the Treasure
-        Valley and for everyone who has prayed and given along the way.
+          God has made a way for Refresh Church to purchase land in Meridian. We
+          are grateful for this step toward long-term ministry in the Treasure
+          Valley and for everyone who has prayed and given along the way.
         </p>
       </div>
 
       <h2 className="text-2xl font-bold text-gray-900 mb-4">Intro Video</h2>
       <div className="flex flex-wrap gap-4 justify-center mb-14">
-        <div className="relative aspect-square w-full overflow-hidden rounded-2xl bg-white shadow-md sm:aspect-17/9">
+        <div className="relative aspect-video w-full overflow-hidden rounded-2xl bg-white shadow-md sm:aspect-17/9">
           {isPlaying ? (
             <video
               autoPlay
@@ -130,7 +129,7 @@ export default function LandPage() {
                 sizes="(max-width: 640px) 100vw, 896px"
                 priority
               />
-              <div className="absolute inset-0 flex items-center justify-center bg-black/20 transition-colors group-hover:bg-black/30">
+              <div className="absolute inset-0 flex items-center justify-center bg-black/05 transition-colors group-hover:bg-black/30">
                 <span
                   className="flex h-16 w-16 items-center justify-center rounded-full bg-black/50 text-3xl text-white shadow-lg transition-all duration-300 group-hover:bg-black/70 sm:h-20 sm:w-20 sm:text-4xl"
                   aria-hidden
@@ -144,24 +143,30 @@ export default function LandPage() {
       </div>
 
       <h2 className="text-2xl font-bold text-gray-900 mb-4">All photos</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12">
-        {LAND_PHOTOS.map((photo, index) => (
-          <button
-            key={`grid-${photo.src}`}
-            type="button"
-            className="group relative aspect-[4/3] w-full cursor-zoom-in overflow-hidden rounded-xl border-0 bg-neutral-100 p-0 text-left shadow-md transition-shadow hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
-            onClick={() => setLightboxIndex(index)}
-            aria-label={`Open photo ${index + 1} of ${LAND_PHOTOS.length} in gallery`}
-          >
-            <Image
-              src={photo.src}
-              alt={photo.alt}
-              fill
-              className="object-cover transition-transform duration-300 group-hover:scale-[1.02]"
-              sizes="(max-width: 640px) 100vw, 50vw"
-            />
-          </button>
-        ))}
+      <div className="grid grid-cols-2 gap-6 mb-12">
+        {LAND_PHOTOS.map((photo, index) => {
+          // index 0 → full width; then pairs starting at 1: positions 1,2 are half; 3,4 half; etc.
+          // Within the shifted index (index - 1), even = first of pair → half width, odd = second → half width.
+          // Only index 0 spans both columns.
+          const isFullWidth = index < 3;
+          return (
+            <button
+              key={`grid-${photo.src}`}
+              type="button"
+              className={`group relative w-full cursor-zoom-in overflow-hidden rounded-xl border-0 bg-neutral-100 p-0 text-left shadow-md transition-shadow hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-primary ${isFullWidth ? "col-span-2 aspect-[16/9]" : "aspect-[4/3]"}`}
+              onClick={() => setLightboxIndex(index)}
+              aria-label={`Open photo ${index + 1} of ${LAND_PHOTOS.length} in gallery`}
+            >
+              <Image
+                src={photo.src}
+                alt={photo.alt}
+                fill
+                className="object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+                sizes={isFullWidth ? "100vw" : "(max-width: 640px) 100vw, 50vw"}
+              />
+            </button>
+          );
+        })}
       </div>
 
       {lightboxIndex !== null && (
