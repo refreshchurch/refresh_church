@@ -101,7 +101,7 @@ export default function LandPage() {
 
       <h2 className="text-2xl font-bold text-gray-900 mb-4">Intro Video</h2>
       <div className="flex flex-wrap gap-4 justify-center mb-14">
-        <div className="relative aspect-square w-full overflow-hidden rounded-2xl bg-white shadow-md sm:aspect-17/9">
+        <div className="relative aspect-video w-full overflow-hidden rounded-2xl bg-white shadow-md sm:aspect-17/9">
           {isPlaying ? (
             <video
               autoPlay
