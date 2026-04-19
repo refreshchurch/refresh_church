@@ -321,11 +321,11 @@ export default function HomePage() {
               muted
               loop
               playsInline
-              poster="/photos/home/durand-thumbnail.png"
+              poster="/photos/land/10.png"
               preload="auto"
               className='absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100'
             >
-              <source src="/videos/durand-story.webm" type="video/webm" />
+              <source src="/videos/land-home.MOV" type="video/webm" />
               {/* Fallback for unsupported browsers */}
               Your browser does not support the video tag.
             </video>
