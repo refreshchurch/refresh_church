@@ -9,10 +9,10 @@ const LAND_VIDEO_POSTER = "/photos/land/01.png";
 const LAND_VIDEO_SRC = "/videos/land.MOV";
 
 const LAND_PHOTOS = [
-  {
-    src: "/photos/land/01.png",
-    alt: "View of Refresh Church land in Meridian, Idaho",
-  },
+  // {
+  //   src: "/photos/land/01.png",
+  //   alt: "View of Refresh Church land in Meridian, Idaho",
+  // },
   {
     src: "/photos/land/02.png",
     alt: "Refresh Church property landscape",
