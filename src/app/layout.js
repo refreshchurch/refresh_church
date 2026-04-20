@@ -8,9 +8,24 @@ import { createClient } from "@/lib/supabase/server";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
+
 export const metadata = {
+  metadataBase: new URL(siteUrl),
   title: "Refresh Church",
   description: "Refreshing souls",
+  openGraph: {
+    title: "Refresh Church",
+    description: "Refreshing souls",
+    images: [{ url: "/photos/logo.webp", alt: "Refresh Church" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Refresh Church",
+    description: "Refreshing souls",
+    images: ["/photos/logo.webp"],
+  },
 };
 
 export default async function RootLayout({ children }) {

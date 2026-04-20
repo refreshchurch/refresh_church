@@ -5,8 +5,9 @@ import Image from "next/image";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 
-const LAND_VIDEO_POSTER = "/photos/land/01.png";
-const LAND_VIDEO_SRC = "/videos/land.MOV";
+const LAND_VIDEO_POSTER = "/photos/land/land-video-thumb.jpg";
+/** From https://youtu.be/e5iIWp95rRo — embed uses the same ID */
+const LAND_YOUTUBE_VIDEO_ID = "e5iIWp95rRo";
 
 const LAND_PHOTOS = [
   // {
@@ -95,25 +96,21 @@ export default function LandPage() {
         <p className="text-lg text-left">
           God has made a way for Refresh Church to purchase land in Meridian. We
           are grateful for this step toward long-term ministry in the Treasure
-          Valley and for everyone who has prayed and given along the way.
+          Valley and for everyone who has prayed and given along the way and for everyone believing with us.
         </p>
       </div>
 
-      <h2 className="text-2xl font-bold text-gray-900 mb-4">Intro Video</h2>
+      <h2 className="text-2xl font-bold text-gray-900 mb-4">Full Story</h2>
       <div className="flex flex-wrap gap-4 justify-center mb-14">
         <div className="relative aspect-video w-full overflow-hidden rounded-2xl bg-white shadow-md sm:aspect-17/9">
           {isPlaying ? (
-            <video
-              autoPlay
-              controls
-              loop
-              playsInline
-              preload="auto"
-              className="absolute inset-0 h-full w-full object-cover"
-            >
-              <source src={LAND_VIDEO_SRC} type="video/webm" />
-              Your browser does not support the video tag.
-            </video>
+            <iframe
+              title="Full Story"
+              src={`https://www.youtube.com/embed/${LAND_YOUTUBE_VIDEO_ID}?autoplay=1&rel=0&modestbranding=1`}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              className="absolute inset-0 h-full w-full border-0"
+            />
           ) : (
             <button
               type="button"
