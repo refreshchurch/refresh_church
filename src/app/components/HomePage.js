@@ -313,22 +313,15 @@ export default function HomePage() {
             </video>
           </div>
 
-          {/* Durrand Video */}
+          {/* Land Video */}
           <div className="bg-white shadow-md rounded-2xl w-full aspect-video relative overflow-hidden transform transition-transform duration-350 hover:scale-[1.02]">
-            <video
-              // autoPlay
-              controls
-              muted
-              loop
-              playsInline
-              poster="/photos/land/10.png"
-              preload="auto"
-              className='absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100'
-            >
-              <source src="/videos/land-home.MOV" type="video/webm" />
-              {/* Fallback for unsupported browsers */}
-              Your browser does not support the video tag.
-            </video>
+            <iframe
+              title="Land video"
+              src="https://www.youtube.com/embed/e5iIWp95rRo?rel=0&modestbranding=1"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              className="absolute inset-0 h-full w-full border-0"
+            />
           </div>
 
         </div>
