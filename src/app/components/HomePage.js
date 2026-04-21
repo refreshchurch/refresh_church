@@ -317,7 +317,7 @@ export default function HomePage() {
           <div className="bg-white shadow-md rounded-2xl w-full aspect-video relative overflow-hidden transform transition-transform duration-350 hover:scale-[1.02]">
             <iframe
               title="Land video"
-              src="https://www.youtube.com/embed/e5iIWp95rRo?rel=0&modestbranding=1"
+              src="https://www.youtube.com/embed/gXGQEUQytiw?rel=0&modestbranding=1"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
               className="absolute inset-0 h-full w-full border-0"
