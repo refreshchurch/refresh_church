@@ -11,42 +11,81 @@ export default function Sermons() {
   const [nextPageToken, setNextPageToken] = useState(null);
   const [loading, setLoading] = useState(true);
   const observer = useRef();
+  const isFetchingRef = useRef(false);
+  const fetchedPagesRef = useRef(new Set());
+  const nextPageTokenRef = useRef(null);
 
-  useEffect(() => {
-    fetchYouTubeData();
-  }, []);
+  const applyYouTubePage = (data, pageToken) => {
+    if (!data.items || data.items.length === 0) return;
 
-  const fetchYouTubeData = async (pageToken = "") => {
+    const itemsToAdd = pageToken ? data.items : data.items.slice(1);
+
+    if (!pageToken) {
+      setLatestVideo(data.items[0]);
+    }
+
+    setSermons((prev) => {
+      const existingIds = new Set(prev.map((item) => item.id.videoId));
+      const uniqueToAdd = itemsToAdd.filter((item) => !existingIds.has(item.id.videoId));
+      return [...prev, ...uniqueToAdd];
+    });
+
+    nextPageTokenRef.current = data.nextPageToken || null;
+    setNextPageToken(data.nextPageToken || null);
+  };
+
+  const loadYouTubePage = async (pageToken = "", signal) => {
+    if (fetchedPagesRef.current.has(pageToken) || isFetchingRef.current) {
+      return;
+    }
+
+    isFetchingRef.current = true;
+
     try {
-      const response = await fetch(`/api/youtube?pageToken=${pageToken}`);
+      const response = await fetch(`/api/youtube?pageToken=${pageToken}`, { signal });
       const data = await response.json();
 
-      if (data.items && data.items.length > 0) {
-        // Set latest video only on first load
-        if (!latestVideo) {
-          setLatestVideo(data.items[0]);
-        }
-
-        // Append new sermons without overriding existing ones
-        setSermons((prev) => [...prev, ...(pageToken ? data.items : data.items.slice(1))]);
-
-        // Update the next page token for infinite scrolling
-        setNextPageToken(data.nextPageToken || null);
+      if (signal?.aborted) {
+        return;
       }
+
+      applyYouTubePage(data, pageToken);
+      fetchedPagesRef.current.add(pageToken);
     } catch (error) {
+      if (pageToken) {
+        nextPageTokenRef.current = pageToken;
+        setNextPageToken(pageToken);
+      }
+      if (error.name === "AbortError") {
+        return;
+      }
       console.error("Error fetching YouTube data:", error);
     } finally {
-      setLoading(false);
+      isFetchingRef.current = false;
+      if (!signal?.aborted) {
+        setLoading(false);
+      }
     }
   };
 
-  // Infinite Scroll Observer
+  useEffect(() => {
+    const controller = new AbortController();
+    loadYouTubePage("", controller.signal);
+    return () => {
+      controller.abort();
+      isFetchingRef.current = false;
+    };
+  }, []);
+
   const lastSermonRef = (node) => {
     if (loading) return;
     if (observer.current) observer.current.disconnect();
     observer.current = new IntersectionObserver((entries) => {
-      if (entries[0].isIntersecting && nextPageToken) {
-        fetchYouTubeData(nextPageToken);
+      const token = nextPageTokenRef.current;
+      if (entries[0].isIntersecting && token) {
+        nextPageTokenRef.current = null;
+        setNextPageToken(null);
+        loadYouTubePage(token);
       }
     });
     if (node) observer.current.observe(node);
@@ -54,7 +93,6 @@ export default function Sermons() {
 
   return (
     <>
-      {/* Meta title and description for SEO */}
       <Head>
         <title>Watch Christian Sermons Online - Refresh Church in Meridian</title>
         <meta
@@ -63,7 +101,6 @@ export default function Sermons() {
         />
       </Head>
 
-      {/* Invisible h tags */}
       <div className="hidden">
         <h1>Christian Sermons from Refresh Church in Meridian, ID</h1>
         <h2></h2>
@@ -73,7 +110,6 @@ export default function Sermons() {
       <section className="w-full py-8 md:py-10 lg:py-12">
         <div className="container mx-auto px-8 md:px-24 lg:px-32 space-y-12">
 
-          {/* Featured Sermon (Latest Video) */}
           <h2 className="text-3xl font-bold text-gray-900 tracking-tighter md:text-4xl">
             Sermons
           </h2>
@@ -105,17 +141,14 @@ export default function Sermons() {
             </Link>
           )}
 
-          {/* Sermon Grid (Loads more on scroll) */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {loading
-              ? // Skeleton loaders for initial 2 sermons
-              Array(2)
+              ? Array(2)
                 .fill(0)
                 .map((_, index) => (
                   <div key={index} className="relative w-full aspect-video overflow-hidden rounded-xl shadow-lg bg-gray-300 animate-pulse"></div>
                 ))
-              : // Render actual sermon cards
-              sermons.map((video, index) => (
+              : sermons.map((video, index) => (
                 <Link
                   key={`${video.id.videoId}-${index}`}
                   href={`/sermons/${video.id.videoId}`}
