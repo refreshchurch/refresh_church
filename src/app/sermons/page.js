@@ -4,6 +4,7 @@ import { useEffect, useState, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
+import { slugify } from "@/lib/utils";
 
 export default function Sermons() {
   const [latestVideo, setLatestVideo] = useState(null);
@@ -116,7 +117,7 @@ export default function Sermons() {
           {loading ? (
             <div className="relative w-full aspect-video overflow-hidden rounded-xl shadow-lg bg-gray-300 animate-pulse "></div>
           ) : latestVideo && (
-            <Link href={`/sermons/${latestVideo.id.videoId}`} className="block pb-3">
+            <Link href={`/sermons/${slugify(latestVideo.snippet.title)}`} className="block pb-3">
               <div className="relative w-full aspect-video overflow-hidden rounded-xl shadow-lg transform transition-transform duration-350 hover:scale-[1.01]">
                 <Image
                   width={500}
@@ -151,7 +152,7 @@ export default function Sermons() {
               : sermons.map((video, index) => (
                 <Link
                   key={`${video.id.videoId}-${index}`}
-                  href={`/sermons/${video.id.videoId}`}
+                  href={`/sermons/${slugify(video.snippet.title)}`}
                   ref={index === sermons.length - 1 ? lastSermonRef : null}
                 >
                   <div className="relative w-full aspect-video overflow-hidden rounded-xl shadow-lg transform transition-transform duration-350 hover:scale-[1.01]">
