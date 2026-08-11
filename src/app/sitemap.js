@@ -1,4 +1,5 @@
 import { createClient } from '@/lib/supabase/server'
+import { slugify } from '@/lib/utils'
 
 export const dynamic = 'force-dynamic'
 
@@ -127,7 +128,7 @@ export default async function sitemap() {
     if (sermons) {
       for (const sermon of sermons) {
         sitemapEntries.push({
-          url: `https://refresh.church/sermons/${sermon.id.videoId}`,
+          url: `https://refresh.church/sermons/${slugify(sermon.snippet.title)}`,
           lastModified: new Date(sermon.snippet.publishedAt),
           changeFrequency: 'monthly',
           priority: 0.7

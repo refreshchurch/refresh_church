@@ -13,3 +13,7 @@ export function slugify(text) {
     .replace(/[\s_-]+/g, "-")
     .replace(/^-+|-+$/g, "")
 }
+
+export function isYouTubeVideoId(value) {
+  return /^[A-Za-z0-9_-]{11}$/.test(value);
+}

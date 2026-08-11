@@ -1,28 +1,42 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import { Calendar } from "lucide-react";
-
-const API_KEY = process.env.NEXT_PUBLIC_YOUTUBE_API_KEY;
+import { slugify, isYouTubeVideoId } from "@/lib/utils";
 
 export default function SermonPlayer() {
-  const { id } = useParams(); // Get ID from URL
+  const { slug } = useParams();
+  const router = useRouter();
   const [video, setVideo] = useState(null);
+  const [videoId, setVideoId] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    if (!id) return;
+    if (!slug) return;
 
     const fetchVideoDetails = async () => {
       try {
         const response = await fetch(
-          `https://www.googleapis.com/youtube/v3/videos?key=${API_KEY}&part=snippet&id=${id}`
+          `/api/youtube/sermon?slug=${encodeURIComponent(slug)}`
         );
-        const data = await response.json();
-        if (data.items.length > 0) {
-          setVideo(data.items[0].snippet);
+
+        if (!response.ok) {
+          setLoading(false);
+          return;
         }
+
+        const data = await response.json();
+        const titleSlug = slugify(data.snippet.title);
+
+        // Redirect old /sermons/[videoId] URLs to the title-based slug
+        if (isYouTubeVideoId(slug) && titleSlug !== slug) {
+          router.replace(`/sermons/${titleSlug}`);
+          return;
+        }
+
+        setVideo(data.snippet);
+        setVideoId(data.id.videoId);
       } catch (error) {
         console.error("Error fetching video details:", error);
       }
@@ -30,7 +44,7 @@ export default function SermonPlayer() {
     };
 
     fetchVideoDetails();
-  }, [id]);
+  }, [slug, router]);
 
   function formatDate(isoString) {
     const date = new Date(isoString);
@@ -53,7 +67,7 @@ export default function SermonPlayer() {
     );
   }
 
-  if (!video) {
+  if (!video || !videoId) {
     return (
       <div className="w-full py-8 md:py-10 lg:py-12 text-center">
         <h2 className="text-2xl font-semibold text-gray-900">Sermon Not Found</h2>
@@ -70,7 +84,7 @@ export default function SermonPlayer() {
         <div className="relative w-full aspect-video overflow-hidden rounded-xl shadow-lg">
           <iframe
             className="w-full h-full object-cover"
-            src={`https://www.youtube.com/embed/${id}`}
+            src={`https://www.youtube.com/embed/${videoId}`}
             title={video.title}
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
