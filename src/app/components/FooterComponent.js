@@ -297,7 +297,7 @@ export default function FooterComponent() {
               </li>
             </ul>
 
-            <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">All rights reserved. ©2024</p>
+            <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">All rights reserved. ©{new Date().getFullYear()}</p>
           </div>
         </div>
       </footer>
