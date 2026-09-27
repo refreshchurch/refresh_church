@@ -7,19 +7,19 @@ export default function Leadership() {
   
   const staff = [
     {
-      img: "/photos/leadership/chris.webp",
-      name: "Pastor Chris Abernathy",
-      title: "Connections Pastor",
-    },
-    {
       img: "/photos/leadership/sam.webp",
       name: "Pastor Sam Pech",
-      title: "Next Gen Pastor",
+      title: "Executive Pastor of Ministries",
     },
     {
       img: "/photos/leadership/dylan.webp",
       name: "Pastor Dylan Cochran",
       title: "Worship & Production Pastor",
+    },
+    {
+      img: "/photos/leadership/chris.webp",
+      name: "Pastor Chris Abernathy",
+      title: "Connections Pastor",
     },
     {
       img: "/photos/leadership/nicole.webp",
@@ -34,7 +34,7 @@ export default function Leadership() {
     {
       img: "/photos/leadership/cat.webp",
       name: "Cat Howard",
-      title: "Connections Admin Assistant",
+      title: "Ministries Admin",
     },
     {
       img: "/photos/leadership/eric.jpg",
