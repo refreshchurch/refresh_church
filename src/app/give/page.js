@@ -4,7 +4,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react"
-import { Inbox, Laptop, Mail, MessageCircle, Phone } from "lucide-react";
+import { ArrowUpRight, Inbox, Laptop, Mail, MessageCircle, Phone } from "lucide-react";
 import { showGivingPage } from "../../../constants";
 import { CopiedToClipboard } from "@/components/copy-to-clipboard";
 
@@ -38,11 +38,20 @@ export default function Contact() {
     <>
       <div className="container mx-auto px-8 sm:px-36 py-12">
         {/* Enhanced Top Section */}
-        <div className="bg-primaryDark rounded-2xl shadow-lg p-8 mb-12 flex flex-col sm:flex-row items-center justify-between text-center sm:text-left">
+        <div className="bg-primaryDark rounded-2xl shadow-lg p-8 mb-8 flex flex-col sm:flex-row items-center justify-between text-center sm:text-left">
           <div className="mb-4 sm:mb-0">
             <h2 className="text-4xl font-bold text-white dark:text-white tracking-tighter sm:text-4xl md:text-5xl">Giving</h2>
             <p className="text-xl text-gray-200 dark:text-gray-300 pt-2">We have three ways you can give</p>
           </div>
+        </div>
+
+        <div className="flex justify-center mb-8">
+          <a href="/Refresh_Church_2026_Vision_Impact_Guide.pdf" target="_blank" rel="noopener noreferrer" className="transform transition-all hover:scale-105">
+            <div className="inline-flex items-center gap-2 bg-[#e46246] text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-[#f39757] transition duration-300 ease-in-out">
+              Kingdom Builders PDF
+              <ArrowUpRight className="w-5 h-5" aria-hidden />
+            </div>
+          </a>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 mb-12">
@@ -75,7 +84,7 @@ export default function Contact() {
             </div>
           </Link>
           <div
-            role="button" 
+            role="button"
             onClick={handleCopyAddress}
             tabIndex={0}
             onKeyDown={(e) => { if (e.key === "Enter") handleCopyAddress() }}>

@@ -126,7 +126,7 @@ export default function HomePage() {
           </div>
 
           <div className="flex flex-col gap-4">
-            <div className="bg-white shadow-md rounded-2xl w-full md:h-[35%] h-[40%] relative overflow-hidden p-6">
+            <div className="bg-white shadow-md rounded-2xl w-full shrink-0 relative overflow-hidden p-6">
               <h3 className="text-black text-3xl font-bold pb-[1px]">Learn More</h3>
               <h5 className="text-gray-400 text-lg">More than just a Sunday</h5>
               <ul className="mt-2 gap-y-2">
@@ -160,7 +160,7 @@ export default function HomePage() {
                 </Link>
               </ul>
             </div>
-            <div className="bg-white shadow-md rounded-2xl w-full h-[65%] relative overflow-hidden p-6">
+            <div className="bg-white shadow-md rounded-2xl w-full h-fit relative overflow-hidden p-6">
               <h4 className="text-black text-3xl font-bold">Get Involved</h4>
               <h5 className="text-gray-400 text-xl ps-0.5">Next Steps</h5>
               <ul className="mt-2 gap-y-2">
