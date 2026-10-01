@@ -266,6 +266,9 @@ export default function FooterComponent() {
                     <Link href="/contact" title="" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"> Contact</Link>
                   </li>
                   <li>
+                    <Link href="https://church.us2.list-manage.com/subscribe?u=e85bd2e4f47f460bfd312fbc4&id=b8536e5be0" target="_blank" rel="noopener noreferrer" title="" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"> Newsletter Sign-up</Link>
+                  </li>
+                  <li>
                     <Link href="/contact" title="" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"> Get Directions</Link>
                   </li>
                   <li>

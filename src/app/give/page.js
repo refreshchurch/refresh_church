@@ -48,7 +48,7 @@ export default function Contact() {
         <div className="flex justify-center mb-8">
           <a href="/Refresh_Church_2026_Vision_Impact_Guide.pdf" target="_blank" rel="noopener noreferrer" className="transform transition-all hover:scale-105">
             <div className="inline-flex items-center gap-2 bg-[#e46246] text-white text-lg font-semibold py-3 px-6 rounded-full hover:bg-[#f39757] transition duration-300 ease-in-out">
-              Kingdom Builders PDF
+              End of Year Giving Impact Guide PDF
               <ArrowUpRight className="w-5 h-5" aria-hidden />
             </div>
           </a>
