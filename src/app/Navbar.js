@@ -311,7 +311,7 @@ export default function Navbar() {
                 </svg>
               </button>
               {dropdown === 'connect' && (
-                <div className="absolute left-0 z-10 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                <div className="absolute left-0 z-10 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-52 dark:bg-gray-700 dark:divide-gray-600">
                   <ul className="py-2 text-base text-gray-700 dark:text-gray-400">
                   <li>
                       <Link href="/stories" onClick={handleLinkClick}>
@@ -321,6 +321,11 @@ export default function Navbar() {
                     <li>
                       <Link href="/contact" onClick={handleLinkClick}>
                         <div className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">contact</div>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="https://church.us2.list-manage.com/subscribe?u=e85bd2e4f47f460bfd312fbc4&id=b8536e5be0" target="_blank" rel="noopener noreferrer" onClick={handleLinkClick}>
+                        <div className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">newsletter sign-up</div>
                       </Link>
                     </li>
                     <li>
