@@ -26,16 +26,10 @@ const formSchema = z.object({
   }),
 })
 
-const DEFAULT_ROBOTS_TXT = `# Allow all crawlers
-User-agent: *
-Allow: /
-
-# Disallow admin paths
-User-agent: *
+const DEFAULT_ROBOTS_TXT = `User-agent: *
 Disallow: /admin/
 
-# Sitemap location
-Sitemap: https://example.com/sitemap.xml`
+Sitemap: https://www.refresh.church/sitemap.xml`
 
 export function RobotsConfigForm({ initialData = {} }) {
   const router = useRouter()

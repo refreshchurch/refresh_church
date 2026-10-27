@@ -3,6 +3,12 @@ import { slugify } from '@/lib/utils'
 
 export const dynamic = 'force-dynamic'
 
+const SITE_URL = 'https://www.refresh.church'
+
+function canonicalUrl(url) {
+  return url.replace(/^https?:\/\/(?:www\.)?refresh\.church(?=\/|$)/i, SITE_URL)
+}
+
 // Function to determine priority and changefreq based on route
 function getRouteMetadata(route) {
   // Default values
@@ -93,7 +99,11 @@ export default async function sitemap() {
       '/visit-us',
       '/copyright',
       '/disclaimer',
-      '/terms-and-conditions'
+      '/terms-and-conditions',
+      '/connect',
+      '/land',
+      '/small-groups',
+      '/small-groups/info'
     ]
 
     // Start building the sitemap entries
@@ -104,7 +114,7 @@ export default async function sitemap() {
       const metadata = getRouteMetadata(route)
       if (metadata) {
         sitemapEntries.push({
-          url: `https://refresh.church${route}`,
+          url: `${SITE_URL}${route}`,
           lastModified: new Date(),
           changeFrequency: metadata.changefreq,
           priority: parseFloat(metadata.priority)
@@ -116,7 +126,7 @@ export default async function sitemap() {
     if (blogs) {
       for (const blog of blogs) {
         sitemapEntries.push({
-          url: `https://refresh.church/blog/${blog.slug}`,
+          url: `${SITE_URL}/blog/${blog.slug}`,
           lastModified: new Date(blog.updated_at),
           changeFrequency: 'monthly',
           priority: 0.6
@@ -128,7 +138,7 @@ export default async function sitemap() {
     if (sermons) {
       for (const sermon of sermons) {
         sitemapEntries.push({
-          url: `https://refresh.church/sermons/${slugify(sermon.snippet.title)}`,
+          url: `${SITE_URL}/sermons/${slugify(sermon.snippet.title)}`,
           lastModified: new Date(sermon.snippet.publishedAt),
           changeFrequency: 'monthly',
           priority: 0.7
@@ -148,7 +158,7 @@ export default async function sitemap() {
 
         if (locMatch) {
           sitemapEntries.push({
-            url: locMatch[1],
+            url: canonicalUrl(locMatch[1]),
             lastModified: lastmodMatch ? new Date(lastmodMatch[1]) : new Date(),
             changeFrequency: changefreqMatch ? changefreqMatch[1] : 'weekly',
             priority: priorityMatch ? parseFloat(priorityMatch[1]) : 0.5
@@ -162,7 +172,7 @@ export default async function sitemap() {
     console.error('Error generating sitemap:', error)
     // Return a basic sitemap in case of error
     return [{
-      url: 'https://refresh.church',
+      url: SITE_URL,
       lastModified: new Date(),
       changeFrequency: 'daily',
       priority: 1.0
